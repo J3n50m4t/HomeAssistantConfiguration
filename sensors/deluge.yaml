@@ -2,6 +2,7 @@
   host: !secret synology_host
   username: !secret deluge_user
   password: !secret deluge_password
+  name: Synology
   monitored_variables:
     - 'current_status'
     - 'download_speed'
@@ -11,6 +12,7 @@
   host: !secret ryzenpc_ip
   username: !secret deluge_user
   password: !secret deluge_password
+  name: Ryzen
   monitored_variables:
     - 'current_status'
     - 'download_speed'
