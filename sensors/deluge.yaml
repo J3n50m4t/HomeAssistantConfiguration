@@ -4,7 +4,6 @@
   password: !secret deluge_password
   name: SynologyDeluge
   monitored_variables:
-    - 'current_status'
     - 'download_speed'
     - 'upload_speed'
 
@@ -14,6 +13,5 @@
   password: !secret deluge_password
   name: RyzenDeluge
   monitored_variables:
-    - 'current_status'
     - 'download_speed'
     - 'upload_speed'

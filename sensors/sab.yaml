@@ -3,10 +3,8 @@
   port: 8090
   api_key: d1b1e1231c771689dc0d96a9f637ad53
   monitored_variables:
-    - 'current_status'
     - 'speed'
     - 'queue_size'
     - 'queue_remaining'
-    - 'disk_size'
     - 'disk_free'
     - 'queue_count'

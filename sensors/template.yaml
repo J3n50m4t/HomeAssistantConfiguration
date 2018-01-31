@@ -1,6 +1,6 @@
 - platform: template
   sensors:
-    scrape:
+    jetloebtauersplited:
       friendly_name: "Löbtauer Straße Jet"
       unit_of_measurement: '€'
       value_template: "{{ states.sensor.jetloebtauer.state.split(' ')[0] | float}}"

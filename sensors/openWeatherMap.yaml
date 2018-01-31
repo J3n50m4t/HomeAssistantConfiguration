@@ -1,0 +1,6 @@
+# - platform: openweathermap
+#   api_key: 5bb4330126ce5e7d32c3497e5b58beb0
+#   language: de
+#   # forecast: tomorrow
+#   monitored_conditions:
+#     - weather

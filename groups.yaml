@@ -49,7 +49,25 @@ Monitoring:
     - sensor.hetzner_cpu_system
 
 ##DEVICE TRACKER
+connected_devices:
+  name: Verbundene Geräte
+  entities:
+  - device_tracker.oneplus3
+  - device_tracker.ryzenpc
+  - device_tracker.firetvtablet
+  - device_tracker.laptopmarkus
+  - device_tracker.vanessasiphone
+##MEDIAPLAYER
+audio: 
+  name: Audiogeräte 
+  entities:
+    - media_player.lautsprecher
+    - media_player.androidtv
 
+video:
+  name: "Video"
+  entities:
+    - media_player.chromecast_video
 ##SENSORS
 ####DARKSKY
 darksky_alltag:
@@ -79,6 +97,8 @@ delugeRyzen:
   entities:
     - sensor.ryzendeluge_down_speed
     - sensor.ryzendeluge_up_speed
+####fritzbox_netmonitor
+
 
 ####NETData
 netdatahetzner:
@@ -134,3 +154,51 @@ netdataryzen:
     - sensor.ryzen_system_io_out
     - sensor.ryzen_system_load
     - sensor.ryzen_uptime
+####PIHOLE
+pihole:
+  name: PiHoleData
+  entities:
+    - sensor.pihole_ads_blocked_today
+    - sensor.pihole_ads_percentage_blocked_today
+    - sensor.pihole_dns_unique_clients
+    - sensor.pihole_dns_unique_domains
+    - sensor.pihole_dns_queries_cached
+    - sensor.pihole_dns_queries_forwarded
+    - sensor.pihole_dns_queries_today
+    - sensor.pihole_domains_blocked
+
+####SABnzbd
+sab:
+  name: SABnzbd
+  entities:
+    - sensor.sabnzbd_speed
+    - sensor.sabnzbd_queue
+    - sensor.sabnzbd_left
+    - sensor.sabnzbd_disk_free
+    - sensor.sabnzdb_queue_count
+
+####SPEEDTEST
+Speedtest:
+  name: Speedtest
+  entities:
+  - sensor.speedtest_ping
+  - sensor.speedtest_download
+  - sensor.speedtest_upload
+
+
+####SYNOLOGY
+Synology:
+  name: NAS Data
+  entities:
+  - sensor.cpu_load_total
+  - sensor.memory_usage_real
+  - sensor.network_up
+  - sensor.network_down
+
+####TEMPLATE
+benzinpreis:
+  name: Benzinpreis
+  entities:
+    - sensor.jetloebtauersplited
+    - sensor.starcoventrysplited
+    - sensor.kauflandfreibergsplited
