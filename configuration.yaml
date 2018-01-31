@@ -1,0 +1,54 @@
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  unit_system: metric
+  time_zone: Europe/Berlin
+frontend:
+config:
+http:
+  api_password: !secret http_password
+
+updater:
+conversation:
+recorder:
+
+history:
+logbook:
+
+mqtt:
+  broker: !secret mqtt_broker
+  port: !secret mqtt_port
+  client_id: !secret mqtt_client_id 
+ # username: !secret mqtt_username
+ # password: !secret mqtt_password
+
+discovery: 
+
+# tradfri:
+#   host: !secret tradfri_host_ip
+#   allow_tradfri_groups: false
+
+map:
+sun:
+sensor: !include_dir_merge_list sensors
+device_tracker: !include_dir_merge_list device_tracker
+media_player: !include_dir_merge_list media_player
+switch: !include_dir_merge_list switch
+#android_ip_webcam: !include_dir_merge_list android_ip_webcam
+light: !include_dir_merge_list light  
+
+digital_ocean:
+  access_token: d40567bd3e8187d8c624f47e7a6850c7538197fd99c4dfb250a526907395346d
+
+# Text to speech
+tts:
+  platform: google
+
+ifttt:
+  key: !secret ifttt_key
+
+group: !include groups.yaml
+automation: !include automations.yaml
+

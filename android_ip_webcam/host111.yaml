@@ -1,0 +1,1 @@
+- host: !secret android_ip_fire_tablet

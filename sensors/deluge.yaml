@@ -1,0 +1,8 @@
+- platform: deluge
+  host: !secret synology_host
+  username: !secret deluge_user
+  password: !secret deluge_password
+  monitored_variables:
+    - 'current_status'
+    - 'download_speed'
+    - 'upload_speed'
