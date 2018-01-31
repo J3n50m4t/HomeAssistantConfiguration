@@ -6,3 +6,12 @@
     - 'current_status'
     - 'download_speed'
     - 'upload_speed'
+
+- platform: deluge
+  host: !secret ryzenpc_ip
+  username: !secret deluge_user
+  password: !secret deluge_password
+  monitored_variables:
+    - 'current_status'
+    - 'download_speed'
+    - 'upload_speed'
