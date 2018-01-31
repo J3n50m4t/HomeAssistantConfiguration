@@ -1,30 +1,30 @@
-# - platform: netdata
-#   host: !secret rootserver_ip
-#   name: hetzner
-#   resources:
-#     - memory_free
-#     - memory_used
-#     - memory_cached
-#     - memory_buffers
-#     - swap_free
-#     - swap_used
-#     - processes_running
-#     - processes_blocked
-#     - system_load
-#     - system_io_in
-#     - system_io_out
-#     - ipv4_in
-#     - ipv4_out
-#     - disk_free
-#     - cpu_iowait
-#     - cpu_user
-#     - cpu_system
-#     - cpu_softirq
-#     - cpu_guest
-#     - uptime
-#     - packets_received
-#     - packets_sent
-#     - connections
+- platform: netdata
+  host: !secret rootserver_ip
+  name: hetzner
+  resources:
+    - memory_free
+    - memory_used
+    - memory_cached
+    - memory_buffers
+    - swap_free
+    - swap_used
+    - processes_running
+    - processes_blocked
+    - system_load
+    - system_io_in
+    - system_io_out
+    - ipv4_in
+    - ipv4_out
+    - disk_free
+    - cpu_iowait
+    - cpu_user
+    - cpu_system
+    - cpu_softirq
+    - cpu_guest
+    - uptime
+    - packets_received
+    - packets_sent
+    - connections
 - platform: netdata
   host: !secret ryzenpc_ip
   name: ryzen
