@@ -39,13 +39,6 @@ switch: !include_dir_merge_list switch
 #android_ip_webcam: !include_dir_merge_list android_ip_webcam ## not active
 light: !include_dir_merge_list light  
 
-# Text to speech
-tts:
-  platform: google
-
-ifttt:
-  key: !secret ifttt_key
 
 group: !include groups.yaml
 automation: !include automations.yaml
-

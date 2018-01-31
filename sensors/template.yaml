@@ -1,20 +1,20 @@
-# - platform: template
-#   sensors:
-#     scrape:
-#       friendly_name: "Löbtauer Straße Jet"
-#       unit_of_measurement: '€'
-#       value_template: "{{ states.sensor.jetloebtauer.state.split(' ')[0] | float}}"
+- platform: template
+  sensors:
+    scrape:
+      friendly_name: "Löbtauer Straße Jet"
+      unit_of_measurement: '€'
+      value_template: "{{ states.sensor.jetloebtauer.state.split(' ')[0] | float}}"
     
-# - platform: template
-#   sensors:
-#     starcoventrysplited:
-#       friendly_name: "Coventry Straße Star"
-#       unit_of_measurement: '€'
-#       value_template: "{{ states.sensor.starcoventry.state.split(' ')[0] | float}}"
+- platform: template
+  sensors:
+    starcoventrysplited:
+      friendly_name: "Coventry Straße Star"
+      unit_of_measurement: '€'
+      value_template: "{{ states.sensor.starcoventry.state.split(' ')[0] | float}}"
     
-# - platform: template
-#   sensors:
-#     kauflandfreibergsplited:
-#       friendly_name: "Kaufland Freiberg"
-#       unit_of_measurement: '€'
-#       value_template: "{{ states.sensor.kauflandfreiberg.state.split(' ')[0] | float}}"
+- platform: template
+  sensors:
+    kauflandfreibergsplited:
+      friendly_name: "Kaufland Freiberg"
+      unit_of_measurement: '€'
+      value_template: "{{ states.sensor.kauflandfreiberg.state.split(' ')[0] | float}}"
