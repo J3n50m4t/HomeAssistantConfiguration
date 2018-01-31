@@ -39,9 +39,6 @@ switch: !include_dir_merge_list switch
 #android_ip_webcam: !include_dir_merge_list android_ip_webcam
 light: !include_dir_merge_list light  
 
-digital_ocean:
-  access_token: d40567bd3e8187d8c624f47e7a6850c7538197fd99c4dfb250a526907395346d
-
 # Text to speech
 tts:
   platform: google
