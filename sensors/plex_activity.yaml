@@ -1,5 +1,0 @@
-# - platform: plex
-#   host: !secret plex_host
-#   username: !secret plex_username
-#   password: !secret plex_password
-#   token: !secret plex_token

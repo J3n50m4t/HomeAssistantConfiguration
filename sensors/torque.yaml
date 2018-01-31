@@ -1,2 +1,0 @@
-#- platform: torque
-#  email: !secret torque_email

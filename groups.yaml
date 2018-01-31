@@ -130,9 +130,6 @@ video:
   entities:
     - media_player.chromecast_video
 
-
-#wetter
-
 darksky:
   name: Wetter
   entities: 

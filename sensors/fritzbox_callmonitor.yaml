@@ -1,4 +1,0 @@
-- platform: fritzbox_callmonitor
-  host: !secret fritz_host
-  username: !secret fritz_username
-  password: !secret fritz_password
