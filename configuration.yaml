@@ -1,14 +1,14 @@
 homeassistant:
   name: Home
-  latitude: !secret latitude
-  longitude: !secret longitude
-  elevation: !secret elevation
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  elevation: !secret homeassistant_elevation
   unit_system: metric
   time_zone: Europe/Berlin
 frontend:
 config:
 http:
-  api_password: !secret http_password
+  api_password: !secret homeassistant_http_password
 
 updater:
 conversation:
