@@ -1,41 +1,41 @@
-- platform: mqtt
-  name: Küchenlicht
-  command_topic: "toarduino"
-  state_topic: "fromarduino"
-  payload_on: "0"
-  payload_off: "1"
-
-- platform: mqtt
-  name: Schwarzlicht
-  command_topic: "toarduino"
-  state_topic: "fromarduino"
-  payload_on: "2"
-  payload_off: "3"
-
-- platform: mqtt
-  name: Sofalicht
-  command_topic: "toarduino"
-  state_topic: "fromarduino"
-  payload_on: "4"
-  payload_off: "5"
-
-
-- platform: mqtt
-  name: Stereoanlage
-  command_topic: "toarduino"
-  state_topic: "fromarduino"
-  payload_on: "6"
-  payload_off: "7"
-
-- platform: mqtt
-  name: StereoanlagenSound
-  command_topic: "toarduino"
-  # state_topic: "fromarduino"
-  payload_on: "8"
-  payload_off: "9"
-
 # - platform: mqtt
-#   name: StereoanlageVOLDOWN
+#   name: Küchenlicht
 #   command_topic: "toarduino"
 #   state_topic: "fromarduino"
-#   payload_on: "9"
+#   payload_on: "0"
+#   payload_off: "1"
+
+# - platform: mqtt
+#   name: Schwarzlicht
+#   command_topic: "toarduino"
+#   state_topic: "fromarduino"
+#   payload_on: "2"
+#   payload_off: "3"
+
+# - platform: mqtt
+#   name: Sofalicht
+#   command_topic: "toarduino"
+#   state_topic: "fromarduino"
+#   payload_on: "4"
+#   payload_off: "5"
+
+
+# - platform: mqtt
+#   name: Stereoanlage
+#   command_topic: "toarduino"
+#   state_topic: "fromarduino"
+#   payload_on: "6"
+#   payload_off: "7"
+
+# - platform: mqtt
+#   name: StereoanlagenSound
+#   command_topic: "toarduino"
+#   # state_topic: "fromarduino"
+#   payload_on: "8"
+#   payload_off: "9"
+
+# # - platform: mqtt
+# #   name: StereoanlageVOLDOWN
+# #   command_topic: "toarduino"
+# #   state_topic: "fromarduino"
+# #   payload_on: "9"
