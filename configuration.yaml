@@ -25,7 +25,7 @@ mqtt:
  # password: !secret mqtt_password
 
 discovery: 
-
+  
 tradfri:
   host: !secret tradfri_host_ip
   allow_tradfri_groups: false
@@ -39,6 +39,12 @@ switch: !include_dir_merge_list switch
 #android_ip_webcam: !include_dir_merge_list android_ip_webcam ## not active
 light: !include_dir_merge_list light  
 
+panel_custom:
+  - name: floorplan
+    sidebar_title: Floorplan
+    sidebar_icon: mdi:home
+    url_path: floorplan
+    config: !include floorplan.yaml
 
 group: !include groups.yaml
 automation: !include automations.yaml

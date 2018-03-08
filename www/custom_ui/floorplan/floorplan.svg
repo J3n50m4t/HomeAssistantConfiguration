@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" height="1000" width="10000" version="1.1" id="svg205" inkscape:version="0.92.1 r15371"
+    sodipodi:docname="Zeichnung.svg">
+    <defs id="defs199" />
+
+    <metadata id="metadata202">
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                <dc:title></dc:title>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g inkscape:label="Wohnung" inkscape:groupmode="Wohnung" id="layer1">
+
+        <g id="balkon" inkscape:label="balkon">
+            <path sodipodi:nodetypes="ccccc" inkscape:connector-curvature="0" id="Balkon" d="M10 10 V595 H 125 V10 Z" style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                inkscape:label="Balkon" />
+        </g>
+        <g inkscape:label="Wohnzimmer" inkscape:groupmode="Wohnzimmer" id="layer1">
+
+            <path d="M125 10 H 486 V 265 M 486 335 V 365 H 386 M386 595 H 125" style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+            />
+            <path d="M386 365 V 595" style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
+            />
+
+        </g>
+        <g id="Küche" inkscape:label="Küche">
+            <path d="M 386 595 H 593 V 365 H 565 M 510 365 H 486" style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+            />
+        </g>
+        <g id="Flur">
+            <path d="M 486 200 H 700 M 780 200 H 839 V 215 M 839 270 V 295 M 839 350 V 365 H 780 M 700 365 H 593" style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+            />
+        </g>
+        <g id="Bad">
+            <path d="M 593 595 H 839 V 365 " style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+            />
+        </g>
+        <g id="Schlafzimmer">
+            <path d="M 839 200 V 10 H 1200 V 340 H 939 V 280 H 839" style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+            />
+        </g>
+        <g id="Kinderzimmer">
+            <path d="M 839 595 H 1200 V 340" style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+            />
+        </g>
+    </g>
+</svg>
