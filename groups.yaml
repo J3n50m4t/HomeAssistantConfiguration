@@ -171,11 +171,13 @@ pihole:
 sab:
   name: SABnzbd
   entities:
+    - sensor.sabnzbd_status
     - sensor.sabnzbd_speed
     - sensor.sabnzbd_queue
     - sensor.sabnzbd_left
+    - sensor.sabnzbd_disk
     - sensor.sabnzbd_disk_free
-    - sensor.sabnzdb_queue_count
+    - sensor.sabnzbd_queue_count
 
 ####SPEEDTEST
 Speedtest:
