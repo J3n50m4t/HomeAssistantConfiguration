@@ -1,2 +1,10 @@
 - host: !secret firetablet_ip
-
+  port: !secret firetablet_webcam_port
+  name: Flur
+  username: !secret firetablet_webcam_username
+  password: !secret firetablet_webcam_password
+  scan_interval: 30
+  sensors:
+    - battery_level
+    - battery_temp
+    - light
