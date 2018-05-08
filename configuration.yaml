@@ -24,7 +24,7 @@ logbook:
 #  username: !secret mqtt_username
 #  password: !secret mqtt_password
 
-discovery: 
+# discovery: 
   
 tradfri:
   host: !secret tradfri_host_ip
