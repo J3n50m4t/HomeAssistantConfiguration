@@ -2,6 +2,7 @@
   host: !secret sabnzbd_host
   api_key: !secret sabnzbd_api_key
   port: !secret sabnzbd_port
+  ssl: true
   monitored_variables:
     - 'current_status'
     - 'speed'
