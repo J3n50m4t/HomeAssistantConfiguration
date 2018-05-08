@@ -1,17 +1,7 @@
 - platform: deluge
   host: !secret synology_host
-  username: !secret deluge_user
   password: !secret deluge_password
   name: SynologyDeluge
-  monitored_variables:
-    - 'download_speed'
-    - 'upload_speed'
-
-- platform: deluge
-  host: !secret ryzenpc_ip
-  username: !secret deluge_user
-  password: !secret deluge_password
-  name: RyzenDeluge
   monitored_variables:
     - 'download_speed'
     - 'upload_speed'
