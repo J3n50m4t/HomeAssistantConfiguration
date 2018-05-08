@@ -1,7 +1,7 @@
-- platform: deluge
-  host: !secret synology_host
-  password: !secret deluge_password
-  name: SynologyDeluge
-  monitored_variables:
-    - 'download_speed'
-    - 'upload_speed'
+# - platform: deluge
+#   host: !secret synology_host
+#   password: !secret deluge_password
+#   name: SynologyDeluge
+#   monitored_variables:
+#     - 'download_speed'
+#     - 'upload_speed'
