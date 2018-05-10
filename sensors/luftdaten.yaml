@@ -1,0 +1,11 @@
+- platform: luftdaten
+  sensorid: !secret luftdaten_sensor_id_p
+  monitored_conditions:
+    - P1
+    - P2
+- platform: luftdaten
+  sensorid: !secret luftdaten_sensor_id_temperature
+  monitored_conditions:    
+    - temperature
+    - humidity
+
