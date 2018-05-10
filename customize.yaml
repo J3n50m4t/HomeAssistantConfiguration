@@ -25,7 +25,7 @@ sensor.luftdaten_pm25:
 #sabnzbd
 sensor.sabnzbd_status:
   friendly_name: Status
-  icon: mdi:cloud-download
+  icon: mdi:progress-download
 sensor.sabnzbd_speed:
   friendly_name: Geschwindigkeit
   icon: mdi:cloud-download
@@ -38,3 +38,11 @@ sensor.sabnzbd_disk_free:
 sensor.sabnzbd_queue_count:
   friendly_name: Warteschlange
   icon: mdi:cloud-download
+
+#Benzinpreis/Scrape/template
+sensor.jetloebtauersplited: 
+  icon: mdi:currency-eur
+sensor.starcoventrysplited: 
+  icon: mdi:currency-eur
+sensor.kauflandfreibergsplited: 
+  icon: mdi:currency-eur
