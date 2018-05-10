@@ -23,6 +23,16 @@ LuftDaten:
     - sensor.luftdaten_humidity
     - sensor.luftdaten_temperature
 
+####SABnzbd
+sab:
+  name: SABnzbd
+  entities:
+    - sensor.sabnzbd_status
+    - sensor.sabnzbd_speed
+    - sensor.sabnzbd_left
+    - sensor.sabnzbd_disk_free
+    - sensor.sabnzbd_queue_count
+
 # Groups 
 #1 
 ##VIEWS
@@ -180,17 +190,7 @@ pihole:
     - sensor.pihole_dns_queries_today
     - sensor.pihole_domains_blocked
 
-####SABnzbd
-sab:
-  name: SABnzbd
-  entities:
-    - sensor.sabnzbd_status
-    - sensor.sabnzbd_speed
-    - sensor.sabnzbd_queue
-    - sensor.sabnzbd_left
-    - sensor.sabnzbd_disk
-    - sensor.sabnzbd_disk_free
-    - sensor.sabnzbd_queue_count
+
 
 ####SPEEDTEST
 Speedtest:
