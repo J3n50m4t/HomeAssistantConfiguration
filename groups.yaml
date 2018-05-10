@@ -19,9 +19,9 @@ darksky_wetterview:
 LuftDaten:
   name: Luftqualität
   entities: 
-    - sensor.luftdaten_humidity
     - sensor.luftdaten_pm10
     - sensor.luftdaten_pm25
+    - sensor.luftdaten_humidity
     - sensor.luftdaten_temperature
 
 # Groups 
