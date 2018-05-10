@@ -8,6 +8,5 @@
     - 'speed'
     - 'queue_size'
     - 'queue_remaining'
-    - 'disk_size'
     - 'disk_free'
     - 'queue_count'
