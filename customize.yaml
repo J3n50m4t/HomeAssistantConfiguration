@@ -25,16 +25,16 @@ sensor.luftdaten_pm25:
 #sabnzbd
 sensor.sabnzbd_status:
   friendly_name: Status
-  icon: mdi:progress-download
+  icon: mdi:cloud-download
 sensor.sabnzbd_speed:
   friendly_name: Geschwindigkeit
-  icon: mdi:progress-download
+  icon: mdi:cloud-download
 sensor.sabnzbd_left:
   friendly_name: Verbleibend
-  icon: mdi:progress-download
+  icon: mdi:cloud-download
 sensor.sabnzbd_disk_free:
   friendly_name: Speicher verbleibend
-  icon: mdi:progress-download
+  icon: mdi:cloud-download
 sensor.sabnzbd_queue_count:
   friendly_name: Warteschlange
-  icon: mdi:progress-download
+  icon: mdi:cloud-download
