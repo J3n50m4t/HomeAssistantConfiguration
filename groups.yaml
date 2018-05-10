@@ -4,9 +4,7 @@ wetter:
   entities:
     - group.darksky_wetterview
     - group.luftdaten
-
-
-
+    
 darksky_wetterview:
   name: Darksky Wetter
   entities:
