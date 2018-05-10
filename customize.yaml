@@ -1,12 +1,15 @@
 #darksky
 sensor.dark_sky_temperature:
   friendly_name: aktuelle Temperatur
+  icon: mdi:temperature-celsius
 sensor.dark_sky_daily_low_temperature:
   friendly_name: aktuelle Temperatur
   icon: mdi:arrow-down-bold
 sensor.dark_sky_daily_high_temperature:
   friendly_name: aktuelle Temperatur  
   icon: mdi:arrow-up-bold
+sensor.dark_sky_wind_speed:
+  friendly_name: Windgeschwindigkeit
 #Luftdaten
 sensor.luftdaten_humidity:
   friendly_name: Luftfeuchtigkeit
