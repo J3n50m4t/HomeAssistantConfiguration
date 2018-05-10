@@ -28,16 +28,16 @@ sensor.sabnzbd_status:
   icon: mdi:progress-download
 sensor.sabnzbd_speed:
   friendly_name: Geschwindigkeit
-  icon: mdi:cloud-download
+  icon: mdi:progress-download
 sensor.sabnzbd_left:
   friendly_name: Verbleibend
-  icon: mdi:cloud-download
+  icon: mdi:progress-download
 sensor.sabnzbd_disk_free:
   friendly_name: Speicher verbleibend
-  icon: mdi:cloud-download
+  icon: mdi:progress-download
 sensor.sabnzbd_queue_count:
   friendly_name: Warteschlange
-  icon: mdi:cloud-download
+  icon: mdi:progress-download
 
 #Benzinpreis/Scrape/template
 sensor.jetloebtauersplited: 
