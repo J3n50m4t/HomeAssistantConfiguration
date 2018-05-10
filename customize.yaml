@@ -21,3 +21,20 @@ sensor.luftdaten_pm10:
   friendly_name: Pollen 10 Microns
 sensor.luftdaten_pm25:
   friendly_name: Pollen 2,5 Microns
+
+#sabnzbd
+sensor.sabnzbd_status:
+  friendly_name: Status
+  icon: mdi:progress-download
+sensor.sabnzbd_speed:
+  friendly_name: Geschwindigkeit
+  icon: mdi:progress-download
+sensor.sabnzbd_left:
+  friendly_name: Verbleibend
+  icon: mdi:progress-download
+sensor.sabnzbd_disk_free:
+  friendly_name: Speicher verbleibend
+  icon: mdi:progress-download
+sensor.sabnzbd_queue_count:
+  friendly_name: Warteschlange
+  icon: mdi:progress-download
