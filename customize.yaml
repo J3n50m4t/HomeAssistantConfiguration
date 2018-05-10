@@ -1,0 +1,11 @@
+#Luftdaten
+sensor.luftdaten_humidity:
+  friendly_name: Luftfeuchtigkeit
+  icon: mdi:water-percent
+sensor.luftdaten_temperature:
+  friendly_name: Temperatur
+  icon: mdi:temperature-celsius
+sensor.luftdaten_pm10:
+  friendly_name: Pollen 10 Microns
+sensor.luftdaten_pm25:
+  friendly_name: Pollen 2,5 Microns

@@ -1,3 +1,29 @@
+wetter:
+  name: Wetter
+  view: true
+  entities:
+    - group.darksky_wetterview
+    - group.luftdaten
+
+
+
+darksky_wetterview:
+  name: Darksky Wetter
+  entities:
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_daily_low_temperature
+    - sensor.dark_sky_daily_high_temperature
+    - sensor.dark_sky_nearest_storm_distance
+    - sensor.dark_sky_wind_speed
+    
+LuftDaten:
+  name: Luftqualität
+  entities: 
+    - sensor.luftdaten_humidity
+    - sensor.luftdaten_pm10
+    - sensor.luftdaten_pm25
+    - sensor.luftdaten_temperature
+
 # Groups 
 #1 
 ##VIEWS
@@ -16,11 +42,6 @@
 #     - sensor.dark_sky_summary
 #     - group.darksky_alltag
 
-wetter:
-  name: Wetter
-  view: true
-  entities:
-    - group.darksky_wetterview
 ####INTERNET
 Internet:
   name: Internet
@@ -77,14 +98,7 @@ darksky_alltag:
     - sensor.dark_sky_daily_low_temperature
     - sensor.dark_sky_daily_high_temperature
     - sensor.dark_sky_wind_speed
-darksky_wetterview:
-  name: Darksky Wetter
-  entities:
-    - sensor.dark_sky_temperature
-    - sensor.dark_sky_daily_low_temperature
-    - sensor.dark_sky_daily_high_temperature
-    - sensor.dark_sky_nearest_storm_distance
-    - sensor.dark_sky_wind_speed
+
 
 ####DELUGE
 delugeSynology:

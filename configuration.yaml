@@ -5,6 +5,9 @@ homeassistant:
   elevation: !secret homeassistant_elevation
   unit_system: metric
   time_zone: Europe/Berlin
+  customize: !include customize.yaml
+    
+
 frontend:
 config:
 http:
@@ -41,3 +44,4 @@ light: !include_dir_merge_list light
 
 group: !include groups.yaml
 automation: !include automations.yaml
+
