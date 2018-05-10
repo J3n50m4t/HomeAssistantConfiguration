@@ -11,9 +11,8 @@ darksky_wetterview:
   name: Darksky Wetter
   entities:
     - sensor.dark_sky_temperature
-    - sensor.dark_sky_daily_low_temperature
     - sensor.dark_sky_daily_high_temperature
-    - sensor.dark_sky_nearest_storm_distance
+    - sensor.dark_sky_daily_low_temperature
     - sensor.dark_sky_wind_speed
     
 LuftDaten:
