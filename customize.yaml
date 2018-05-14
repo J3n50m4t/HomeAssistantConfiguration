@@ -46,3 +46,14 @@ sensor.starcoventrysplited:
   icon: mdi:currency-eur
 sensor.kauflandfreibergsplited: 
   icon: mdi:currency-eur
+
+#Speedtest
+sensor.speedtest_ping:
+  friendly_name: Ping
+  icon: mdi:pulse
+sensor.speedtest_download:
+  friendly_name: Download
+  icon: mdi:cloud-download
+sensor.speedtest_upload:
+  friendly_name: Upload
+  icon: mdi:cloud-upload

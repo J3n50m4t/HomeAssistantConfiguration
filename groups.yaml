@@ -30,6 +30,14 @@ sab:
     - sensor.sabnzbd_left
     - sensor.sabnzbd_disk_free
     - sensor.sabnzbd_queue_count
+    
+####SPEEDTEST
+Speedtest:
+  name: Speedtest
+  entities:
+  - sensor.speedtest_ping
+  - sensor.speedtest_download
+  - sensor.speedtest_upload
 
 ####SYNOLOGY
 Synology:
@@ -40,13 +48,7 @@ Synology:
   - sensor.network_down
   - sensor.network_up
 
-####SPEEDTEST
-Speedtest:
-  name: Speedtest
-  entities:
-  - sensor.speedtest_ping
-  - sensor.speedtest_download
-  - sensor.speedtest_upload
+
 
 ####TEMPLATE
 benzinpreis:
