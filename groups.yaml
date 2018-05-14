@@ -48,8 +48,6 @@ Synology:
   - sensor.network_down
   - sensor.network_up
 
-
-
 ####TEMPLATE
 benzinpreis:
   name: Benzinpreis
