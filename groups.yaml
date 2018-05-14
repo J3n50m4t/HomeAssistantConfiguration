@@ -56,6 +56,19 @@ benzinpreis:
     - sensor.starcoventrysplited
     - sensor.kauflandfreibergsplited
 
+##Switches
+Schalter:
+  name: Schalter
+  entities: 
+    - switch.tv_input
+    - switch.tv_power
+    - switch.tv_volume
+    - switch.lichtschalterkueche
+    - switch.steck_dose_zwei
+    - switch.steck_dose_drei
+    - switch.steck_dose_alle_aus
+
+######## ENDED N
 Internet:
   name: Internet
   view: true

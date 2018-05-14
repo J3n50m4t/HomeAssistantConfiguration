@@ -59,15 +59,29 @@ sensor.speedtest_upload:
   icon: mdi:cloud-upload
 
 #Synology
-  sensor.cpu_load_total:
-    friendly_name: CPU Auslastung
-    icon: mdi:chip
-  sensor.memory_usage_real:
-    friendly_name: RAM Auslastung
-    icon: mdi:memory
-  sensor.network_down:
-    friendly_name: Download
-    icon: mdi:cloud-download
-  sensor.network_up:
-    friendly_name: Upload
-    icon: mdi:cloud-upload
+sensor.cpu_load_total:
+  friendly_name: CPU Auslastung
+  icon: mdi:chip
+sensor.memory_usage_real:
+  friendly_name: RAM Auslastung
+  icon: mdi:memory
+sensor.network_down:
+  friendly_name: Download
+  icon: mdi:cloud-download
+sensor.network_up:
+  friendly_name: Upload
+  icon: mdi:cloud-upload
+
+switch.tv_input:
+  friendly_name: TV Eingang ändern
+  icon: mdi:video-input-hdmi
+switch.tv_power:
+  friendly_name: TV Power
+  icon: mdi:television-classic
+switch.tv_volume:
+  friendly_name: Lautstärke
+  icon: mdi:volume-high
+switch.lichtschalterkueche:
+  friendly_name: Küchenlicht
+  icon: mdi:lightbulb
+#2 Missing.
