@@ -11,7 +11,7 @@ homeassistant:
 frontend:
 config:
 http:
-  api_password: !secret homeassistant_http_password
+#  api_password: !secret homeassistant_http_password
 
 updater:
 conversation:
@@ -34,6 +34,7 @@ discovery:
 #  allow_tradfri_groups: false
 hue:
   bridges:
+    - host: 192.168.1.116
 
 map:
 sun:
