@@ -28,10 +28,6 @@ logbook:
 #  password: !secret mqtt_password
 
 # discovery: 
-  
-tradfri:
-  host: !secret tradfri_host_ip
-  allow_tradfri_groups: false
 
 map:
 sun:
