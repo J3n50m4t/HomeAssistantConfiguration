@@ -28,6 +28,9 @@ logbook:
 #  password: !secret mqtt_password
 
 # discovery: 
+hue:
+  bridges:
+    - host: !secret hue_ip
 
 map:
 sun:
