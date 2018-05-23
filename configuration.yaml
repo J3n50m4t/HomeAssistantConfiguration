@@ -27,24 +27,21 @@ logbook:
 #  username: !secret mqtt_username
 #  password: !secret mqtt_password
 
-# discovery: 
+discovery: 
   
 #tradfri:
 #  host: !secret tradfri_host_ip
 #  allow_tradfri_groups: false
 hue:
   bridges:
-    - host: 192.168.1.116
-      allow_unreachable: true
-      allow_hue_groups: true
 
 map:
 sun:
-sensor: !include_dir_merge_list sensors
-device_tracker: !include_dir_merge_list device_tracker
-media_player: !include_dir_merge_list media_player
-switch: !include_dir_merge_list switch
-android_ip_webcam: !include_dir_merge_list android_ip_webcam
+#sensor: !include_dir_merge_list sensors
+#device_tracker: !include_dir_merge_list device_tracker
+#media_player: !include_dir_merge_list media_player
+#switch: !include_dir_merge_list switch
+#android_ip_webcam: !include_dir_merge_list android_ip_webcam
 #light: !include_dir_merge_list light  
 
 group: !include groups.yaml
