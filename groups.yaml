@@ -68,7 +68,16 @@ Schalter:
     - switch.steck_dose_drei
     - switch.steck_dose_alle_aus
 
-######## ENDED N
+## Light
+Lichtschalter: 
+  name: Lichtschalter
+  entities:
+    - light.arbeitszimmerlampe
+    - light.esslampe
+    - light.wohnzimmerlampen
+    - light.schlaflampe
+
+    ######## ENDED N
 Internet:
   name: Internet
   view: true

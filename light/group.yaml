@@ -1,0 +1,6 @@
+- platform: group
+  name: Wohnzimmerlampen
+  entities:
+    - light.wohnzimmerlampe_mitte
+    - light.wohnzimmerlampe_richtung_fenster
+    - light.wohnzimmerlampe_richtung_wohnung

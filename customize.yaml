@@ -85,3 +85,10 @@ switch.lichtschalterkueche:
   friendly_name: Küchenlicht
   icon: mdi:lightbulb
 #2 Missing.
+
+light.arbeitszimmerlampe:
+  friendly_name: Arbeitszimmer
+light.esslampe:
+  friendly_name: Essbereich
+light.schlaflampe:
+  friendly_name: Schlafzimmer

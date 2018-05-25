@@ -27,7 +27,7 @@ logbook:
 #  username: !secret mqtt_username
 #  password: !secret mqtt_password
 
-# discovery: 
+discovery: 
 hue:
   bridges:
     - host: !secret hue_ip
