@@ -7,3 +7,4 @@ known_devices.yaml
 entity_registry.yaml
 .HA_VERSION
 deps*
+.config_entries.json
