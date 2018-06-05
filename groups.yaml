@@ -64,8 +64,8 @@ Schalter:
     - switch.tv_power
     - switch.tv_volume
     - switch.lichtschalterkueche
-    - switch.steck_dose_zwei
-    - switch.steck_dose_drei
+    - switch.ladegeraetv
+    - switch.ladegeraetm
     - switch.steck_dose_alle_aus
 
 ## Light
