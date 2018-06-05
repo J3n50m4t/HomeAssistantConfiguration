@@ -1,0 +1,11 @@
+- id: '1528225019888'
+  alias: Wohnzimmer abend Beleuchtung
+  trigger:
+  - event: sunset
+    offset: '-1'
+    platform: sun
+  condition: []
+  action:
+  - data:
+      entity_id: light.wohnzimmerlampen
+    service: light.turn_on
