@@ -7,5 +7,5 @@
   condition: []
   action:
   - data:
-      entity_id: light.wohnzimmerlampen
+      entity_id: light.wohnzimmer_2
     service: light.turn_on

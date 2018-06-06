@@ -19,6 +19,10 @@ recorder:
 
 history:
 logbook:
+joaoapps_join:
+  - name: android
+    device_id: group.android
+    api_key: !secret join_api_key
 
 #mqtt:
 #  broker: !secret mqtt_broker
