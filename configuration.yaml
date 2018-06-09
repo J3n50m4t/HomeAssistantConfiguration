@@ -23,7 +23,9 @@ joaoapps_join:
   - name: android
     device_id: group.android
     api_key: !secret join_api_key
-
+ifttt:
+  key: !secret ifttt_key
+  
 #mqtt:
 #  broker: !secret mqtt_broker
 #  port: !secret mqtt_port
