@@ -2,26 +2,8 @@
   alias: Wohnzimmer abend Beleuchtung
   trigger:
   - event: sunset
-    offset: '-1'
+    offset: '-2'
     platform: sun
-  condition:
-    condition: or
-    conditions:
-    - condition: state
-      entity_id: device_tracker.xiaomimia1
-      state: home
-    - condition: state
-      entity_id: device_tracker.oneplus6
-      state: home
-  action:
-  - data:
-      entity_id: light.wohnzimmer_2
-    service: light.turn_on
-- id: '18165165614'
-  alias: TestBedingung
-  trigger:
-  - at: 01:50:00
-    platform: time
   condition:
   - condition: or
     conditions:
@@ -33,5 +15,5 @@
       state: home
   action:
   - data:
-      entity_id: light.buro
-    service: light.toggle
+      entity_id: light.wohnzimmer_2
+    service: light.turn_on
