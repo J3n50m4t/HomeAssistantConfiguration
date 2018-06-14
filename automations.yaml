@@ -7,35 +7,31 @@
   condition:
     condition: or
     conditions:
-      - condition: state
-        entity_id: 'device_tracker.xiaomimia1'
-        state: 'home'
-      - condition: state
-        entity_id: 'device_tracker.oneplus6'
-        state: 'home'
+    - condition: state
+      entity_id: device_tracker.xiaomimia1
+      state: home
+    - condition: state
+      entity_id: device_tracker.oneplus6
+      state: home
   action:
   - data:
       entity_id: light.wohnzimmer_2
     service: light.turn_on
-
-
 - id: '18165165614'
   alias: TestBedingung
   trigger:
+  - at: 01:50:00
     platform: time
-    # When 'at' is used, you cannot also match on hour, minute, seconds.
-    # Military time format.
-    at: '01:42:00'
   condition:
-    condition: or
+  - condition: or
     conditions:
-      - condition: state
-        entity_id: 'device_tracker.xiaomimia1'
-        state: 'home'
-      - condition: state
-        entity_id: 'device_tracker.oneplus6'
-        state: 'home'
+    - condition: state
+      entity_id: device_tracker.xiaomimia1
+      state: home
+    - condition: state
+      entity_id: device_tracker.oneplus6
+      state: home
   action:
   - data:
-      entity_id: light.wohnzimmer_2
-    service: light.turn_toggle
+      entity_id: light.buro
+    service: light.toggle
