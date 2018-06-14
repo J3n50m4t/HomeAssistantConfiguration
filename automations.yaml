@@ -7,12 +7,12 @@
   condition:
     condition: or
     conditions:
-    - condition: state
-      entity_id: device_tracker.xiaomimia1
-      state: home
-    - condition: state
-      entity_id: device_tracker.oneplus6
-      state: home
+      - condition: state
+        entity_id: 'device_tracker.xiaomimia1'
+        state: 'home'
+      - condition: state
+        entity_id: 'device_tracker.oneplus6'
+        state: 'home'
   action:
   - data:
       entity_id: light.wohnzimmer_2
