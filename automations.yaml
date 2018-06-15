@@ -20,7 +20,7 @@
 
 - id: '1528225019888'
   trigger: Arbeitszimmer Licht an, wenn PC an un Nacht
-  - platform: sun
+    platform: sun
     entity_id: device_tracker.ryzenpc
     from: 'not_home'
     to: 'home'
