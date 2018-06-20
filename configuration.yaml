@@ -16,6 +16,16 @@ http:
 updater:
 conversation:
 recorder:
+alexa:
+  smart_home:
+    filter:
+      include_entities:
+        - switch.lichtschalterkueche
+    entity_config:
+      switch.lichtschalterkueche:
+        name: Küchenleiste
+        description: The light in the kitchen
+
 
 history:
 logbook:
