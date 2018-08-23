@@ -1,10 +1,6 @@
 secrets.yaml
-.tradfri_psk.conf
-.uuid
+.* 
+homea-assistant*
 home-assistant.log
 home-assistant_v2.db
-known_devices.yaml
-entity_registry.yaml
-.HA_VERSION
-deps*
-.config_entries.json
+.gitignore

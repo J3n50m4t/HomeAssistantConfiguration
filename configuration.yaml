@@ -21,3 +21,6 @@ logbook:
 map:
 sun:
 
+shiftr:
+  username: !secret shiftr_username
+  password: !secret shiftr_password
