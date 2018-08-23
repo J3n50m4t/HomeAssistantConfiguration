@@ -1,2 +1,0 @@
-- platform: fritz
-  host: !secret fritz_host
