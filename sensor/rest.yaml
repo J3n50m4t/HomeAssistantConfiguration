@@ -16,7 +16,7 @@
   value_template: '{{value_json.response.data.stream_count}}'
   unit_of_measurement: Streams
   scan_interval: 60
-  - platform: rest
+- platform: rest
   resource: !secret rest_plexpy_streams 
   name: Plex Streams Direct
   value_template: '{{value_json.response.data.stream_count_direct_play}}'
