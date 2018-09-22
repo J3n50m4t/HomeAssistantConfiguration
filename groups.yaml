@@ -1,8 +1,14 @@
-default_view:
+# default_view:
+#   view: yes
+#     icon: mdi:home 
+#   entities:
+#      - group.habitica
+
+view_userinfo:
+  name: Nutzerinfos
   view: yes
-  icon: mdi:home 
-  entities:
-     - group.habitica
+  entities: 
+    - groud.habitica
 
 Habitica:
   name: Habitica
