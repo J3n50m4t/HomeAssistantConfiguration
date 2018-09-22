@@ -1,3 +1,4 @@
 secrets.yaml
 home-assistant*
 .*
+known_devices\.yaml
