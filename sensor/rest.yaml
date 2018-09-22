@@ -24,5 +24,5 @@
   scan_interval: 60
 - platform: rest
   resource: !secret rest_plexpy_refresh_libs 
-  name: Plex Streams Direct
+  name: Plex Lib Refresh
   scan_interval: 300
