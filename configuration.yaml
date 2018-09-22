@@ -1,3 +1,23 @@
+automation: !include automations.yaml
+
+config:
+
+device_tracker: !include device_tracker.yaml
+  
+discovery:
+
+frontend:
+
+group:
+#group: !include groups.yaml
+
+habitica:
+  - api_user: !secret habitica_api_user
+    api_key: !secret habitica_api_key
+    name: !secret habitica_name
+
+history:
+
 homeassistant:
   name: Home
   latitude: !secret homeassistant_latitude
@@ -5,22 +25,49 @@ homeassistant:
   elevation: !secret homeassistant_elevation
   unit_system: metric
   time_zone: Europe/Berlin
-  # customize: !include customize.yaml
-    
+  customize: !include customize.yaml
 
-frontend:
-config:
 http:
-  api_password: !secret homeassistant_http_password
+  base_url: !secret http_base_url
+  api_password: !secret http_api_password 
 
-updater:
-conversation:
-recorder:
-history:
 logbook:
+
 map:
+
+panel_iframe:
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: http://hassio.local:3218
+
+script: !include scripts.yaml
+
+sensor:
+  - platform: template
+    sensors:
+      oneplus6_battery:
+        friendly_name: OP6 von Markus
+        unit_of_measurement: "%"
+        value_template: '{{ states.device_tracker.markus_oneplus6.attributes.battery|int }}'
+        device_class: battery
+  - platform: yr
+  
+shiftr:
+  username: !secret shiftr_username 
+  password: !secret shiftr_password
 sun:
 
-shiftr:
-  username: !secret shiftr_username
-  password: !secret shiftr_password
+tts:
+  - platform: google
+
+tradfri:
+  host: !secret tradfri_host
+  
+updater:
+
+zone: !include zone.yaml
+
+
+
+
