@@ -3,20 +3,24 @@
   name: Plex Filme
   value_template: '{{value_json.response.data.count}}'
   unit_of_measurement: "Movies"
+  scan_interval: 300
 - platform: rest
   resource: !secret rest_plexpy_library2_count
   name: Plex Serien
   value_template: '{{value_json.response.data.child_count}}'
   unit_of_measurement: "Episodes"
+  scan_interval: 300
 - platform: rest
   resource: !secret rest_plexpy_streams 
   name: Plex Streams
   value_template: '{{value_json.response.data.stream_count}}'
   unit_of_measurement: Streams
+  scan_interval: 60
   - platform: rest
   resource: !secret rest_plexpy_streams 
   name: Plex Streams Direct
   value_template: '{{value_json.response.data.stream_count_direct_play}}'
   unit_of_measurement: Streams
+  scan_interval: 60
 
   
