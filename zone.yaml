@@ -4,8 +4,8 @@
   radius: 100
   icon: mdi:home
 - name: Arbeit
-  latitude: 
-  longitude: 
+  latitude: !secret zone_work_latitude
+  longitude: !secret zone_work_longitude
   radius: 250
   icon: mdi:cube-send
 - name: !secret zone_zone3_name
