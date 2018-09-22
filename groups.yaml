@@ -1,0 +1,16 @@
+default_view:
+  view: yes
+  icon: mdi:home 
+  entities:
+     - group.habitica
+
+Habitica:
+  name: Habitica
+  entities:
+    - sensor.habitica_j3n50m4t_class
+    - sensor.habitica_j3n50m4t_exp
+    - sensor.habitica_j3n50m4t_gp
+    - sensor.habitica_j3n50m4t_hp
+    - sensor.habitica_j3n50m4t_lvl
+    - sensor.habitica_j3n50m4t_mp
+    - sensor.habitica_j3n50m4t_tonextlevel
