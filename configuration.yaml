@@ -37,7 +37,7 @@ map:
 
 panel_iframe:
   configurator:
-    title: Configurator
+    title: FileEditor
     icon: mdi:wrench
     url: http://hassio.local:3218
 
