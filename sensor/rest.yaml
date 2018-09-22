@@ -2,9 +2,11 @@
   resource: !secret rest_plexpy_library1_count
   name: Plex Filme
   value_template: '{{value_json.response.data.count}}'
+  unit_of_measurement: "Movies"
 - platform: rest
   resource: !secret rest_plexpy_library2_count
   name: Plex Serien
   value_template: '{{value_json.response.data.child_count}}'
+  unit_of_measurement: "Episodes"
 
   
