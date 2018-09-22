@@ -22,5 +22,7 @@
   value_template: '{{value_json.response.data.stream_count_direct_play}}'
   unit_of_measurement: Streams
   scan_interval: 60
-
-  
+- platform: rest
+  resource: !secret rest_plexpy_refresh_libs 
+  name: Plex Streams Direct
+  scan_interval: 300
