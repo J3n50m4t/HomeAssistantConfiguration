@@ -1,6 +1,3 @@
 secrets.yaml
-.* 
-homea-assistant*
-home-assistant.log
-home-assistant_v2.db
-.gitignore
+home-assistant*
+.*
