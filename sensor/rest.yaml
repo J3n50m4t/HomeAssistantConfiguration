@@ -1,0 +1,5 @@
+- platform: rest
+  resource: !secret rest_plexpy_library1_count
+  name: Plex Filme
+  value_template: '{{value_json.count}}'
+  
