@@ -1,6 +1,6 @@
 - platform: template
   sensors:
-    Anzahl Scrobbles:
-      friendly_name: "Sun angle"
+    anzahl_scrobbles:
+      friendly_name: "Anzahl Scrobbles"
       unit_of_measurement: 'Anzahl'
       value_template: "{{ sensor.lastfm_j3n50m4t.attributes.play_count }}"
