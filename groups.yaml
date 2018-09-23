@@ -8,7 +8,7 @@ view_userinfo:
   name: Nutzerinfos
   view: yes
   entities: 
-    - groud.habitica
+    - group.habitica
 
 Habitica:
   name: Habitica
