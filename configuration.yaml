@@ -8,8 +8,8 @@ discovery:
 
 frontend:
 
-group:
-#group: !include groups.yaml
+# group:
+group: !include groups.yaml
 
 habitica:
   - api_user: !secret habitica_api_user
