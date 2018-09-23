@@ -31,7 +31,9 @@
   resource: https://api.trakt.tv/users/j3n50m4t/stats
   name: trakt Stats
   scan_interval: 300
+  value_template: 'value_json[0]'
   headers:
     trakt-api-key: rest_trakt_api_key
     trakt-api-version: 2
     Content-Type: application/json
+  
