@@ -3,4 +3,4 @@
     anzahl_scrobbles:
       friendly_name: "Anzahl Scrobbles"
       unit_of_measurement: 'Anzahl'
-      value_template: "{{ sensor.lastfm_j3n50m4t.attributes.play_count }}"
+      value_template: "{{ states.sensor.lastfm_j3n50m4t.attributes.play_count }}"
