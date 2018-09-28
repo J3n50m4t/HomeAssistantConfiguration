@@ -1,15 +1,12 @@
 automation: !include automations.yaml
 
-alexa:
-  smart_home:
-    
-    entity_config:
-      light.esszimmer:
-        name: Küchentisch
-        description: The light in the kitchen
-
-
 cloud: 
+  alexa:
+    filter:
+      exclude_domains:
+        - sensor
+        - group
+        - input_boolean
 config:
 
 device_tracker: !include device_tracker.yaml
