@@ -3,10 +3,20 @@ automation: !include automations.yaml
 cloud: 
   alexa:
     filter:
+      include_domains:
+        - switch.tv_power
+        - switch.tv_volume
+        - switch.lichschalterkueche
       exclude_domains:
+        - light
         - sensor
+        - group
         - input_boolean
         - media_player
+      entity_config:
+        switch.tv_power:
+          name: Küchenleiste
+          description: Leiste unter den Schränken in der Küche
 config:
 
 device_tracker: !include device_tracker.yaml
