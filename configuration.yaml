@@ -6,6 +6,7 @@ cloud:
       exclude_domains:
         - sensor
         - input_boolean
+        - media_player
 config:
 
 device_tracker: !include device_tracker.yaml
