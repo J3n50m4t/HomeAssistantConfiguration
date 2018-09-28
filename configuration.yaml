@@ -7,6 +7,7 @@ cloud:
         - switch.tv_power
         - switch.tv_volume
         - switch.lichtschalterkueche
+        
       exclude_domains:
         - alert
         - automation
@@ -29,6 +30,10 @@ cloud:
         name: Fernseher
         description: Fernseher
         display_categories: TV
+      switch.tv_volume:
+        name: Fernseher Lautstärke
+        description: Fernseher Lautstäke
+        display_categories: TV        
         
 config:
 
@@ -64,6 +69,11 @@ http:
 logbook:
 
 map:
+
+media_player:
+  - platform: xiaomi_tv
+    host: !mibox_tv_ip
+    name: MiBox
 
 panel_iframe:
   configurator:
