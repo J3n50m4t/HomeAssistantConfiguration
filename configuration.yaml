@@ -1,5 +1,14 @@
 automation: !include automations.yaml
 
+alexa:
+  smart_home:
+    
+    entity_config:
+      light.esszimmer:
+        name: Küchentisch
+        description: The light in the kitchen
+
+
 cloud: 
 config:
 
