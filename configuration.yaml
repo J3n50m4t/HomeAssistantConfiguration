@@ -5,7 +5,6 @@ cloud:
     filter:
       exclude_domains:
         - sensor
-        - group
         - input_boolean
 config:
 
