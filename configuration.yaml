@@ -17,6 +17,7 @@ cloud:
         switch.tv_power:
           name: Küchenleiste
           description: Leiste unter den Schränken in der Küche
+          display_categories: LIGHT
 config:
 
 device_tracker: !include device_tracker.yaml
