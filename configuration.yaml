@@ -6,7 +6,7 @@ cloud:
       include_entities:
         - switch.tv_power
         - switch.tv_volume
-        - switch.lichschalterkueche
+        - switch.lichtschalterkueche
       exclude_domains:
         - alert
         - automation
