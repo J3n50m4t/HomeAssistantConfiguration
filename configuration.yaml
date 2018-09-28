@@ -3,7 +3,7 @@ automation: !include automations.yaml
 cloud: 
   alexa:
     filter:
-      include_domains:
+      include_entities:
         - switch.tv_power
         - switch.tv_volume
         - switch.lichschalterkueche
