@@ -1,5 +1,6 @@
 automation: !include automations.yaml
 
+cloud: 
 config:
 
 device_tracker: !include device_tracker.yaml
