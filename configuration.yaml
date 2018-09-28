@@ -8,11 +8,18 @@ cloud:
         - switch.tv_volume
         - switch.lichschalterkueche
       exclude_domains:
-        - light
-        - sensor
+        - alert
+        - automation
+        - cover
+        - fan
         - group
         - input_boolean
+        - light
+        - lock
         - media_player
+        - scene
+        - script
+        - switch
     entity_config:
       switch.lichtschalterkueche:
         name: Küchenleiste
