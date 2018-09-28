@@ -5,7 +5,6 @@ cloud:
     filter:
       include_entities:
         - switch.tv_power
-        - switch.tv_volume
         - switch.lichtschalterkueche
         
       exclude_domains:
@@ -30,10 +29,7 @@ cloud:
         name: Fernseher
         description: Fernseher
         display_categories: TV
-      switch.tv_volume:
-        name: Fernseher Lautstärke
-        description: Fernseher Lautstäke
-        display_categories: TV        
+       
         
 config:
 
