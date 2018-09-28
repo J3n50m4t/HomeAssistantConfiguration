@@ -74,6 +74,13 @@ http:
   base_url: !secret http_base_url
   api_password: !secret http_api_password 
 
+light:
+  - platform: yeelight
+    devices:
+      !secret yeelight_kueche_ip:
+        name: Küche
+        transition: 1000
+
 logbook:
 
 map:
