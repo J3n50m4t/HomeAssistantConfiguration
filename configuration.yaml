@@ -6,7 +6,11 @@ cloud:
       include_entities:
         - switch.tv_power
         - switch.lichtschalterkueche
-        
+        - light.wohnzimmer
+        - light.esszimmer
+        - light.kinderzimmer
+        - light.schlafzimmer
+         -light.stehlampe
       exclude_domains:
         - alert
         - automation
@@ -29,8 +33,16 @@ cloud:
         name: Fernseher
         description: Fernseher
         display_categories: TV
-       
-        
+      light.wohnzimmer:
+        name: Wohnzimmer
+      light.esszimmer:
+        name: Esszimmer
+      light.kinderzimmer:
+        name: Kinderzimmer
+      light.schlafzimmer:
+        name:  Schlafzimmer
+      light.stehlampe:
+        name:  Stehlampe
 config:
 
 device_tracker: !include device_tracker.yaml
