@@ -79,9 +79,7 @@ logbook:
 map:
 
 media_player:
-  - platform: xiaomi_tv
-    host: !mibox_tv_ip
-    name: MiBox
+  - platform: cast
 
 panel_iframe:
   configurator:
