@@ -10,7 +10,8 @@ cloud:
         - light.esszimmer
         - light.kinderzimmer
         - light.schlafzimmer
-         -light.stehlampe
+        - light.stehlampe
+        - light.yeelight_rgb_34ce008e9873
       exclude_domains:
         - alert
         - automation
@@ -43,6 +44,8 @@ cloud:
         name:  Schlafzimmer
       light.stehlampe:
         name:  Stehlampe
+      light.yeelight_rgb_34ce008e9873
+        name: Küche
 config:
 
 device_tracker: !include device_tracker.yaml
