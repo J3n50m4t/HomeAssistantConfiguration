@@ -51,7 +51,7 @@ panel_iframe:
 script: !include scripts.yaml
 
 sensor: !include_dir_merge_list sensor
-  
+switch: !include_dir_merge_list switch  
 shiftr:
   username: !secret shiftr_username 
   password: !secret shiftr_password
