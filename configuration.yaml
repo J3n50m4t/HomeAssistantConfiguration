@@ -6,7 +6,9 @@ cloud:
       include_entities:
         - switch.tv_power
         - switch.lichtschalterkueche
-        - light.wohnzimmer
+        - light.wohnung
+        - light.fenstee
+        - light.mitte
         - light.esszimmer
         - light.kinderzimmer
         - light.schlafzimmer
