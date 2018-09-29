@@ -21,7 +21,7 @@ Habitica:
     - sensor.habitica_j3n50m4t_mp
     - sensor.habitica_j3n50m4t_tonextlevel
 
-Wohnzimmerlichter
+Wohnzimmerlichter:
   name: Wohnzimmerlicht
   entities:
     - light.wohnung
