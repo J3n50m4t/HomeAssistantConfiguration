@@ -36,8 +36,12 @@ cloud:
         name: Fernseher
         description: Fernseher
         display_categories: TV
-      light.wohnzimmer:
-        name: Wohnzimmer
+      light.wohnung:
+        name: WohnzimmerWohnung
+      light.fenstee:
+        name: WohnzimmerFenster
+      light.mitte:
+        name: WohnzimmerMitte
       light.esszimmer:
         name: Esszimmer
       light.kinderzimmer:
