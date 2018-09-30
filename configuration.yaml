@@ -97,6 +97,11 @@ map:
 media_player:
   - platform: cast
 
+mqtt: 
+  broker: !secret mqtt__domain
+  username: !secret mqtt_user "cde53120"
+  password: !secret mqtt_password
+
 panel_iframe:
   configurator:
     title: FileEditor
@@ -107,9 +112,9 @@ script: !include scripts.yaml
 
 sensor: !include_dir_merge_list sensor
 switch: !include_dir_merge_list switch  
-shiftr:
-  username: !secret shiftr_username 
-  password: !secret shiftr_password
+#shiftr:
+#  username: !secret shiftr_username 
+#  password: !secret shiftr_password
 sun:
 
 tts:
