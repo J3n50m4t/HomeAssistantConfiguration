@@ -99,7 +99,7 @@ media_player:
 
 mqtt: 
   broker: !secret mqtt_domain
-  username: !secret mqtt_user "cde53120"
+  username: !secret mqtt_user
   password: !secret mqtt_password
 
 panel_iframe:
