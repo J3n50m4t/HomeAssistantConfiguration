@@ -4,16 +4,17 @@ cloud:
   alexa:
     filter:
       include_entities:
-        - switch.tv_power
-        - switch.lichtschalterkueche
-        - light.wohnung
-        - light.fenstee
-        - light.mitte
         - light.esszimmer
+        - light.fenstee
         - light.kinderzimmer
+        - light.mitte
         - light.schlafzimmer
         - light.stehlampe
+        - light.wohnung
         - light.yeelight_rgb_34ce008e9873
+        - switch.deko_switch
+        - switch.lichtschalterkueche
+        - switch.tv_power
       exclude_domains:
         - alert
         - automation
@@ -28,6 +29,26 @@ cloud:
         - script
         - switch
     entity_config:
+      light.esszimmer:
+        name: Esszimmer
+      light.fenstee:
+        name: WohnzimmerFenster
+      light.kinderzimmer:
+        name: Kinderzimmer
+      light.mitte:
+        name: WohnzimmerMitte
+      light.schlafzimmer:
+        name:  Schlafzimmer
+      light.stehlampe:
+        name:  Stehlampe
+      light.wohnung:
+        name: WohnzimmerWohnung
+      light.yeelight_rgb_34ce008e9873:
+        name: Küche
+      switch.deko_switch:
+        name: Deko
+        description: Dekoration im Haus
+        display_categories: LIGHT  
       switch.lichtschalterkueche:
         name: Küchenleiste
         description: Leiste unter den Schränken in der Küche
@@ -36,22 +57,7 @@ cloud:
         name: Fernseher
         description: Fernseher
         display_categories: TV
-      light.wohnung:
-        name: WohnzimmerWohnung
-      light.fenstee:
-        name: WohnzimmerFenster
-      light.mitte:
-        name: WohnzimmerMitte
-      light.esszimmer:
-        name: Esszimmer
-      light.kinderzimmer:
-        name: Kinderzimmer
-      light.schlafzimmer:
-        name:  Schlafzimmer
-      light.stehlampe:
-        name:  Stehlampe
-      light.yeelight_rgb_34ce008e9873:
-        name: Küche
+
 config:
 
 device_tracker: !include device_tracker.yaml
