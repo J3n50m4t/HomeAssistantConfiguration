@@ -91,6 +91,9 @@ http:
 
 ios:
 
+joaoapps_join:
+  - api_key: !secret join_api_key
+
 light:
   - platform: yeelight
     devices:
