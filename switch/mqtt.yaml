@@ -1,6 +1,21 @@
 # https://www.home-assistant.io/components/switch.mqtt/
 - platform: mqtt
-  name: "Deko Switch"
+  name: "Lichterkette Switch"
   command_topic: "switchCommand"
   payload_on: "D1"
   payload_off: "D0"
+- platform: mqtt
+  name: "Lampions Switch"
+  command_topic: "switchCommand"
+  payload_on: "L1"
+  payload_off: "L0"
+- platform: mqtt
+  name: "Vase Switch"
+  command_topic: "switchCommand"
+  payload_on: "V1"
+  payload_off: "V0"
+- platform: mqtt
+  name: "Deko Switch"
+  command_topic: "switchCommand"
+  payload_on: "A1"
+  payload_off: "A0"
