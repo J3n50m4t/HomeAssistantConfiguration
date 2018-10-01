@@ -133,4 +133,4 @@ tradfri:
   
 updater:
 
-#zone: !include zone.yaml
+zone: !include zone.yaml
