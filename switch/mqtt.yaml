@@ -1,5 +1,5 @@
 - platform: mqtt
   name: "Deko Switch"
   command_topic: "switchCommand"
-  state_on: "D1"
-  state_off: "D0"
+  payload_on: "D1"
+  payload_off: "D0"
