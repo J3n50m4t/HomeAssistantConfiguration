@@ -89,6 +89,8 @@ http:
   base_url: !secret http_base_url
   api_password: !secret http_api_password 
 
+ios:
+
 light:
   - platform: yeelight
     devices:
