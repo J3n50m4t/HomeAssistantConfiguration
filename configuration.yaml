@@ -108,7 +108,7 @@ logbook:
 map:
 
 media_player:
-  - platform: cast
+
 
 mqtt: 
   broker: !secret mqtt_domain
