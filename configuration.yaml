@@ -91,8 +91,10 @@ http:
 
 ios:
 
-#joaoapps_join:
-  #- api_key: !secret join_api_key
+joaoapps_join:
+  - api_key: !secret join_api_key
+    device_id: group.all
+    name: Alle Geräte
 
 light:
   - platform: yeelight
