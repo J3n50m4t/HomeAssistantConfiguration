@@ -1,12 +1,12 @@
 - name: Home
   latitude: !secret zone_home_latitude
   longitude: !secret zone_home_longitude
-  radius: 100
+  radius: 75
   icon: mdi:home
 - name: Arbeit
   latitude: !secret zone_work_latitude
   longitude: !secret zone_work_longitude
-  radius: 250
+  radius: 100
   icon: mdi:cube-send
 - name: !secret zone_zone3_name
   latitude: !secret zone_zone3_latitude
