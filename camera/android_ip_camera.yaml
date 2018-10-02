@@ -1,4 +1,2 @@
-- host: 192.168.1.131
-  username: !secret android_camera_username
-  password: !secret android_camera_password
+
   

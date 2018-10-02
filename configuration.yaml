@@ -1,4 +1,8 @@
-android_ip_webcam: !include camera/android_ip_camera.yaml
+android_ip_webcam: 
+  - host: 192.168.1.131
+    port: 8080
+    username: !secret android_camera_username
+    password: !secret android_camera_password
 automation: !include automations.yaml
 
 cloud: 
