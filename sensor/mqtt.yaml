@@ -1,5 +1,4 @@
 - platform: mqtt
   name: "Akkustand Markus Op6"
-  state_topic: "owntracks/j3n50m4t/oneplus6"
+  state_topic: "mobilephone/markus/oneplus6"
   unit_of_measurement: '%'
-  value_template: "{{ value_json.batt }}"
