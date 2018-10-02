@@ -1,4 +1,4 @@
-android_ip_webcam: !include include_dir_merge_list camera
+android_ip_webcam: !include camera/android_ip_camera.yaml
 automation: !include automations.yaml
 
 cloud: 
