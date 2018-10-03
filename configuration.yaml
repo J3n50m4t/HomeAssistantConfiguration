@@ -99,7 +99,6 @@ homeassistant:
   elevation: !secret homeassistant_elevation
   unit_system: metric
   time_zone: Europe/Berlin
-  customize: !include customize.yaml
 
 http:
   base_url: !secret http_base_url
