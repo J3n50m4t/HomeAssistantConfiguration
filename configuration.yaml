@@ -1,6 +1,6 @@
-android_ip_webcam: 
-  - host: 192.168.1.131
-    name: Op3
+# android_ip_webcam: 
+#   - host: 192.168.1.131
+#     name: Op3
 
 automation: !include automations.yaml
 
