@@ -68,6 +68,8 @@ device_tracker: !include device_tracker.yaml
   
 discovery:
 
+dreamscreen:
+
 frontend:
 
 # group:
@@ -81,6 +83,16 @@ habitica:
 history:
 
 homeassistant:
+  customize:
+    script.dreamscreen_input_source_1:
+      emulated_hue_hidden: false
+      hidden: true
+    script.dreamscreen_input_source_2:
+      emulated_hue_hidden: false
+      hidden: true
+    script.dreamscreen_input_source_3:
+      emulated_hue_hidden: false
+      hidden: true
   name: Home
   latitude: !secret homeassistant_latitude
   longitude: !secret homeassistant_longitude

@@ -1,0 +1,21 @@
+dreamscreen_input_source_1:
+  alias: "DreamScreen - Source 1"
+  sequence:
+    - service: dreamscreen.set_hdmi_source
+      data:
+        entity_id: dreamscreen.living_room
+        source: 0
+dreamscreen_input_source_2:
+  alias: "DreamScreen - Source 2"
+  sequence:
+    - service: dreamscreen.set_hdmi_source
+      data:
+        entity_id: dreamscreen.living_room
+        source: 1
+dreamscreen_input_source_3:
+  alias: "DreamScreen - Source 3"
+  sequence:
+    - service: dreamscreen.set_hdmi_source
+      data:
+        entity_id: dreamscreen.living_room
+        source: 2
