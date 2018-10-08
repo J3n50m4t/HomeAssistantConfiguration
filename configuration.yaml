@@ -8,8 +8,7 @@ cloud:
   alexa:
     filter:
       include_entities:
-        - anlage_power
-        - anlage_volume
+        - switch.anlage_power
         - light.esszimmer
         - light.fenstee
         - light.kinderzimmer
@@ -35,7 +34,7 @@ cloud:
         - script
         - switch
     entity_config:
-      anlage_power:
+      switch.anlage_power:
         name: Stereoanlage
         display_categories: Speaker
       light.esszimmer:
