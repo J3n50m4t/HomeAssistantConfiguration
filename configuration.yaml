@@ -1,10 +1,10 @@
-# android_ip_webcam: 
+# android_ip_webcam:
 #   - host: 192.168.1.131
 #     name: Op3
 
 automation: !include automations.yaml
 
-cloud: 
+cloud:
   alexa:
     filter:
       include_entities:
@@ -52,7 +52,7 @@ cloud:
       switch.deko_switch:
         name: Deko
         description: Dekoration im Haus
-        display_categories: LIGHT  
+        display_categories: LIGHT
       switch.lichtschalterkueche:
         name: Küchenleiste
         description: Leiste unter den Schränken in der Küche
@@ -65,10 +65,8 @@ cloud:
 config:
 
 device_tracker: !include device_tracker.yaml
-  
-discovery:
 
-dreamscreen:
+discovery:
 
 frontend:
 
@@ -83,16 +81,6 @@ habitica:
 history:
 
 homeassistant:
-  customize:
-    script.dreamscreen_input_source_1:
-      emulated_hue_hidden: false
-      hidden: true
-    script.dreamscreen_input_source_2:
-      emulated_hue_hidden: false
-      hidden: true
-    script.dreamscreen_input_source_3:
-      emulated_hue_hidden: false
-      hidden: true
   name: Home
   latitude: !secret homeassistant_latitude
   longitude: !secret homeassistant_longitude
@@ -102,7 +90,7 @@ homeassistant:
 
 http:
   base_url: !secret http_base_url
-  api_password: !secret http_api_password 
+  api_password: !secret http_api_password
 
 ios:
 
@@ -125,7 +113,7 @@ map:
 media_player:
 
 
-mqtt: 
+mqtt:
   broker: !secret mqtt_domain
   username: !secret mqtt_user
   password: !secret mqtt_password
@@ -142,34 +130,10 @@ panel_iframe:
     icon: mdi:wrench
     url: http://hassio.local:3218
 
-script:
-  dreamscreen_input_source_1:
-    alias: "DreamScreen - Source 1"
-    sequence:
-      - service: dreamscreen.set_hdmi_source
-        data:
-          entity_id: dreamscreen.living_room
-          source: 0
-  dreamscreen_input_source_2:
-    alias: "DreamScreen - Source 2"
-    sequence:
-      - service: dreamscreen.set_hdmi_source
-        data:
-          entity_id: dreamscreen.living_room
-          source: 1
-  dreamscreen_input_source_3:
-    alias: "DreamScreen - Source 3"
-    sequence:
-      - service: dreamscreen.set_hdmi_source
-        data:
-          entity_id: dreamscreen.living_room
-          source: 2
-
 sensor: !include_dir_merge_list sensor
-switch: !include_dir_merge_list switch  
-#shiftr:
-#  username: !secret shiftr_username 
-#  password: !secret shiftr_password
+
+switch: !include_dir_merge_list switch
+
 sun:
 
 tts:
@@ -177,7 +141,7 @@ tts:
 
 tradfri:
   host: !secret tradfri_host
-  
+
 updater:
 
 zone: !include zone.yaml
