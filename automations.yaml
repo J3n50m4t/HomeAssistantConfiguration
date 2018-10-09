@@ -1,1 +1,22 @@
-[]
+- id: '1539091288646'
+  alias: Lampen aus 
+  trigger:
+  - entity_id:device_tracker.j3n50m4t_oneplus6
+    from: home
+    platform: state
+    to: not_home
+  - entity_id: device_tracker.dfa703aa_vanessa
+    from: home
+    platform: state
+    to: not_home
+  condition:
+  - condition: state
+    entity_id: device_tracker.j3n50m4t_oneplus6
+    state: not_home
+  - condition: state
+    entity_id: device_tracker.dfa703aa_vanessa
+    state: not_home
+  action:
+  - condition: state
+    entity_id: sensor.yr_symbol
+    state: 'off'
