@@ -16,6 +16,7 @@ cloud:
         - light.schlafzimmer
         - light.stehlampe
         - light.wohnung
+        - light.woodbox
         - light.yeelight_rgb_34ce008e9873
         - switch.deko_switch
         - switch.lichtschalterkueche
@@ -51,6 +52,8 @@ cloud:
         name:  Stehlampe
       light.wohnung:
         name: WohnzimmerWohnung
+      light.woodbox:
+        name: Woodbox
       light.yeelight_rgb_34ce008e9873:
         name: Küche
       switch.deko_switch:
