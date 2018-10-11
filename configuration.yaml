@@ -112,7 +112,7 @@ light:
   - platform: flux_led
     automatic_add: false
     devices: 
-      192.168.1.33
+      192.168.1.33:
         name: Woodbox
         mode: "rgb"
         
