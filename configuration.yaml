@@ -109,6 +109,14 @@ light:
       !secret yeelight_kueche_ip:
         name: Küche
         transition: 1000
+  - platform: flux_led
+    automatic_add: false
+    devices: 
+      192.168.1.33
+        name: Woodbox
+        mode: "rgb"
+        
+    
 
 logbook:
 
