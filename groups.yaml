@@ -33,3 +33,13 @@ Küchenlichter:
   entities: 
     - light.kuche
     - switch.lichtschalterkueche
+
+Wohnküchelichter:
+  name: Wohnküche    
+  entities: 
+    - light.esszimmer    
+    - light.fenstee
+    - light.kuche
+    - switch.lichtschalterkueche
+    - light.mitte 
+    - light.wohnung
