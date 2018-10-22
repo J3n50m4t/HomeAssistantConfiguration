@@ -8,7 +8,7 @@ cloud:
   alexa:
     filter:
       include_entities:
-        - switch.anlage_power
+        - group.kuchenlichter
         - light.esszimmer
         - light.fenstee
         - light.kinderzimmer
@@ -18,10 +18,10 @@ cloud:
         - light.wohnung
         - light.woodbox
         - light.yeelight_rgb_34ce008e9873
+        - switch.anlage_power
         - switch.deko_switch
         - switch.lichtschalterkueche
         - switch.tv_power
-        - group.kuchenlichter
       exclude_domains:
         - alert
         - automation
@@ -36,9 +36,6 @@ cloud:
         - script
         - switch
     entity_config:
-      switch.anlage_power:
-        name: Stereoanlage
-        display_categories: Speaker
       light.esszimmer:
         name: Esszimmer
       light.fenstee:
@@ -61,6 +58,9 @@ cloud:
         name: Deko
         description: Dekoration im Haus
         display_categories: LIGHT
+      switch.anlage_power:
+        name: Stereoanlage
+        display_categories: Speaker
       switch.lichtschalterkueche:
         name: Küchenleiste
         description: Leiste unter den Schränken in der Küche
