@@ -21,6 +21,7 @@ cloud:
         - switch.deko_switch
         - switch.lichtschalterkueche
         - switch.tv_power
+        - group.kuchenlichter
       exclude_domains:
         - alert
         - automation
