@@ -36,6 +36,14 @@ cloud:
         - script
         - switch
     entity_config:
+      group.kuchenlichter:
+        name: Küche
+        description: Alle Lichter in der Küche
+        display_categories: LIGHT
+      group.wohnzimmerlichter:
+        name: Wohnzimmer
+        description: Alle Lichter in der Küche
+        display_categories: LIGHT
       light.esszimmer:
         name: Esszimmer
       light.fenstee:
@@ -53,7 +61,7 @@ cloud:
       light.woodbox:
         name: Woodbox
       light.yeelight_rgb_34ce008e9873:
-        name: Küche
+        name: Küchenlampe
       switch.deko_switch:
         name: Deko
         description: Dekoration im Haus
