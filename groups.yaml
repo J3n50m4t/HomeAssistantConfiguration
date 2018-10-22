@@ -22,8 +22,14 @@ Habitica:
     - sensor.habitica_j3n50m4t_tonextlevel
 
 Wohnzimmerlichter:
-  name: Wohnzimmerlicht
+  name: Wohnzimmer
   entities:
     - light.wohnung
     - light.fenstee
     - light.mitte  
+
+Küchenlichter:
+  name: Küche
+  entities: 
+    - light.kuche
+    - switch.lichtschalterkueche
