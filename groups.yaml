@@ -1,25 +1,9 @@
 # default_view:
 #   view: yes
-#     icon: mdi:home 
+#   icon: mdi:home 
 #   entities:
-#      - group.habitica
+#     - group.wohnkuchelichter
 
-view_userinfo:
-  name: Nutzerinfos
-  view: yes
-  entities: 
-    - group.habitica
-
-Habitica:
-  name: Habitica
-  entities:
-    - sensor.habitica_j3n50m4t_class
-    - sensor.habitica_j3n50m4t_exp
-    - sensor.habitica_j3n50m4t_gp
-    - sensor.habitica_j3n50m4t_hp
-    - sensor.habitica_j3n50m4t_lvl
-    - sensor.habitica_j3n50m4t_mp
-    - sensor.habitica_j3n50m4t_tonextlevel
 
 Wohnzimmerlichter:
   name: Wohnzimmer
@@ -40,6 +24,8 @@ Wohnküchelichter:
     - light.esszimmer    
     - light.fenstee
     - light.kuche
-    - switch.lichtschalterkueche
     - light.mitte 
     - light.wohnung
+    - light.woodbox
+    - switch.deko_switch
+    - switch.lichtschalterkueche
