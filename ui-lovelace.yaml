@@ -1,7 +1,29 @@
-title: Home
+title: Zuhause
 views:
   - title: Home
     cards:
+      - type: weather-forecast
+        name: Wetter
+        entity: weather.openweathermap
+      - type: map
+        entities: 
+          - device_tracker.j3n50m4t_oneplus6
+          - device_tracker.dfa703aa_vanessa
+          - zone.home
+          aspect_ratio: 70%
+          default_zoom: 11
+      - type: entities
+        title: "Wohnküche"
+        show_header_toggle: true
+        entities:
+          - light.esszimmer
+          - light.fenstee
+          - light.kuche
+          - light.mitte
+          - light.wohnung
+          - light.woodbox
+          - switch.deko_switch
+          - switch.lichtschalterkueche
       - type: entities
         title: Wohnzimmer
         show_header_toggle: true
@@ -15,25 +37,17 @@ views:
         entities:
           - light.kuche
           - switch.lichtschalterkueche
-      - type: entities
-        title: "Wohnküche"
-        show_header_toggle: true
-        entities:
-          - light.esszimmer
-          - light.fenstee
-          - light.kuche
-          - light.mitte
-          - light.wohnung
-          - light.woodbox
-          - switch.deko_switch
-          - switch.lichtschalterkueche
-      - type: weather-forecast
-        name: Wetter
-        entity: weather.openweathermap
-      - type: map
-        entities: 
-          - device_tracker.j3n50m4t_oneplus6
-          - device_tracker.dfa703aa_vanessa
-          - zone.home
-          aspect_ratio: 70%
-          default_zoom: 11
+      - type: sensor
+        entity: sensor.speedtest_download#
+        name: Downloadspeed
+        height: 75
+        line_color: "#3498db"
+        icon: mdi:speedometer
+        unit: Mbit/s
+      - type: sensor
+        entity: sensor.plex_serien
+        name: Serien
+        height: 75
+        line_color: "#3498db"
+        icon: mdi:youtube-tv
+        unit: Folgen
