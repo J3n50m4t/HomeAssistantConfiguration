@@ -4,7 +4,6 @@
 #   entities:
 #     - group.wohnkuchelichter
 
-
 Wohnzimmerlichter:
   name: Wohnzimmer
   entities:

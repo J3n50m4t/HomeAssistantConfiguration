@@ -1,0 +1,21 @@
+##############
+##  LIGHT   ##
+##############
+light.esszimmer: 
+  friendly_name: Esszimmer
+light.fenstee:
+  friendly_name: Wohnzimmerlampe Fensterrichtung
+light.kuche:
+  friendly_name: Küchenlicht Lampe
+light.mitte:
+  friendly_name: Wohnzimmerlampe Mittig
+light.wohnung:
+  friendly_name: Wohnzimmerlampe Wohnungsrichtung
+
+##############
+##  SWITCH  ##
+##############
+switch.deko_switch:
+  friendly_name: Dekoration im Wohnzimmer
+switch.lichtschalterkueche:
+  friendly_name: Küchenlicht Leiste
