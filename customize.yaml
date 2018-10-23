@@ -4,6 +4,7 @@
 automation.wenn_keiner_zuhause_licht_aus:
   hidden: true
 
+
 ##############
 ##  LIGHT   ##
 ##############
@@ -23,6 +24,14 @@ light.wohnung:
   friendly_name: Wohnzimmerlampe Wohnungsrichtung
 light.yeelight_rgb_34ce008e9873:
   friendly_name: Küchenlampe 
+
+
+##############
+##  SENSOR  ##
+##############
+
+sensor.aftership_sensor:  
+  custom_ui_state_card: state-card-aftership
 
 ##############
 ##  SWITCH  ##

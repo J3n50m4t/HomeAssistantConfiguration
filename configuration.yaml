@@ -156,6 +156,9 @@ device_tracker: !include device_tracker.yaml
 discovery:
 
 frontend:
+  extra_html_url:
+    - /local/custom_ui/state-card-aftership.html
+
 
 # group:
 group: !include groups.yaml
