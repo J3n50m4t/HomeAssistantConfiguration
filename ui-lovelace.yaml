@@ -64,6 +64,7 @@ views:
         height: 75
         line_color: "#3498db"
         icon: mdi:speedometer
+        unit: Mbit/s
       - type: "custom:state-card-aftership-ll"
         entity: sensor.aftership_sensor 
         icon: mdi:cube-send
