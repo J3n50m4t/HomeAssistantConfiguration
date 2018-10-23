@@ -61,11 +61,3 @@ views:
         line_color: "#3498db"
         icon: mdi:speedometer
         unit: Mbit/s
-      - type: sensor
-        entity: sensor.plex_serien
-        name: Serien
-        height: 75
-        line_color: "#3498db"
-        icon: mdi:youtube-tv
-        unit: Folgen
-        hours_to_show: 168
