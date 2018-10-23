@@ -10,7 +10,6 @@ cloud:
       include_entities:
         - group.kuchenlichter
         - group.wohnkuchelichter
-        - group.wohnzimmerlichter
         - light.esszimmer
         - light.fenstee
         - light.kinderzimmer
@@ -45,10 +44,6 @@ cloud:
       group.wohnkuchelichter:
         name: Wohnküche
         description: Alle Lichter im Wohnzimmer Esszimmer und Küche
-        display_categories: LIGHT
-      group.wohnzimmerlichter:
-        name: Wohnzimmer
-        description: Alle Lichter im Wohnzimmer
         display_categories: LIGHT
       light.esszimmer:
         name: Esszimmer
