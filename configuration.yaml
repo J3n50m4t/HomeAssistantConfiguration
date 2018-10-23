@@ -49,7 +49,7 @@ cloud:
       group.wohnzimmerlichter:
         name: Wohnzimmer
         description: Alle Lichter im Wohnzimmer
-        # display_categories: LIGHT
+        display_categories: LIGHT
       light.esszimmer:
         name: Esszimmer
       light.fenstee:
