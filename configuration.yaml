@@ -160,11 +160,6 @@ frontend:
 # group:
 group: !include groups.yaml
 
-habitica:
-  - api_user: !secret habitica_api_user
-    api_key: !secret habitica_api_key
-    name: !secret habitica_name
-
 history:
 
 homeassistant:
