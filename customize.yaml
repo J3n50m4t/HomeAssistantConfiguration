@@ -1,4 +1,10 @@
 ##############
+##Automation##
+##############
+automation.wenn_keiner_zuhause_licht_aus:
+  hidden: true
+
+##############
 ##  LIGHT   ##
 ##############
 light.esszimmer: 
