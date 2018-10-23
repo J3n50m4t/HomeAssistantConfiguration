@@ -229,4 +229,9 @@ tradfri:
 
 updater:
 
+weather: 
+  - platform: openweathermap
+    api_key: !secret openweathermap_api_key
+    mode: hourly
+
 zone: !include zone.yaml
