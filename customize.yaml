@@ -9,8 +9,14 @@ light.kuche:
   friendly_name: Küchenlicht Lampe
 light.mitte:
   friendly_name: Wohnzimmerlampe Mittig
+light.stehlampe:
+  friendly_name: Stehlampe Schlafzimmer
+light.schlaflampe:
+  friendly_name: Schlafzimmerlampe
 light.wohnung:
   friendly_name: Wohnzimmerlampe Wohnungsrichtung
+light.yeelight_rgb_34ce008e9873:
+  friendly_name: Küchenlampe 
 
 ##############
 ##  SWITCH  ##
