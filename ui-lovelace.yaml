@@ -10,8 +10,8 @@ views:
           - device_tracker.j3n50m4t_oneplus6
           - device_tracker.dfa703aa_vanessa
           - zone.home
-          aspect_ratio: 70%
-          default_zoom: 11
+        aspect_ratio: 70%
+        default_zoom: 11
       - type: entities
         title: "Wohnküche"
         show_header_toggle: true
@@ -38,7 +38,7 @@ views:
           - light.kuche
           - switch.lichtschalterkueche
       - type: sensor
-        entity: sensor.speedtest_download#
+        entity: sensor.speedtest_download
         name: Downloadspeed
         height: 75
         line_color: "#3498db"
@@ -51,3 +51,4 @@ views:
         line_color: "#3498db"
         icon: mdi:youtube-tv
         unit: Folgen
+        hours_to_show: 168
