@@ -5,13 +5,30 @@ views:
       - type: weather-forecast
         name: Wetter
         entity: weather.openweathermap
-      - type: map
-        entities: 
-          - device_tracker.j3n50m4t_oneplus6
-          - device_tracker.dfa703aa_vanessa
-          - zone.home
-        aspect_ratio: 70%
-        default_zoom: 11
+      - type: conditional
+        conditions:
+          - entity: device_tracker.j3n50m4t_oneplus6 
+            state_not: "home"
+        card:
+          type: map
+          entities: 
+            - device_tracker.j3n50m4t_oneplus6
+            - device_tracker.dfa703aa_vanessa
+            - zone.home
+          aspect_ratio: 70%
+          default_zoom: 11
+      - type: conditional
+        conditions:
+          - entity: device_tracker.dfa703aa_vanessa 
+            state_not: "home"
+        card:
+          type: map
+          entities: 
+            - device_tracker.j3n50m4t_oneplus6
+            - device_tracker.dfa703aa_vanessa
+            - zone.home
+          aspect_ratio: 70%
+          default_zoom: 11
       - type: entities
         title: "Wohnküche"
         show_header_toggle: true
