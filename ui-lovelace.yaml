@@ -33,7 +33,7 @@ views:
             - zone.home
           aspect_ratio: 70%
           default_zoom: 11
-      - type: glace: 
+      - type: glace 
         title: Steuereinheit
         entities:
           - light.esszimmer
