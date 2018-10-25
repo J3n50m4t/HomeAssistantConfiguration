@@ -33,31 +33,15 @@ views:
             - zone.home
           aspect_ratio: 70%
           default_zoom: 11
-      - type: entities
-        title: "Wohnküche"
-        show_header_toggle: true
+      - type: glace: 
+        title: Steuereinheit
         entities:
           - light.esszimmer
-          - light.fenstee
-          - light.kuche
-          - light.mitte
           - light.wohnung
           - light.woodbox
           - switch.deko_switch
-          - switch.lichtschalterkueche
-      - type: entities
-        title: Wohnzimmer
-        show_header_toggle: true
-        entities:
-          - light.wohnung
-          - light.fenstee
-          - light.mitte
-      - type: entities
-        title: "Küche"
-        show_header_toggle: true
-        entities:
-          - light.kuche
-          - switch.lichtschalterkueche
+          - group.kuchenlichter
+          - group.wohnzimmerlichter
       - type: sensor
         entity: sensor.speedtest_download
         name: Downloadspeed
