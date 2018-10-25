@@ -33,12 +33,10 @@ views:
             - zone.home
           aspect_ratio: 70%
           default_zoom: 11
-      - type: glace 
+      - type: glance 
         title: Steuereinheit
         entities:
           - light.esszimmer
-          - light.wohnung
-          - light.woodbox
           - switch.deko_switch
           - group.kuchenlichter
           - group.wohnzimmerlichter
