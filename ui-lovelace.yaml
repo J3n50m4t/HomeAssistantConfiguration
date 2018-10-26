@@ -40,6 +40,17 @@ views:
           - switch.deko_switch
           - group.kuchenlichter
           - group.wohnzimmerlichter
+      - type: entity-button
+        entity: light.esszimmer
+      - type: entity-button
+        entity: deko_switch
+      - type: entity-button
+        entity: group.kuchenlichter
+      - type: entity-button
+        entity: group.wohnzimmerlichter
+
+  - title: Monitoring
+    cards: 
       - type: sensor
         entity: sensor.speedtest_download
         name: Downloadspeed
