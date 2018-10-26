@@ -62,18 +62,18 @@ views:
             accuracy: 7
             unit: blocks
           - type: sensor
-            entity: sensor.ads_percentage_today
+            entity: sensor.pihole_ads_percentage_blocked_today
             name: Percentage Today
             height: 75
             line_color: "#ff0000"
             hours_to_show: 168
             accuracy: 7
-            unit: blocks
+            unit: Percent
           - type: sensor
-            entity: sensor.dns_queries_today
+            entity: sensor.pihole_dns_queries_today
             name: Queries Today
             height: 75
             line_color: "#2f2c7f"
             hours_to_show: 168
             accuracy: 7
-            unit: blocks
+            unit: Queries
