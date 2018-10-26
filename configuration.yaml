@@ -194,6 +194,9 @@ light:
   - platform: flux_led
     automatic_add: false
     devices: 
+      192.168.1.31
+        name: Hintergrundbeleuchtung
+        mode: "rgb"
       192.168.1.33:
         name: Woodbox
         mode: "rgb"
