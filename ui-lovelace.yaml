@@ -7,7 +7,6 @@ views:
   - title: Home
     cards:
       - type: weather-forecast
-        name: Wetter
         entity: weather.openweathermap
       - type: conditional
         conditions:
@@ -43,7 +42,7 @@ views:
       - type: entity-button
         entity: light.esszimmer
       - type: entity-button
-        entity: deko_switch
+        entity: switchdeko_switch
       - type: entity-button
         entity: group.kuchenlichter
       - type: entity-button
