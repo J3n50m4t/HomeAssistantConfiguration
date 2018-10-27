@@ -52,7 +52,7 @@ views:
       - type: weather-forecast
         entity: weather.wetter
       - type: iframe
-        url: https://embed.windy.com/embed2.html
+        url: !secret windyurl
         aspect_ratio: 100%
   # - title: Monitoring
   #   cards: 
