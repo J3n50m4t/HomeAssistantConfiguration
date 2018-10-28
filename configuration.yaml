@@ -3,9 +3,8 @@
 #     name: Op3
 
 automation: !include automations.yaml
-
-cloud:
-  alexa:
+alexa:
+  smart_home:
     filter:
       include_entities:
         - group.kuchenlichter
@@ -82,80 +81,6 @@ cloud:
         name: Fernseher
         description: Fernseher
         display_categories: TV
-  google_actions:
-    filter:
-      include_entities:
-        - switch.anlage_power
-        - light.esszimmer
-        - light.fenstee
-        - light.kinderzimmer
-        - light.hintergrundbeleuchtung
-        - light.mitte
-        - light.schlafzimmer
-        - light.stehlampe
-        - light.wohnung
-        - light.woodbox
-        - light.yeelight_rgb_34ce008e9873
-        - switch.deko_switch
-        - switch.lichtschalterkueche
-        - switch.tv_power
-      exclude_domains:
-        - alert
-        - automation
-        - cover
-        - climate
-        - fan
-        - group
-        - input_boolean
-        - light
-        - lock
-        - media_player
-        - scene
-        - script
-        - switch
-    entity_config:
-      switch.anlage_power:
-        name: Stereoanlage
-        room: Kinderzimmer
-      light.esszimmer:
-        name: Esszimmer
-        room: Esszimmer
-      light.fenstee:
-        name: WohnzimmerFenster
-        room: Wohnzimmer
-      light.kinderzimmer:
-        name: Kinderzimmer
-        room: Kinderzimmer
-      light.hintergrundbeleuchtung:
-        name: Hintergrundbeleuchtung
-        room: Wohnzimmer
-      light.mitte:
-        name: WohnzimmerMitte
-        room: Wohnzimmer
-      light.schlafzimmer:
-        name:  Schlafzimmer
-        room: Schlafzimmer
-      light.stehlampe:
-        name:  Stehlampe
-        room: Schlafzimmer
-      light.wohnung:
-        name: WohnzimmerWohnung
-        room: Wohnzimmer
-      light.woodbox:
-        name: Woodbox
-        room: Wohnzimmer
-      light.yeelight_rgb_34ce008e9873:
-        name: Küche
-        room: Küche
-      switch.deko_switch:
-        name: Deko
-        room: Wohnzimmer
-      switch.lichtschalterkueche:
-        name: Küchenleiste
-        room: Küche
-      switch.tv_power:
-        name: Fernseher
-        room: Wohnzimmer        
 
 config:
 
