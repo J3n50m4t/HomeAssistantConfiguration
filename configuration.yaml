@@ -158,7 +158,7 @@ panel_iframe:
   ide:
     title: IDE
     icon: mdi:code-braces
-    url: !secrets ideurl
+    url: !secret ideurl
 
 sensor: !include_dir_merge_list sensor
 
