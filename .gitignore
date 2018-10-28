@@ -2,3 +2,4 @@ secrets.yaml
 home-assistant*
 .*
 known_devices\.yaml
+ui-lovelace.yaml
