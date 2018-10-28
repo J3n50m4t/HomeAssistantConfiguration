@@ -154,6 +154,12 @@ notify:
     device_id: group.all
     name: All
 
+panel_iframe:
+  ide:
+    title: IDE
+    icon: mdi:code-braces
+    url: !secrets ideurl
+
 sensor: !include_dir_merge_list sensor
 
 switch: !include_dir_merge_list switch
