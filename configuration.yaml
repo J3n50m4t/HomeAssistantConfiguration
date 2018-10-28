@@ -13,6 +13,7 @@ cloud:
         - light.esszimmer
         - light.fenstee
         - light.kinderzimmer
+        - light.hintergrundbeleuchtung
         - light.mitte
         - light.schlafzimmer
         - light.stehlampe
@@ -51,6 +52,9 @@ cloud:
         name: WohnzimmerFenster
       light.kinderzimmer:
         name: Kinderzimmer
+      light.hintergrundbeleuchtung:
+        name: Hintergrundbeleuchtung
+        display_categories: LIGHT
       light.mitte:
         name: WohnzimmerMitte
       light.schlafzimmer:
@@ -85,6 +89,7 @@ cloud:
         - light.esszimmer
         - light.fenstee
         - light.kinderzimmer
+        - light.hintergrundbeleuchtung
         - light.mitte
         - light.schlafzimmer
         - light.stehlampe
@@ -121,6 +126,9 @@ cloud:
       light.kinderzimmer:
         name: Kinderzimmer
         room: Kinderzimmer
+      light.hintergrundbeleuchtung:
+        name: Hintergrundbeleuchtung
+        room: Wohnzimmer
       light.mitte:
         name: WohnzimmerMitte
         room: Wohnzimmer
