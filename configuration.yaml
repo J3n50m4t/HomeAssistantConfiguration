@@ -98,6 +98,8 @@ tradfri:
 
 updater:
 
+wake_on_lan:
+  mac: !secret ryzenpc_mac
 weather: 
   - platform: darksky
     api_key: !secret darksky_api_key
