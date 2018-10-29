@@ -3,84 +3,8 @@
 #     name: Op3
 
 automation: !include automations.yaml
-alexa:
-  smart_home:
-    filter:
-      include_entities:
-        - group.kuchenlichter
-        - group.wohnkuchelichter
-        - light.esszimmer
-        - light.fenstee
-        - light.kinderzimmer
-        - light.hintergrundbeleuchtung
-        - light.mitte
-        - light.schlafzimmer
-        - light.stehlampe
-        - light.wohnung
-        - light.woodbox
-        - light.yeelight_rgb_34ce008e9873
-        - switch.anlage_power
-        - switch.deko_switch
-        - switch.lichtschalterkueche
-        - switch.tv_power
-      exclude_domains:
-        - alert
-        - automation
-        - cover
-        - fan
-        - group
-        - input_boolean
-        - light
-        - lock
-        - media_player
-        - scene
-        - script
-        - switch
-    entity_config:
-      group.kuchenlichter:
-        name: Küche
-        description: Alle Lichter in der Küche
-        display_categories: LIGHT
-      group.wohnkuchelichter:
-        name: Wohnküche
-        description: Alle Lichter im Wohnzimmer Esszimmer und Küche
-        display_categories: LIGHT
-      light.esszimmer:
-        name: Esszimmer
-      light.fenstee:
-        name: WohnzimmerFenster
-      light.kinderzimmer:
-        name: Kinderzimmer
-      light.hintergrundbeleuchtung:
-        name: Hintergrundbeleuchtung
-        display_categories: LIGHT
-      light.mitte:
-        name: WohnzimmerMitte
-      light.schlafzimmer:
-        name:  Schlafzimmer
-      light.stehlampe:
-        name:  Stehlampe
-      light.wohnung:
-        name: WohnzimmerWohnung
-      light.woodbox:
-        name: Woodbox
-      light.yeelight_rgb_34ce008e9873:
-        name: Küchenlampe
-      switch.deko_switch:
-        name: Deko
-        description: Dekoration im Haus
-        display_categories: LIGHT
-      switch.anlage_power:
-        name: Stereoanlage
-        display_categories: Speaker
-      switch.lichtschalterkueche:
-        name: Küchenleiste
-        description: Leiste unter den Schränken in der Küche
-        display_categories: LIGHT
-      switch.tv_power:
-        name: Fernseher
-        description: Fernseher
-        display_categories: TV
+alexa: !include assistants/alexa.yaml
+  
 
 config:
 
