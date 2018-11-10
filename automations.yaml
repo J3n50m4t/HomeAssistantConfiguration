@@ -21,3 +21,64 @@
     data:
       entity_id: group.all_lights
     service: light.turn_off
+- id: '1541885808013'
+  alias: wenig Speicher auf Server
+  trigger:
+  - below: '500'
+    entity_id: sensor.sabnzbd_disk_free
+    platform: numeric_state
+  condition: []
+  action:
+  - alias: ''
+    data:
+      message: 'Low Disk Storage '
+      title: Disk Storage
+    service: notify.join
+- id: '1541885858102'
+  alias: Markus Standort enter
+  trigger:
+  - entity_id: device_tracker.j3n50m4t_oneplus6
+    platform: state
+    to: home
+  condition: []
+  action:
+  - data:
+      message: Markus ist zuhause
+      title: Standort
+    service: notify.join
+- id: '1541885858145'
+  alias: Markus Standort Leave
+  trigger:
+  - entity_id: device_tracker.j3n50m4t_oneplus6
+    platform: state
+    to: not_home
+  condition: []
+  action:
+  - data:
+      message: Markus ist nicht mehr zuhause
+      title: Standort
+    service: notify.join    
+- id: '1541885858132'
+  alias: Vanessa Standort enter
+  trigger:
+  - entity_id: device_tracker.dfa703aa_vanessa
+    platform: state
+    to: home
+  condition: []
+  action:
+  - data:
+      message: Vanessa ist zuhause
+      title: Standort
+    service: notify.join
+- id: '1541866858145'
+  alias: Vanessa Standort Leave
+  trigger:
+  - entity_id: device_tracker.dfa703aa_vanessa
+    platform: state
+    to: not_home
+  condition: []
+  action:
+  - data:
+      message: Vanessa ist nicht mehr zuhause
+      title: Standort
+    service: notify.join    
