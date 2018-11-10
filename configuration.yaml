@@ -37,6 +37,7 @@ http:
 
 ios:
 
+
 joaoapps_join:
   - api_key: !secret join_api_key
     device_id: group.all
@@ -72,12 +73,11 @@ mqtt:
   username: !secret mqtt_user
   password: !secret mqtt_password
 
-notify:
+notify: 
   - platform: joaoapps_join
-    api_key: join_api_key
-    device_id: group.all
-    name: All
-
+    api_key: !secret join_api_key
+    device_id: !secret join_device_id_op6 
+    name: Join
 panel_iframe:
   ide:
     title: IDE
