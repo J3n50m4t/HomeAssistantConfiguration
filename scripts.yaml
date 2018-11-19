@@ -1,0 +1,6 @@
+find-vacuum:
+  alias: Find Vacuum
+  sequence:
+    - service: vacuum.locate
+      entity_id:
+      - vacuum.xiaomi_vacuum_cleaner

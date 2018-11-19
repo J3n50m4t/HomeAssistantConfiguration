@@ -3,6 +3,7 @@ smart_home:
     include_entities:
       - group.kuchenlichter
       - group.wohnkuchelichter
+      - group.all_lights
       - light.esszimmer
       - light.fenstee
       - light.kinderzimmer
@@ -17,6 +18,8 @@ smart_home:
       - switch.deko_switch
       - switch.lichtschalterkueche
       - switch.tv_power
+      - switch.vacuum
+      - script.find_vacuum
     exclude_domains:
       - alert
       - automation
@@ -75,3 +78,9 @@ smart_home:
       name: Fernseher
       description: Fernseher
       display_categories: TV
+    switch.vacuum:
+      name: Staubsauger
+      description: Roborock S50 Saugroboter
+      display_categories: switch
+    script.find_vacuum:
+      name: Finde Roboter

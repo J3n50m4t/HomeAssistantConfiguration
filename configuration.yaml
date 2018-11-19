@@ -102,6 +102,14 @@ sabnzbd:
     - month_size
     - total_size  
 
+script: 
+  find_vacuum:
+    alias: Find Vacuum
+    sequence:
+      - service: vacuum.locate
+        entity_id:
+        - vacuum.xiaomi_vacuum_cleaner
+        
 sensor: !include_dir_merge_list sensor
 
 switch: !include_dir_merge_list switch
@@ -115,6 +123,11 @@ tradfri:
   host: !secret tradfri_host
 
 updater:
+
+vacuum:
+  - platform: xiaomi_miio
+    host: !secret vacuum_ip_adress
+    token: !secret vacuum_token
 
 wake_on_lan:
   mac: !secret ryzenpc_mac
