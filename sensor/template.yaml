@@ -1,2 +1,48 @@
-# - platform: template
-#   sensors:
+- platform: template
+  sensors:
+    vacuum_start_time_weekdays:
+      friendly_name: 'Wochentags'
+      value_template: '{{ "%0.02d:%0.02d" | format(states("input_number.vacuum_start_hour_weekdays") | int, states("input_number.vacuum_start_minutes_weekdays") | int) }}'
+    vacuum_start_time_weekend:
+      friendly_name: 'Wochenende'
+      value_template: '{{ "%0.02d:%0.02d" | format(states("input_number.vacuum_start_hour_weekend") | int, states("input_number.vacuum_start_minutes_weekend") | int) }}'
+    vacuum_status:
+      friendly_name: "Vacuum - Status"
+      value_template: "Status: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.status }}"
+    vacuum_weekdays:
+      friendly_name: "Vacuum - Weekdays"
+      value_template: "Hétköznap:"
+    vacuum_weekend:
+      friendly_name: "Vacuum - Weekend"
+      value_template: "Wochenende:"
+    vacuum_battery:
+      friendly_name: "Vacuum - Battery"
+      value_template: "Akku: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.battery_level }}"
+      device_class: battery
+      unit_of_measurement: '%'
+    vacuum_accessories:
+      friendly_name: "Vacuum - Zubehör"
+      value_template: "Status der Zubehör"
+    vacuum_operation:
+      friendly_name: "Vacuum - Operation"
+      value_template: "Operation"
+    vacuum_main_brush:
+      friendly_name: "Vacuum - Hauptbürste"
+      value_template: "Hauptbürste: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.main_brush_left }} h"
+    vacuum_side_brush:
+      friendly_name: "Vacuum - Seitenbürste"
+      value_template: "Seitenbürste: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.side_brush_left }} h"
+    vacuum_filter:
+      friendly_name: "Vacuum - Filter"
+      value_template: "Filter: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.filter_left }} h"
+    vacuum_sensor:
+      friendly_name: "Vacuum - Schmutzsensor"
+      value_template: "Schmutzsensor: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.sensor_dirty_left }} h"
+    vacuum_area_cleaned:
+      friendly_name: "Bereich gereinigt"
+      value_template: "{{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaned_area }} m²"
+    vacuum_cleaning_time:
+      friendly_name: "Zeit"
+      value_template: "{{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaning_time  }} min"
+      
+      

@@ -35,6 +35,8 @@ http:
   base_url: !secret http_base_url
   api_password: !secret http_api_password
 
+input_number: !include input_number.yaml
+
 ios:
 
 

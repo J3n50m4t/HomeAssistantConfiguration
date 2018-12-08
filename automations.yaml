@@ -24,15 +24,15 @@
 - id: '1541885808013'
   alias: wenig Speicher auf Server
   trigger:
-  - below: '500'
+  - below: '200'
     entity_id: sensor.sabnzbd_disk_free
     platform: numeric_state
   condition: []
   action:
   - alias: ''
     data:
-      message: 'Low Disk Storage '
-      title: Disk Storage
+      message: Server Storage is below 200 GB
+      title: Disk Storage on Server
     service: notify.join
 - id: '1541885858102'
   alias: Markus Standort enter
@@ -57,7 +57,7 @@
   - data:
       message: Markus ist nicht mehr zuhause
       title: Standort
-    service: notify.join    
+    service: notify.join
 - id: '1541885858132'
   alias: Vanessa Standort enter
   trigger:
@@ -81,4 +81,37 @@
   - data:
       message: Vanessa ist nicht mehr zuhause
       title: Standort
-    service: notify.join    
+    service: notify.join
+- id: cleaning_timer_weekdays
+  alias: Wochentags
+  trigger:
+  - platform: template
+    value_template: '{{ states.sensor.vacuum_start_time_weekdays.state == states.sensor.time.state
+      }}'
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  action:
+  - data:
+      entity_id: vacuum.xiaomi_vacuum_cleaner
+    service: vacuum.start
+- id: cleaning_timer_weekend
+  alias: Wochenende
+  trigger:
+  - platform: template
+    value_template: '{{ states.sensor.vacuum_start_time_weekend.state == states.sensor.time.state
+      }}'
+  condition:
+  - condition: time
+    weekday:
+    - sat
+    - sun
+  action:
+  - data:
+      entity_id: vacuum.xiaomi_vacuum_cleaner
+    service: vacuum.start

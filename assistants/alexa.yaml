@@ -20,6 +20,7 @@ smart_home:
       - switch.tv_power
       - switch.vacuum
       - script.find_vacuum
+      - switch.steckdose_drei
     exclude_domains:
       - alert
       - automation
@@ -55,8 +56,10 @@ smart_home:
       name: WohnzimmerMitte
     light.schlafzimmer:
       name:  Schlafzimmer
-    light.stehlampe:
+    switch.steckdose_drei:
       name:  Stehlampe
+    light.stehlampe:
+      name: Weihnachtsstern
     light.wohnung:
       name: WohnzimmerWohnung
     light.woodbox:
