@@ -17,9 +17,9 @@ light.kuche:
 light.mitte:
   friendly_name: Wohnzimmerlampe Mittig
 light.stehlampe:
-  friendly_name: Stehlampe Schlafzimmer
+  friendly_name: Stehlampe
 light.schlaflampe:
-  friendly_name: Schlafzimmerlampe
+  friendly_name: Schlaflampe Schlafzimmer
 light.wohnung:
   friendly_name: Wohnzimmerlampe Wohnungsrichtung
 light.yeelight_rgb_34ce008e9873:
@@ -40,3 +40,5 @@ switch.deko_switch:
   friendly_name: Dekoration im Wohnzimmer
 switch.lichtschalterkueche:
   friendly_name: Küchenlicht Leiste
+switch.steckdose_drei:
+  friendly_name: Stehlampe Schlafzimmer
