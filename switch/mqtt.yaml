@@ -19,3 +19,9 @@
   command_topic: "switchCommand"
   payload_on: "A1"
   payload_off: "A0"
+- platform: mqtt
+  name: "Flur Switch"
+  command_topic: "cmnd/flur/POWER"
+  payload_off: "OFF"
+  payload_on: "ON"
+  state_topic: "stat/flur/POWER"
