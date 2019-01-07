@@ -1,7 +1,20 @@
+- id: '1544472184317'
+  alias: Saugroboter ist fertig
+  trigger:
+  - entity_id: vacuum.xiaomi_vacuum_cleaner
+    platform: state
+    to: docked
+  condition: []
+  action:
+  - alias: ''
+    data:
+      message: Saugen ist fertig
+      title: Saugroboter ist fertig
+    service: notify.join
 - id: '1539122857421'
   alias: Wenn keiner zuhause, Licht aus
   trigger:
-  - entity_id: device_tracker.j3n50m4t_oneplus6
+  - entity_id: device_tracker.oneplus_6
     from: home
     platform: state
     to: not_home
@@ -14,104 +27,114 @@
     entity_id: device_tracker.dfa703aa_vanessa
     state: not_home
   - condition: state
-    entity_id: device_tracker.j3n50m4t_oneplus6
+    entity_id: device_tracker.oneplus_6
     state: not_home
   action:
   - alias: ''
     data:
       entity_id: group.all_lights
     service: light.turn_off
-- id: '1541885808013'
-  alias: wenig Speicher auf Server
+  - data:
+      entity_id: switch.deko_switch
+    service: switch.turn_off
+  - data:
+      entity_id: switch.flur_switch
+    service: switch.turn_off
+- id: '1544476061506'
+  alias: Starte Saugen durch Abwesenheit
   trigger:
-  - below: '200'
-    entity_id: sensor.sabnzbd_disk_free
-    platform: numeric_state
-  condition: []
+  - entity_id: group.all_devices
+    platform: state
+    to: not_home
+  condition:
+  - after: 09:00
+    before: '21:00'
+    condition: time
+  - below: '1'
+    condition: numeric_state
+    entity_id: variable.staubsauger_runcounter
   action:
   - alias: ''
-    data:
-      message: Server Storage is below 200 GB
-      title: Disk Storage on Server
-    service: notify.join
-- id: '1541885858102'
-  alias: Markus Standort enter
-  trigger:
-  - entity_id: device_tracker.j3n50m4t_oneplus6
-    platform: state
-    to: home
-  condition: []
-  action:
-  - data:
-      message: Markus ist zuhause
-      title: Standort
-    service: notify.join
-- id: '1541885858145'
-  alias: Markus Standort Leave
-  trigger:
-  - entity_id: device_tracker.j3n50m4t_oneplus6
-    platform: state
-    to: not_home
-  condition: []
-  action:
-  - data:
-      message: Markus ist nicht mehr zuhause
-      title: Standort
-    service: notify.join
-- id: '1541885858132'
-  alias: Vanessa Standort enter
-  trigger:
-  - entity_id: device_tracker.dfa703aa_vanessa
-    platform: state
-    to: home
-  condition: []
-  action:
-  - data:
-      message: Vanessa ist zuhause
-      title: Standort
-    service: notify.join
-- id: '1541866858145'
-  alias: Vanessa Standort Leave
-  trigger:
-  - entity_id: device_tracker.dfa703aa_vanessa
-    platform: state
-    to: not_home
-  condition: []
-  action:
-  - data:
-      message: Vanessa ist nicht mehr zuhause
-      title: Standort
-    service: notify.join
-- id: cleaning_timer_weekdays
-  alias: Wochentags
-  trigger:
-  - platform: template
-    value_template: '{{ states.sensor.vacuum_start_time_weekdays.state == states.sensor.time.state
-      }}'
-  condition:
-  - condition: time
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-    - fri
-  action:
-  - data:
-      entity_id: vacuum.xiaomi_vacuum_cleaner
+    data: {}
     service: vacuum.start
-- id: cleaning_timer_weekend
-  alias: Wochenende
+  - data:
+      message: Saugen wird gestarted, da abwesend
+      title: Saugroboter startet
+    service: notify.join
+  - data:
+      value_template: '{{ (variable.state | int) + 1 }}'
+      variable: staubsauger_runcounter
+    service: variable.set_variable
+- id: '1544476061523'
+  alias: 'Saugroboter counter update '
   trigger:
-  - platform: template
-    value_template: '{{ states.sensor.vacuum_start_time_weekend.state == states.sensor.time.state
-      }}'
-  condition:
-  - condition: time
-    weekday:
-    - sat
-    - sun
+  - entity_id: vacuum.xiaomi_vacuum_cleaner
+    platform: state
+    to: cleaning
+  condition: []
   action:
   - data:
-      entity_id: vacuum.xiaomi_vacuum_cleaner
-    service: vacuum.start
+      message: Saugen wird gestarted
+      title: Saugroboter startet
+    service: notify.join
+  - data:
+      value_template: '{{ (variable.state | int) + 1 }}'
+      variable: staubsauger_runcounter
+    service: variable.set_variable
+- id: '1544565337548'
+  alias: Staubsauger RunCounter Resetten
+  trigger:
+  - at: '8:50'
+    platform: time
+  condition: []
+  action:
+  - data:
+      value: '0'
+      variable: staubsauger_runcounter
+    service: variable.set_variable
+- id: '1544910582816'
+  alias: Starte Saugen durch Zeit
+  trigger:
+  - at: '10:30'
+    platform: time
+  condition:
+  - below: '1'
+    condition: numeric_state
+    entity_id: variable.staubsauger_runcounter
+  - condition: state
+    entity_id: group.all_devices
+    state: not_home
+  action:
+  - service: vacuum.start
+  - data:
+      value_template: '{{ (variable.state | int) + 1 }}'
+      variable: staubsauger_runcounter
+    service: variable.set_variable
+  - data:
+      message: Saugen wird gestarted
+      title: Saugroboter startet wegen Zeit
+    service: notify.join
+- id: '1546875168005'
+  alias: Fernseher schaltet Dreamscreen an
+  trigger:
+  - entity_id: switch.tv_power
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      entity_id: dreamscreen.dreamscreen_hd
+      mode: '1'
+    service: dreamscreen.set_mode
+- id: '1546875223626'
+  alias: Fernseher schaltet Dreamscreen aus
+  trigger:
+  - entity_id: switch.tv_power
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - data:
+      entity_id: dreamscreen.dreamscreen_hd
+      mode: '0'
+    service: dreamscreen.set_mode
