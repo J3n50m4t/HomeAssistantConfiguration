@@ -5,3 +5,7 @@
 # - platform: owntracks
   # max_gps_accuracy: 200
 - platform: traccar
+  host: !secret traccarhost
+  port: !secret traccarport
+  username: !secret traccarusername
+  password: !secret traccarpassword
