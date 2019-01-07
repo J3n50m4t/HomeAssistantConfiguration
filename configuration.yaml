@@ -5,6 +5,9 @@
 automation: !include automations.yaml
 alexa: !include assistants/alexa.yaml
   
+camera: 
+  - platform: mjpeg
+    mjpeg_url: !secret cameraurl
 
 config:
 
