@@ -2,8 +2,6 @@ secrets.yaml
 home-assistant*
 .*
 known_devices\.yaml
-ui-lovelace.yaml
-ui-lovelace.yaml
 traccar\.xml
 www/
 custom_components/
