@@ -52,6 +52,9 @@ joaoapps_join:
     device_id: group.all
     name: Alle Geräte
 
+lovelace:
+  mode: yaml
+
 light:
   - platform: yeelight
     devices:
