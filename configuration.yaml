@@ -81,11 +81,18 @@ notify:
     api_key: !secret join_api_key
     device_id: !secret join_device_id_op6 
     name: Join
+    
+owntracks:
+  max_gps_accuracy: 200
+  mqtt_topic: "owntracks/#"
+    
 panel_iframe:
   ide:
     title: IDE
     icon: mdi:code-braces
     url: !secret ideurl
+
+recorder: 
 
 sabnzbd:
   api_key: !secret sabnzb_api_key
@@ -131,9 +138,12 @@ vacuum:
   - platform: xiaomi_miio
     host: !secret vacuum_ip_adress
     token: !secret vacuum_token
-
-wake_on_lan:
-  mac: !secret ryzenpc_mac
+variable:
+  staubsauger_runcounter:
+    value: 0
+    attributes:
+      icon: mdi:robot-vacuum
+      
 weather: 
   - platform: darksky
     api_key: !secret darksky_api_key
