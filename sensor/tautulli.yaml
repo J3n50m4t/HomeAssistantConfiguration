@@ -1,3 +1,5 @@
-#- platform: tautulli
-#  api_key: !secret tautulli_api_key
-#  host: !secret tautulli_host
+- platform: tautulli
+  api_key: !secret tautulli_api_key
+  host: !secret tautulli_host
+  port: 443
+  ssl: true
