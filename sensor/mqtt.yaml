@@ -1,4 +1,4 @@
 - platform: mqtt
-  name: "Akkustand Markus Op6"
-  state_topic: "mobilephone/markus/oneplus6"
-  unit_of_measurement: '%'
+  name: "TV Board Temperature"
+  state_topic: "tvboardtemp"
+  unit_of_measurement: '°C'

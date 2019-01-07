@@ -39,8 +39,3 @@
       friendly_name: "Stereoanlage"
       command_on: 'JgBUAE4UJxQTFCcUFBQmFRMUFBMTFRMUExQTFScAA05PFCcUExQnFBMUKBMTFRMUExQTFRMUFBMoAANOTxMoExMUJxQUFCcUExQTFBMVExQTFRMUJwANBQAAAAA='
       command_off: 'JgBUAE4UJxQTFCcUFBQmFRMUFBMTFRMUExQTFScAA05PFCcUExQnFBMUKBMTFRMUExQTFRMUFBMoAANOTxMoExMUJxQUFCcUExQTFBMVExQTFRMUJwANBQAAAAA='        
-
-    # tv_aus:
-    #   friendly_name: "Fernseher Volume"
-    #   command_on: ''
-    #   command_off: ''

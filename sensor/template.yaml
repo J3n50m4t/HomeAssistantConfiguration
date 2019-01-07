@@ -1,11 +1,5 @@
 - platform: template
   sensors:
-    vacuum_start_time_weekdays:
-      friendly_name: 'Wochentags'
-      value_template: '{{ "%0.02d:%0.02d" | format(states("input_number.vacuum_start_hour_weekdays") | int, states("input_number.vacuum_start_minutes_weekdays") | int) }}'
-    vacuum_start_time_weekend:
-      friendly_name: 'Wochenende'
-      value_template: '{{ "%0.02d:%0.02d" | format(states("input_number.vacuum_start_hour_weekend") | int, states("input_number.vacuum_start_minutes_weekend") | int) }}'
     vacuum_status:
       friendly_name: "Vacuum - Status"
       value_template: "Status: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.status }}"
@@ -44,5 +38,3 @@
     vacuum_cleaning_time:
       friendly_name: "Zeit"
       value_template: "{{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaning_time  }} min"
-      
-      

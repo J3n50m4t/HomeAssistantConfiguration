@@ -14,7 +14,7 @@ Wohnzimmerlichter:
 Küchenlichter:
   name: Küche
   entities: 
-    - light.kuche
+    - light.yeelight_rgb_34ce008e9873
     - switch.lichtschalterkueche
 
 Wohnküchelichter:
@@ -22,10 +22,9 @@ Wohnküchelichter:
   entities: 
     - light.esszimmer    
     - light.fenstee
-    - light.kuche
+    - light.yeelight_rgb_34ce008e9873
     - light.hintergrundbeleuchtung
     - light.mitte 
     - light.wohnung
-    - light.woodbox
     - switch.deko_switch
     - switch.lichtschalterkueche
