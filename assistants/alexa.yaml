@@ -18,9 +18,9 @@ smart_home:
       - switch.deko_switch
       - switch.lichtschalterkueche
       - switch.tv_power
+      - switch.flur_switch
       - switch.vacuum
       - script.find_vacuum
-      - switch.steckdose_drei
     exclude_domains:
       - alert
       - automation
@@ -56,10 +56,8 @@ smart_home:
       name: WohnzimmerMitte
     light.schlafzimmer:
       name:  Schlafzimmer
-    switch.steckdose_drei:
-      name:  Stehlampe
     light.stehlampe:
-      name: Weihnachtsstern
+      name:  Stehlampe
     light.wohnung:
       name: WohnzimmerWohnung
     light.woodbox:
@@ -73,6 +71,10 @@ smart_home:
     switch.anlage_power:
       name: Stereoanlage
       display_categories: Speaker
+    switch.flur_switch:
+      name: Flur
+      description: Flurlicht
+      display_categories: light
     switch.lichtschalterkueche:
       name: Küchenleiste
       description: Leiste unter den Schränken in der Küche
