@@ -363,38 +363,35 @@ views:
             - input_number.vacuum_start_minutes_weekend     
   - title: Monitoring
     cards:
-      - type: vertical-stack
-        title: TVBoardTemp
+      - type: horizontal-stack
         cards: 
           - type: sensor
-            graph: line
-            hours_to_show: 2
+            name: DB Size
+            graph: none
+            entity: sensor.homeassistant_v2db
+          - type: sensor
+            graph: none
             entity: sensor.tv_board_temperature
-          - type: sensor
-            graph: line
-            entity: sensor.sabnzbd_disk_free
-      - type: vertical-stack
-        title: Sabnzbd
+      - type: horizontal-stack
         cards: 
           - type: sensor
-            graph: line
-            entity: sensor.sabnzbd_daily_total
-          - type: sensor
-            graph: line
-            entity: sensor.sabnzbd_speed     
-          - type: sensor
-            graph: line
+            graph: none
+            name: SAB Disk free
             entity: sensor.sabnzbd_disk_free
-          - type: horizontal-stack
-            cards:
-              - type: sensor
-                title: Ping
-                entity: sensor.speedtest_ping
-                line_color: "#000"
-              - type: sensor
-                title: Download
-                entity: sensor.speedtest_download
-                line_color: "#000"
+          - type: sensor
+            graph: none
+            name: Down /d
+            entity: sensor.sabnzbd_daily_total
+      - type: vertical-stack
+        cards:
+          - type: sensor
+            name: Ping
+            entity: sensor.speedtest_ping
+            line_color: "#000"
+          - type: sensor
+            name: Speed down
+            entity: sensor.speedtest_download
+            line_color: "#000"
 
   - title: Tautulli card
     icon: mdi:plex
