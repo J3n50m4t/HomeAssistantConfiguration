@@ -451,3 +451,17 @@ views:
               left: 15px
               color: white
               transform: none              
+
+  - title: Automatisierung
+    cards: 
+      - type: entities
+        entities:
+          - group.all_automations
+          - automation.fernseher_schaltet_dreamscreen_an
+          - automation.fernseher_schaltet_dreamscreen_aus
+          - automation.saugroboter_counter_update_
+          - automation.saugroboter_ist_fertig
+          - automation.starte_saugen_durch_abwesenheit
+          - automation.starte_saugen_durch_zeit
+          - automation.staubsauger_runcounter_resetten
+          - automation.wenn_keiner_zuhause_licht_aus   
