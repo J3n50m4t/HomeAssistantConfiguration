@@ -44,6 +44,15 @@ http:
   base_url: !secret http_base_url
   api_password: !secret http_api_password
 
+influxdb:
+  host: !secret influx_host
+  port: !secret influx_port
+  # username: !secret influx_username
+  # password: !secret influx_password
+  include:
+    domains:
+      - sensor
+
 input_number: !include input_number.yaml
 
 ios:
