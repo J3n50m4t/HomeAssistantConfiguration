@@ -138,3 +138,23 @@
       entity_id: dreamscreen.dreamscreen_hd
       mode: '0'
     service: dreamscreen.set_mode
+- id: '1547397663898'
+  alias: Automatisierungen An
+  trigger:
+  - at: '1:00'
+    platform: time
+  - at: '8:00'
+    platform: time
+  - at: '14:00'
+    platform: time
+  - at: '18:00'
+    platform: time
+  - at: '18:00'
+    platform: time
+  - at: '21:00'
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: group.all_automations
+    service: automation.turn_on
