@@ -53,11 +53,6 @@ influxdb:
     domains:
       - sensor
 
-input_number: !include input_number.yaml
-
-ios:
-
-
 joaoapps_join:
   - api_key: !secret join_api_key
     device_id: group.all
@@ -78,9 +73,6 @@ light:
 logbook:
 
 map:
-
-media_player:
-
 
 mqtt:
   broker: !secret mqtt_domain
@@ -158,6 +150,7 @@ vacuum:
   - platform: xiaomi_miio
     host: !secret vacuum_ip_adress
     token: !secret vacuum_token
+    
 variable:
   staubsauger_runcounter:
     value: 0
