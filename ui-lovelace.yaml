@@ -459,7 +459,7 @@ views:
           - group.all_automations
           - automation.fernseher_schaltet_dreamscreen_an
           - automation.fernseher_schaltet_dreamscreen_aus
-          - automation.saugroboter_counter_update_
+          - automation.saugroboter_counter_update
           - automation.saugroboter_ist_fertig
           - automation.starte_saugen_durch_abwesenheit
           - automation.starte_saugen_durch_zeit
