@@ -46,14 +46,6 @@ http:
 
 influxdb:
   host: !secret influx_host
-  port: !secret influx_port
-  username: !secret influx_username
-  password: !secret influx_password
-  include:
-    domains:
-      - sensor
-influxdb:
-  host: !secret influx_host
   database: home_assistant
   username: !secret influx_username
   password: !secret influx_password
