@@ -52,6 +52,14 @@ influxdb:
   include:
     domains:
       - sensor
+influxdb:
+  host: !secret influx_host
+  database: home_assistant
+  username: !secret influx_username
+  password: !secret influx_password
+  include:
+    domains:
+      - sensor
 
 joaoapps_join:
   - api_key: !secret join_api_key
