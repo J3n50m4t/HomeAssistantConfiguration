@@ -75,14 +75,9 @@ lovelace:
 luftdaten:
   sensor_id: !secret luftdaten_sensor_id
   show_on_map: true
-  scan_intervall: 300
-  sensors: 
+  sensors:
     monitored_conditions:
       - P1
-      - temperature
-      - humidity
-      - pressure
-    
 
 map:
 
