@@ -1,6 +1,6 @@
 air_quality:
   - platform: opensensemap
-    station_id: opensense_id
+    station_id: !secret opensense_id
 
 automation: !include automations.yaml
 alexa: !include assistants/alexa.yaml
