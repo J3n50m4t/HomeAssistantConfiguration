@@ -1,6 +1,6 @@
-# android_ip_webcam:
-#   - host: 192.168.1.131
-#     name: Op3
+air_quality:
+  - platform: opensensemap
+    station_id: opensense_id
 
 automation: !include automations.yaml
 alexa: !include assistants/alexa.yaml
@@ -71,13 +71,6 @@ logbook:
 
 lovelace:
   mode: yaml
-
-luftdaten:
-  sensor_id: !secret luftdaten_sensor_id
-  show_on_map: true
-  sensors:
-    monitored_conditions:
-      - P1
 
 map:
 
