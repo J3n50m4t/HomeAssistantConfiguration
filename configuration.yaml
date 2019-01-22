@@ -58,9 +58,6 @@ joaoapps_join:
     device_id: group.all
     name: Alle Geräte
 
-lovelace:
-  mode: yaml
-
 light:
   - platform: yeelight
   - platform: flux_led
@@ -71,6 +68,9 @@ light:
         mode: "rgb"
 
 logbook:
+
+lovelace:
+  mode: yaml
 
 map:
 
