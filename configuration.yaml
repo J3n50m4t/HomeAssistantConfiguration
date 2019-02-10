@@ -39,6 +39,18 @@ homeassistant:
   customize: !include customize.yaml
   whitelist_external_dirs:
     - /config
+    
+homekit:
+  filter:
+    include_entities:
+      - light.wohnzimmer
+      - light.esszimmer_2
+      - light.hintergrundbeleuchtung
+      - light.schlafzimmer
+      - group.kuchenlichter
+      - group.wohnkuchelichter
+      - switch.tv_power
+      - switch.deko_switch
 
 http:
   base_url: !secret http_base_url
