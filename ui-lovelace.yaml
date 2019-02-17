@@ -366,15 +366,6 @@ views:
       - type: horizontal-stack
         cards: 
           - type: sensor
-            name: DB Size
-            graph: none
-            entity: sensor.homeassistant_v2db
-          - type: sensor
-            graph: none
-            entity: sensor.tv_board_temperature
-      - type: horizontal-stack
-        cards: 
-          - type: sensor
             graph: none
             name: SAB Disk free
             entity: sensor.sabnzbd_disk_free
