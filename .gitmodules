@@ -1,0 +1,12 @@
+[submodule "www/custom_ui/vertical-stack-in-card"]
+	path = www/custom_ui/vertical-stack-in-card
+	url = https://github.com/custom-cards/vertical-stack-in-card.git
+[submodule "www/custom_ui/custom-lovelace"]
+	path = www/custom_ui/custom-lovelace
+	url = https://github.com/ciotlosm/custom-lovelace.git
+[submodule "www/custom_ui/text-element"]
+	path = www/custom_ui/text-element
+	url = https://github.com/custom-cards/text-element.git
+[submodule "www/custom_ui/state-attribute-element"]
+	path = www/custom_ui/state-attribute-element
+	url = https://github.com/custom-cards/state-attribute-element.git
