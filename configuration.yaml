@@ -136,13 +136,7 @@ sabnzbd:
     - month_size
     - total_size  
 
-script: 
-  find_vacuum:
-    alias: Find Vacuum
-    sequence:
-      - service: vacuum.locate
-        entity_id:
-        - vacuum.xiaomi_vacuum_cleaner
+script: !include scripts.yaml
         
 sensor: !include_dir_merge_list sensor
 

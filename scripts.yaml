@@ -1,10 +1,10 @@
-find-vacuum:
+find_vacuum:
   alias: Find Vacuum
   sequence:
     - service: vacuum.locate
       entity_id:
-      - vacuum.xiaomi_vacuum_cleaner
-restart-homeassistant:
-  alias: Restart HomeAssistant
+        - vacuum.xiaomi_vacuum_cleaner
+restart_my_homeassistant:
+  alias: Restart my HomeAssistant
   sequence:
     - service: homeassistant.restart
