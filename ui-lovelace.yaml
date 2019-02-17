@@ -5,6 +5,8 @@ resources:
     type: js
   - url: /local/custom_ui/text-element/text-element.js
     type: js
+  - url: /local/custom_ui/vertical-stack-in-card/vertical-stack-in-card.js
+    type: js
     
 title: Zuhause
 views:
@@ -359,6 +361,17 @@ views:
             - input_number.vacuum_start_minutes_weekend     
   - title: Monitoring
     cards:
+      - type: custom:vertical-stack-in-card
+        title: Speed
+        cards:
+          - type: sensor
+            entity: sensor.speedtest_download
+            line_color: "#000"
+          - type: picture-entity
+            show_info: false
+            show_name: false
+            show_state: false
+            entity: camera.grafana_fritzbox_traffic
       - type: horizontal-stack
         cards: 
           - type: sensor
