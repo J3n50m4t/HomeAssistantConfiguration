@@ -8,6 +8,9 @@ alexa: !include assistants/alexa.yaml
 camera: 
   - platform: mjpeg
     mjpeg_url: !secret cameraurl
+  - platform: local_file
+    name: Grafana_fritzbox_traffic
+    file_path: /config/www/grafanaimages/fritzboxtraffic.png
 
 config:
 

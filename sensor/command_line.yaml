@@ -1,0 +1,3 @@
+- platform: command_line
+  name: "Download Fritzbox"
+  command: !secret command_line_fritzboxtraffic
