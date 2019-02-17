@@ -1,13 +1,9 @@
 resources:
-  - url: /local/custom_ui/state-card-aftership.js
-    type: js
-  - url: /local/custom_ui/entity-markdown.js
-    type: js
-  - url: /local/custom_ui/monster-card.js?v=1
+  - url: /local/custom_ui/custom-lovelace/monster-card/monster-card.js
     type: js    
-  - url: /local/custom_ui/state-attribute-element.js?v=0
+  - url: /local/custom_ui/state-attribute-element/state-attribute-element.js
     type: js
-  - url: /local/custom_ui/text-element.js?v=0
+  - url: /local/custom_ui/text-element/text-element.js
     type: js
     
 title: Zuhause
