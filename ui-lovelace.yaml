@@ -342,27 +342,6 @@ views:
                 border-left-style: solid
                 border-color: rgb(34, 154, 210)
                 opacity: 0.8
-           
-      - type: horizontal-stack
-        cards:
-          - type: sensor
-            entity: sensor.vacuum_area_cleaned
-            name: Bereich gesäubert
-            graph: none
-          - type: sensor
-            entity: sensor.vacuum_cleaning_time
-            name: Reinigungszeit
-            graph: none
-      - type: conditional
-        conditions:
-          - entity: automation.wochenende
-            state: "on"
-        card:
-          type: entities
-          entities:
-            - sensor.vacuum_start_time_weekend
-            - input_number.vacuum_start_hour_weekend
-            - input_number.vacuum_start_minutes_weekend     
   - title: Monitoring
     cards:
       - type: custom:vertical-stack-in-card
@@ -373,6 +352,21 @@ views:
             show_name: false
             show_state: false
             entity: camera.grafana_fritzbox_traffic
+          - type: horizontal-stack
+            cards:
+            - type: sensor
+              entity: sensor.vacuum_area_cleaned
+              name: Bereich gesäubert
+              graph: none
+            - type: sensor
+              entity: sensor.vacuum_cleaning_time
+              name: Reinigungszeit
+              graph: none
+            - type: sensor
+              entity: variable.staubsauger_runcounter
+              name: Anzahl der Reinigungsläufe bis 10
+              graph: none
+
   - title: Tautulli card
     icon: mdi:plex
     cards:

@@ -1,7 +1,0 @@
-- platform: rtorrent
-  url: !secret rtorrent_url
-  monitored_conditions:
-    - current_status
-    - download_speed
-    - upload_speed
-    

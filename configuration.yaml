@@ -121,24 +121,6 @@ recorder:
       - sun.sun
       - sensor.date
 
-sabnzbd:
-  api_key: !secret sabnzb_api_key
-  host: !secret sabnzb_host
-  ssl: true
-  port: 443
-  sensors:
-    - current_status
-    - speed
-    - queue_size
-    - queue_remaining
-    - disk_size
-    - disk_free
-    - queue_count
-    - day_size
-    - week_size
-    - month_size
-    - total_size  
-
 script: !include scripts.yaml
         
 sensor: !include_dir_merge_list sensor
