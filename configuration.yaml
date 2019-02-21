@@ -44,6 +44,7 @@ homeassistant:
     - /config
     
 homekit:
+  auto_start: false
   filter:
     include_entities:
       - light.wohnzimmer

@@ -158,3 +158,12 @@
   - data:
       entity_id: group.all_automations
     service: automation.turn_on
+- id: '1550779173464'
+  alias: Starte Homekit mit Delay
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - delay: 00:05
+  - service: homekit.start
