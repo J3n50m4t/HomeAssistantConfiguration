@@ -364,34 +364,12 @@ views:
       - type: custom:vertical-stack-in-card
         title: Speed
         cards:
-          - type: sensor
-            entity: sensor.speedtest_download
-            line_color: "#000"
           - type: picture-entity
             show_info: false
             show_name: false
             show_state: false
             entity: camera.grafana_fritzbox_traffic
-      - type: horizontal-stack
-        cards: 
-          - type: sensor
-            graph: none
-            name: SAB Disk free
-            entity: sensor.sabnzbd_disk_free
-          - type: sensor
-            graph: none
-            name: Down /d
-            entity: sensor.sabnzbd_daily_total
-      - type: vertical-stack
-        cards:
-          - type: sensor
-            name: Ping
-            entity: sensor.speedtest_ping
-            line_color: "#000"
-          - type: sensor
-            name: Speed down
-            entity: sensor.speedtest_download
-            line_color: "#000"
+
 
   - title: Tautulli card
     icon: mdi:plex
