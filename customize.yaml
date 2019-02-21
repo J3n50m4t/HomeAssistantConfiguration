@@ -33,7 +33,7 @@ light.yeelight_rgb_34ce008e9873:
 sensor.aftership_sensor:  
   custom_ui_state_card: state-card-aftership
 
-##############
+##############p
 ##  SWITCH  ##
 ##############
 switch.deko_switch:
@@ -41,4 +41,4 @@ switch.deko_switch:
 switch.lichtschalterkueche:
   friendly_name: Küchenlicht Leiste
 switch.steckdose_deko:
-  friendly_name: Steckdose Wohnzimmer Regal
+  friendly_name: Lichtschild Wohnzimmer

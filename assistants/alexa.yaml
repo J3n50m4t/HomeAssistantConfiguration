@@ -16,6 +16,7 @@ smart_home:
       - light.yeelight_rgb_34ce008e9873
       - switch.anlage_power
       - switch.deko_switch
+      - switch.steckdose_deko
       - switch.lichtschalterkueche
       - switch.tv_power
       - switch.flur_switch
@@ -68,6 +69,10 @@ smart_home:
       name: Deko
       description: Dekoration im Haus
       display_categories: LIGHT
+    switch.steckdose_deko:
+      name: Lichtschild
+      description: Lichtschild im Regal
+      display_categories: light
     switch.anlage_power:
       name: Stereoanlage
       display_categories: Speaker

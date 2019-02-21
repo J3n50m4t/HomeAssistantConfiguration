@@ -37,6 +37,9 @@
   - data:
       entity_id: switch.deko_switch
     service: switch.turn_off
+  - data: 
+      entity_id: switch.steckdose_deko
+    service: switch.turn_off
   - data:
       entity_id: switch.flur_switch
     service: switch.turn_off

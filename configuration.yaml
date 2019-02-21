@@ -55,6 +55,7 @@ homekit:
       - group.wohnkuchelichter
       - switch.tv_power
       - switch.deko_switch
+      - switch.steckdose_deko
 
 http:
   base_url: !secret http_base_url
