@@ -373,8 +373,6 @@ views:
             show_name: false
             show_state: false
             entity: camera.grafana_fritzbox_traffic
-
-
   - title: Tautulli card
     icon: mdi:plex
     cards:
@@ -433,7 +431,6 @@ views:
               left: 15px
               color: white
               transform: none              
-
   - title: Automatisierung
     cards: 
       - type: entities
