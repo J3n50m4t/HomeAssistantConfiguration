@@ -184,36 +184,40 @@ views:
             elements:
             - type: icon
               icon: mdi:bell-ring
-              tap_action: call-service
+              tap_action: 
+                action: call-service
+                service: vacuum.locate
               entity: vacuum.xiaomi_vacuum_cleaner
-              service: vacuum.locate
               style:
                 top: 90%
                 left: 65%
                 "--paper-item-icon-color": rgb(115, 122, 130)
             - type: icon
-              tap_action: call-service
-              icon: mdi:home
+              tap_action: 
+                action: call-service
+                service: vacuum.return_to_base
               entity: vacuum.xiaomi_vacuum_cleaner
-              service: vacuum.return_to_base
+              icon: mdi:home
               style:
                 top: 90%
                 left: 55%
                 "--paper-item-icon-color": rgb(115, 122, 130)
             - type: icon
               icon: mdi:play
-              tap_action: call-service
+              tap_action: 
+                action: call-service
+                service: vacuum.start
               entity: vacuum.xiaomi_vacuum_cleaner
-              service: vacuum.start
               style:
                 top: 90%
                 left: 45%
                 "--paper-item-icon-color": rgb(115, 122, 130)
             - type: icon
               icon: mdi:stop
-              tap_action: call-service
+              tap_action: 
+                action: call-service
+                service: vacuum.stop
               entity: vacuum.xiaomi_vacuum_cleaner
-              service: vacuum.stop
               style:
                 top: 90%
                 left: 35%
