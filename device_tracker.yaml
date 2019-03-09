@@ -4,8 +4,3 @@
 #   password: !secret device_tracker_fritz_password
 # - platform: owntracks
   # max_gps_accuracy: 200
-- platform: traccar
-  host: !secret traccarhost
-  port: !secret traccarport
-  username: !secret traccarusername
-  password: !secret traccarpassword
