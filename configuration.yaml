@@ -70,10 +70,7 @@ influxdb:
     domains:
       - sensor
 
-joaoapps_join:
-  - api_key: !secret join_api_key
-    device_id: group.all
-    name: Alle Geräte
+ios:
 
 light:
   - platform: yeelight
