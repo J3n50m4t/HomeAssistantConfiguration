@@ -14,7 +14,7 @@
 - id: '1539122857421'
   alias: Wenn keiner zuhause, Licht aus
   trigger:
-  - entity_id: device_tracker.oneplus_6
+  - entity_id: device_tracker.iphone_von_markus
     from: home
     platform: state
     to: not_home
@@ -27,7 +27,7 @@
     entity_id: device_tracker.dfa703aa_vanessa
     state: not_home
   - condition: state
-    entity_id: device_tracker.oneplus_6
+    entity_id: device_tracker.iphone_von_markus
     state: not_home
   action:
   - alias: ''

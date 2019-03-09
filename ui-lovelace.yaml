@@ -21,7 +21,7 @@ views:
         aspect_ratio: 100%
         entities:
           - device_tracker.dfa703aa_vanessa
-          - device_tracker.oneplus_6
+          - device_tracker.iphone_von_markus
           - zone.home
       - type: custom:monster-card
         show_empty: false
@@ -45,7 +45,7 @@ views:
             - entity_id: "light.kuche"
       - type: entity-filter
         entities:
-          - device_tracker.oneplus_6
+          - device_tracker.iphone_von_markus
           - device_tracker.dfa703aa_vanessa
         state_filter:
           - home
