@@ -5,5 +5,4 @@ known_devices\.yaml
 traccar\.xml
 www/grafanaimages
 www/images
-custom_components/
 deps/
