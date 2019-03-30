@@ -45,7 +45,7 @@ smart_home:
       description: Alle Lichter im Wohnzimmer Esszimmer und Küche
       display_categories: LIGHT
     light.esszimmer:
-      name: Esszimmer
+      name: Dekolampe
     light.fenstee:
       name: WohnzimmerFenster
     light.kinderzimmer:

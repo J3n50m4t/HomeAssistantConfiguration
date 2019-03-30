@@ -9,7 +9,7 @@ automation.wenn_keiner_zuhause_licht_aus:
 ##  LIGHT   ##
 ##############
 light.esszimmer: 
-  friendly_name: Esszimmer
+  friendly_name: Dekolampe
 light.fenstee:
   friendly_name: Wohnzimmerlampe Fensterrichtung
 light.kuche:
