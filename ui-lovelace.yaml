@@ -32,10 +32,10 @@ views:
           include: 
             - entity_id: "light.esszimmer"
             - entity_id: "light.leuchtkugel"
-            - entity_id: "light.hintergrundbeleuchtung"
+            # - entity_id: "light.hintergrundbeleuchtung"
             - entity_id: "light.schlafzimmer"
             - entity_id: "light.stehlampe"
-            - entity_id: "light.woodbox"
+            - entity_id: "group.wohnzimmer"
             - entity_id: "switch.deko_switch"
             - entity_id: "switch.steckdose_deko"
             - entity_id: "switch.lichtschalterkueche"
