@@ -30,19 +30,18 @@ views:
           title: Lights
         filter:
           include: 
-            - domain: light
+            - entity_id: "light.esszimmer"
+            - entity_id: "light.leuchtkugel"
+            - entity_id: "light.hintergrundbeleuchtung"
+            - entity_id: "light.schlafzimmer"
+            - entity_id: "light.stehlampe"
+            - entity_id: "light.woodbox"
             - entity_id: "switch.deko_switch"
             - entity_id: "switch.steckdose_deko"
             - entity_id: "switch.lichtschalterkueche"
             - entity_id: "switch.steckdose_fernseher"
             - entity_id: "switch.flur_switch"
           exclude: 
-            - entity_id: "light.mitte"
-            - entity_id: "light.fenster"
-            - entity_id: "light.wohnung"
-            - entity_id: "light.kizilampe_2"
-            - entity_id: "light.esszimmer_2"
-            - entity_id: "light.kuche"
       - type: entity-filter
         entities:
           - device_tracker.iphone_von_markus
