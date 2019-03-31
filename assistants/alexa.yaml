@@ -5,8 +5,8 @@ smart_home:
       - group.wohnkuchelichter
       - group.all_lights
       - light.esszimmer
-      - light.fenstee
-      - light.kinderzimmer
+      - light.fenster
+      - light.leuchtkugel
       - light.hintergrundbeleuchtung
       - light.mitte
       - light.schlafzimmer
@@ -45,11 +45,11 @@ smart_home:
       description: Alle Lichter im Wohnzimmer Esszimmer und Küche
       display_categories: LIGHT
     light.esszimmer:
-      name: Dekolampe
-    light.fenstee:
+      name: Esszimmer
+    light.fenster:
       name: WohnzimmerFenster
-    light.kinderzimmer:
-      name: Kinderzimmer
+    light.leuchtkugel:
+      name: Leuchtkugel
     light.hintergrundbeleuchtung:
       name: Hintergrundbeleuchtung
       display_categories: LIGHT

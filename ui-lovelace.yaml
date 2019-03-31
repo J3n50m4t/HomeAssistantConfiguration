@@ -38,7 +38,7 @@ views:
             - entity_id: "switch.flur_switch"
           exclude: 
             - entity_id: "light.mitte"
-            - entity_id: "light.fenstee"
+            - entity_id: "light.fenster"
             - entity_id: "light.wohnung"
             - entity_id: "light.kizilampe_2"
             - entity_id: "light.esszimmer_2"
@@ -63,7 +63,7 @@ views:
           - light.hintergrundbeleuchtung
           - type: divider
           - light.wohnung
-          - light.fenstee
+          - light.fenster
           - light.mitte
       - type: vertical-stack
         cards: 
