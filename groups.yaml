@@ -11,6 +11,16 @@ AlleGeraete:
     - group.wohnzimmerlichter
     - group.schlafzimmer
     - switch.flur_switch
+    - light.esszimmer
+    - light.leuchtkugel
+    - light.schlafzimmer
+    - light.stehlampe
+    - group.wohnzimmerlichter
+    - switch.deko_switch
+    - switch.steckdose_deko
+    - switch.lichtschalterkueche
+    - switch.steckdose_fernseher
+    - switch.flur_switch
 
 Küchenlichter:
   name: Küche
