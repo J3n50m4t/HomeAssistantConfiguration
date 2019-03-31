@@ -6,13 +6,10 @@ smart_home:
       - group.wohnzimmerlichter
       - group.all_lights
       - light.esszimmer
-      - light.fenster
       - light.leuchtkugel
       - light.hintergrundbeleuchtung
-      - light.mitte
       - light.schlafzimmer
       - light.stehlampe
-      - light.wohnung
       - light.woodbox
       - light.yeelight_rgb_34ce008e9873
       - switch.anlage_power
@@ -51,21 +48,15 @@ smart_home:
       display_categories: LIGHT
     light.esszimmer:
       name: Esszimmer
-    light.fenster:
-      name: WohnzimmerFenster
     light.leuchtkugel:
       name: Leuchtkugel
     light.hintergrundbeleuchtung:
       name: Hintergrundbeleuchtung
       display_categories: LIGHT
-    light.mitte:
-      name: WohnzimmerMitte
     light.schlafzimmer:
       name:  Schlafzimmer
     light.stehlampe:
       name:  Stehlampe
-    light.wohnung:
-      name: WohnzimmerWohnung
     light.woodbox:
       name: Woodbox
     light.yeelight_rgb_34ce008e9873:
