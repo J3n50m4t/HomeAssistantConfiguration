@@ -3,19 +3,25 @@
 #   icon: mdi:home 
 #   entities:
 #     - group.wohnkuchelichter
-
-Wohnzimmerlichter:
-  name: Wohnzimmer
-  entities:
-    - light.wohnung
-    - light.fenster
-    - light.mitte  
+AlleGeraete:
+  name: Alle Geräte
+  entities: 
+    - group.kuchenlichter
+    - group.wohnkuchelichter
+    - group.wohnzimmerlichter
+    - group.schlafzimmer
 
 Küchenlichter:
   name: Küche
   entities: 
     - light.yeelight_rgb_34ce008e9873
     - switch.lichtschalterkueche
+
+Schlafzimmer:
+  name: Schlafzimmer
+  entities:
+    - light.stehlame
+    - light.schlaflampe
 
 Wohnküchelichter:
   name: Wohnküche    
@@ -30,3 +36,10 @@ Wohnküchelichter:
     - switch.deko_switch
     - switch.steckdose_deko
     - switch.lichtschalterkueche
+
+Wohnzimmerlichter:
+  name: Wohnzimmer
+  entities:
+    - light.wohnung
+    - light.fenster
+    - light.mitte  
