@@ -130,12 +130,6 @@ sun:
 
 system_health:
 
-tts:
-  - platform: google
-
-tradfri:
-  host: !secret tradfri_host
-
 updater:
 
 vacuum:
