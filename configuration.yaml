@@ -101,11 +101,6 @@ notify:
     api_key: !secret join_api_key
     device_id: !secret join_device_id_op6 
     name: Join
-    
-owntracks:
-  max_gps_accuracy: 200
-  mqtt_topic: "owntracks/#"
-    
 panel_iframe:
   ide:
     title: IDE
