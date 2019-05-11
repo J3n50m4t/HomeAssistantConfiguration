@@ -367,10 +367,6 @@ views:
               entity: sensor.vacuum_cleaning_time
               name: Reinigungszeit
               graph: none
-            - type: sensor
-              entity: variable.staubsauger_runcounter
-              name: Anzahl der Reinigungsläufe bis 10
-              graph: none
 
   - title: Tautulli card
     icon: mdi:plex
