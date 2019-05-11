@@ -352,6 +352,11 @@ views:
             show_name: false
             show_state: false
             entity: camera.grafana_fritzbox_traffic
+          - type: picture-entity
+            show_info: false
+            show_name: false
+            show_state: false
+            entity: camera.grafana_tvboard_temperature
           - type: horizontal-stack
             cards:
             - type: sensor

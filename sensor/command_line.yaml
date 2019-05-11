@@ -1,3 +1,6 @@
 - platform: command_line
   name: "Download Fritzbox"
   command: !secret command_line_fritzboxtraffic
+- platform: command_line
+  name: "Download TVBoardTemp"
+  command: !secret command_line_tvboard

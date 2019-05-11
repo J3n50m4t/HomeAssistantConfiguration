@@ -11,6 +11,9 @@ camera:
   - platform: local_file
     name: Grafana_fritzbox_traffic
     file_path: /config/www/grafanaimages/fritzboxtraffic.png
+  - platform: local_file
+    name: Grafana_tvboard_temperature
+    file_path: /config/www/grafanaimages/tvboardtemp.png
 
 config:
 
