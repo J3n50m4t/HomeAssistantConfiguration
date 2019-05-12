@@ -19,7 +19,10 @@ config:
 device_tracker: !include device_tracker.yaml
 
 dreamscreen:
-  ip_address: !secret dreamscreenip
+  devices:
+  - dream_screen:
+    address: !secret dreamscreenip
+    timeout: 5
   
 frontend:
   extra_html_url:
