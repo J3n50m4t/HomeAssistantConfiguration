@@ -4,6 +4,8 @@ air_quality:
 
 alexa: !include assistants/alexa.yaml
 
+api:
+
 automation: !include automations.yaml
   
 camera: 
