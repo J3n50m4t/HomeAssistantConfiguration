@@ -1,7 +1,3 @@
-air_quality:
-  - platform: opensensemap
-    station_id: !secret opensense_id
-
 alexa: !include assistants/alexa.yaml
 
 api:
@@ -22,11 +18,8 @@ config:
 
 device_tracker: !include device_tracker.yaml
 
-discovery:
-
-
 dreamscreen:
-  ip_adress: !secret dreamscreenip
+  ip_address: !secret dreamscreenip
   
 frontend:
   extra_html_url:
