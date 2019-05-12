@@ -20,7 +20,7 @@ views:
       - type: map
         aspect_ratio: 100%
         entities:
-          - device_tracker.dfa703aa_vanessa
+          - device_tracker.a78f3bb3_op6
           - device_tracker.iphone_von_markus
           - zone.home
       - type: custom:monster-card
@@ -45,7 +45,7 @@ views:
       - type: entity-filter
         entities:
           - device_tracker.iphone_von_markus
-          - device_tracker.dfa703aa_vanessa
+          - device_tracker.a78f3bb3_op6
         state_filter:
           - home
         card: 

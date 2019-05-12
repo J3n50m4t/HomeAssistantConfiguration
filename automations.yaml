@@ -18,13 +18,13 @@
     from: home
     platform: state
     to: not_home
-  - entity_id: device_tracker.dfa703aa_vanessa
+  - entity_id: device_tracker.a78f3bb3_op6
     from: home
     platform: state
     to: not_home
   condition:
   - condition: state
-    entity_id: device_tracker.dfa703aa_vanessa
+    entity_id: device_tracker.a78f3bb3_op6
     state: not_home
   - condition: state
     entity_id: device_tracker.iphone_von_markus
