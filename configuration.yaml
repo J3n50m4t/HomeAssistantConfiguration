@@ -2,8 +2,9 @@ air_quality:
   - platform: opensensemap
     station_id: !secret opensense_id
 
-automation: !include automations.yaml
 alexa: !include assistants/alexa.yaml
+
+automation: !include automations.yaml
   
 camera: 
   - platform: mjpeg
