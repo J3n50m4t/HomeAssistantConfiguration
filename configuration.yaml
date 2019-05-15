@@ -49,19 +49,40 @@ homekit:
   auto_start: false
   filter:
     include_entities:
-      - light.wohnzimmer
       - light.esszimmer
-      - light.hintergrundbeleuchtung
       - light.schlafzimmer
       - light.stehlampe
       - light.leuchtkugel
-      - group.kuchenlichter
-      - group.wohnkuchelichter
       - switch.tv_power
       - switch.lichtschalterkueche
       - switch.deko_switch
       - switch.steckdose_deko
-
+      - light.fenster 
+      - light.mitte
+      - light.wohnung
+  entity_config:
+    light.esszimmer:
+      name: Essbereich
+      linked_battery_sensor: sensor.esszimmerschalter
+    light.schlafzimmer:
+      name: Große Schlaflampe
+      linked_battery_sensor: sensor.schlafschalter
+    light.stehlampe:
+      name: Stehlampe
+      linked_battery_sensor: sensor.schlafschalter
+    light.fenster:
+      name: Wohnzimmer Richtung Fenster
+      linked_battery_sensor: sensor.wohnzimmer 
+    light.mitte:
+      name: Wohnzimmer Mittig
+      linked_battery_sensor: sensor.wohnzimmer
+    light.wohnung:
+      name: Wohnzimmer Richtung Wohnung
+      linked_battery_sensor: sensor.wohnzimmer
+    light.leuchtkugel:
+      name: Leuchtkugel
+      linked_battery_sensor: sensor.leuchtkugelschalter
+    
 http:
   base_url: !secret http_base_url
   api_password: !secret http_api_password
