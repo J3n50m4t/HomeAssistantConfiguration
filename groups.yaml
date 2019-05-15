@@ -19,7 +19,7 @@ AlleGeraete:
     - switch.deko_switch
     - switch.steckdose_deko
     - switch.lichtschalterkueche
-    - switch.steckdose_fernseher
+    # - switch.steckdose_fernseher
     - switch.flur_switch
 
 Küchenlichter:

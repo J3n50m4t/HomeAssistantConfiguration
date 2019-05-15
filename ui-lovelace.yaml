@@ -39,8 +39,9 @@ views:
             - entity_id: "switch.deko_switch"
             - entity_id: "switch.steckdose_deko"
             - entity_id: "switch.lichtschalterkueche"
-            - entity_id: "switch.steckdose_fernseher"
+            # - entity_id: "switch.steckdose_fernseher"
             - entity_id: "switch.flur_switch"
+            - entity_id: "switch.tv_power"
           exclude: 
       - type: entity-filter
         entities:
