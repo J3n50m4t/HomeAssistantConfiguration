@@ -163,10 +163,6 @@ views:
                   service_data:
                     entity_id: dreamscreen.dreamscreen_hd
                     mode: "3"
-  - title: Kinderzimmer
-    cards:
-      - type: light
-        entity: light.kizilampe_2
   - title: Schlafzimmer
     cards: 
       - type: picture-glance
