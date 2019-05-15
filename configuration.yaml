@@ -3,8 +3,8 @@ alexa: !include assistants/alexa.yaml
 api:
 
 automation: !include automations.yaml
-  
-camera: 
+
+camera:
   - platform: mjpeg
     mjpeg_url: !secret cameraurl
   - platform: local_file
@@ -23,7 +23,7 @@ dreamscreen:
   - dream_screen:
     address: !secret dreamscreenip
     timeout: 5
-  
+
 frontend:
   extra_html_url:
     - /local/custom_ui/state-card-aftership.html
@@ -44,18 +44,21 @@ homeassistant:
   customize: !include customize.yaml
   whitelist_external_dirs:
     - /config
-    
+
 homekit:
   auto_start: false
   filter:
     include_entities:
       - light.wohnzimmer
-      - light.esszimmer_2
+      - light.esszimmer
       - light.hintergrundbeleuchtung
       - light.schlafzimmer
+      - light.stehlampe
+      - light.leuchtkugel
       - group.kuchenlichter
       - group.wohnkuchelichter
       - switch.tv_power
+      - switch.lichtschalterkueche
       - switch.deko_switch
       - switch.steckdose_deko
 
@@ -78,7 +81,7 @@ light:
   - platform: yeelight
   - platform: flux_led
     automatic_add: false
-    devices: 
+    devices:
       192.168.1.21:
         name: Hintergrundbeleuchtung
         mode: "rgb"
@@ -105,7 +108,7 @@ panel_iframe:
     icon: mdi:code-braces
     url: !secret ideurl
 
-recorder: 
+recorder:
   purge_keep_days: 5
   exclude:
     domains:
@@ -117,7 +120,7 @@ recorder:
       - sensor.date
 
 script: !include scripts.yaml
-        
+
 sensor: !include_dir_merge_list sensor
 
 switch: !include_dir_merge_list switch
@@ -132,14 +135,14 @@ vacuum:
   - platform: xiaomi_miio
     host: !secret vacuum_ip_adress
     token: !secret vacuum_token
-    
+
 variable:
   staubsauger_runcounter:
     value: 0
     attributes:
       icon: mdi:robot-vacuum
-      
-weather: 
+
+weather:
   - platform: darksky
     api_key: !secret darksky_api_key
     mode: hourly
