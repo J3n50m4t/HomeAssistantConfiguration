@@ -21,9 +21,8 @@ device_tracker: !include device_tracker.yaml
 dreamscreen:
   devices:
     - dream_screen:
-      address: !secret dreamscreenip
-      timeout: 5
-
+        address: !secret dreamscreenip
+        timeout: 5
 frontend:
   extra_html_url:
     - /local/custom_ui/state-card-aftership.html
