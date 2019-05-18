@@ -3,12 +3,6 @@
     vacuum_status:
       friendly_name: "Vacuum - Status"
       value_template: "Status: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.status }}"
-    vacuum_weekdays:
-      friendly_name: "Vacuum - Weekdays"
-      value_template: "Hétköznap:"
-    vacuum_weekend:
-      friendly_name: "Vacuum - Weekend"
-      value_template: "Wochenende:"
     vacuum_battery:
       friendly_name: "Vacuum - Battery"
       value_template: "Akku: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.battery_level }}"
@@ -34,7 +28,7 @@
       value_template: "Schmutzsensor: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.sensor_dirty_left }} h"
     vacuum_area_cleaned:
       friendly_name: "Bereich gereinigt"
-      value_template: "{{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaned_area }} m²"
+      value_template: "Bereich gereinigt: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaned_area }} m²"
     vacuum_cleaning_time:
-      friendly_name: "Zeit"
-      value_template: "{{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaning_time  }} min"
+      friendly_name: "Reinigungsdauer"
+      value_template: "Reinigungsdauer: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaning_time  }} min"
