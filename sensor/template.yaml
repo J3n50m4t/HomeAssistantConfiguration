@@ -10,7 +10,7 @@
       unit_of_measurement: '%'
     vacuum_accessories:
       friendly_name: "Vacuum - Zubehör"
-      value_template: "Status der Zubehör"
+      value_template: "Status des Zubehörs"
     vacuum_operation:
       friendly_name: "Vacuum - Operation"
       value_template: "Operation"
