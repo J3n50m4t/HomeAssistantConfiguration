@@ -103,32 +103,32 @@ views:
             show_state: false
             columns: 3
             entities:
-              - entity: dreamscreen.dreamscreen_hd
+              - entity: dreamscreen.dream_screen
                 icon: mdi:youtube-tv
                 name:
                 tap_action:
                   action: call-service
                   service: dreamscreen.set_hdmi_source
                   service_data:
-                    entity_id: dreamscreen.dreamscreen_hd
+                    entity_id: dreamscreen.dream_screen
                     source: "0"
-              - entity: dreamscreen.dreamscreen_hd
+              - entity: dreamscreen.dream_screen
                 icon: mdi:xbox
                 name:
                 tap_action:
                   action: call-service
                   service: dreamscreen.set_hdmi_source
                   service_data:
-                    entity_id: dreamscreen.dreamscreen_hd
+                    entity_id: dreamscreen.dream_screen
                     source: "1"
-              - entity: dreamscreen.dreamscreen_hd
+              - entity: dreamscreen.dream_screen
                 icon: mdi:steam
                 name:
                 tap_action:
                   action: call-service
                   service: dreamscreen.set_hdmi_source
                   service_data:
-                    entity_id: dreamscreen.dreamscreen_hd
+                    entity_id: dreamscreen.dream_screen
                     source: "2"
       - type: vertical-stack
         cards: 
@@ -137,32 +137,32 @@ views:
             show_state: false
             columns: 3
             entities:
-              - entity: dreamscreen.dreamscreen_hd
+              - entity: dreamscreen.dream_screen
                 icon: mdi:power
                 name:
                 tap_action:
                   action: call-service
                   service: dreamscreen.set_mode
                   service_data:
-                    entity_id: dreamscreen.dreamscreen_hd
+                    entity_id: dreamscreen.dream_screen
                     mode: "0"
-              - entity: dreamscreen.dreamscreen_hd
+              - entity: dreamscreen.dream_screen
                 icon: mdi:television
                 name:
                 tap_action:
                   action: call-service
                   service: dreamscreen.set_mode
                   service_data:
-                    entity_id: dreamscreen.dreamscreen_hd
+                    entity_id: dreamscreen.dream_screen
                     mode: "1"
-              - entity: dreamscreen.dreamscreen_hd
+              - entity: dreamscreen.dream_screen
                 icon: mdi:alarm-light
                 name:
                 tap_action:
                   action: call-service
                   service: dreamscreen.set_mode
                   service_data:
-                    entity_id: dreamscreen.dreamscreen_hd
+                    entity_id: dreamscreen.dream_screen
                     mode: "3"
   - title: Schlafzimmer
     cards: 

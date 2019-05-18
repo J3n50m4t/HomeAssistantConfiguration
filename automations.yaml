@@ -126,7 +126,7 @@
   condition: []
   action:
   - data:
-      entity_id: dreamscreen.dreamscreen_hd
+      entity_id: dreamscreen.dream_screen
       mode: '1'
     service: dreamscreen.set_mode
 - id: '1546875223626'
@@ -138,7 +138,7 @@
   condition: []
   action:
   - data:
-      entity_id: dreamscreen.dreamscreen_hd
+      entity_id: dreamscreen.dream_screen
       mode: '0'
     service: dreamscreen.set_mode
 - id: '1547397663898'
