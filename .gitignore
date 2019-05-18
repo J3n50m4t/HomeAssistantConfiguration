@@ -3,6 +3,7 @@ home-assistant*
 .*
 known_devices\.yaml
 traccar\.xml
+aircast\.xml
 www/grafanaimages
 www/images
 deps/
