@@ -52,7 +52,7 @@ views:
           - home
         card: 
           type: glance
-          title: People at home
+          title: Wer ist zuhause
   - title: Wohnküche
     cards:
       - type: entities
