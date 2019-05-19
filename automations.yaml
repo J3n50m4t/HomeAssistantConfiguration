@@ -6,20 +6,18 @@
     to: docked
   condition: []
   action:
-  - alias: ''
+  - alias: Notify iOS app
     data:
-      message: Saugen ist fertig
-      title: Saugroboter ist fertig
-    service: notify.join
+      message: ' Der Staubsauger ist fertig. in {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaning_time  }}
+        min hat er {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaned_area
+        }} m² gereinigt. Verbleibende Akkukapazität: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.battery_level
+        }} %'
+      title: ' Saugroboter fertig'
+    service: notify.ios_iphone_von_markus
 - id: '1539122857421'
   alias: Wenn keiner zuhause, Licht aus
   trigger:
-  - entity_id: device_tracker.iphone_von_markus
-    from: home
-    platform: state
-    to: not_home
-  - entity_id: device_tracker.a78f3bb3_op6
-    from: home
+  - entity_id: group.all_devices
     platform: state
     to: not_home
   condition:
@@ -30,19 +28,22 @@
     entity_id: device_tracker.iphone_von_markus
     state: not_home
   action:
-  - alias: ''
-    data:
+  - data:
       entity_id: group.all_lights
     service: light.turn_off
   - data:
       entity_id: switch.deko_switch
     service: switch.turn_off
-  - data: 
+  - data:
       entity_id: switch.steckdose_deko
     service: switch.turn_off
   - data:
       entity_id: switch.flur_switch
     service: switch.turn_off
+  - data:
+      message: Überprüfe, ob der TV zB noch lief und schalte ihn ab!
+      title: Alle Lichter Ausgeschaltet, da keiner mehr zuhause
+    service: notify.ios_iphone_von_markus
 - id: '1544476061506'
   alias: Starte Saugen durch Abwesenheit
   trigger:
@@ -61,9 +62,10 @@
     data: {}
     service: vacuum.start
   - data:
-      message: Saugen wird gestarted, da abwesend
-      title: Saugroboter startet
-    service: notify.join
+      message: 'Dein Staubsauger fängt jetzt an. Runcounter: {{ states.variable.staubsauger_runcounter.state
+        }}'
+      title: Staubsauger Startet, da keiner zuhause
+    service: notify.ios_iphone_von_markus
   - data:
       value_template: '{{ (variable.state | int) + 1 }}'
       variable: staubsauger_runcounter
@@ -77,9 +79,10 @@
   condition: []
   action:
   - data:
-      message: Saugen wird gestarted
-      title: Saugroboter startet
-    service: notify.join
+      message: 'Dein Staubsauger fängt jetzt an. Runcounter: {{ states.variable.staubsauger_runcounter.state
+        }}'
+      title: Staubsauger Startet
+    service: notify.ios_iphone_von_markus
   - data:
       value_template: '{{ (variable.state | int) + 1 }}'
       variable: staubsauger_runcounter
@@ -114,9 +117,10 @@
       variable: staubsauger_runcounter
     service: variable.set_variable
   - data:
-      message: Saugen wird gestarted
-      title: Saugroboter startet wegen Zeit
-    service: notify.join
+      message: 'Dein Staubsauger fängt jetzt an. Runcounter: {{ states.variable.staubsauger_runcounter.state
+        }}'
+      title: Staubsauger Startet
+    service: notify.ios_iphone_von_markus
 - id: '1546875168005'
   alias: Fernseher schaltet Dreamscreen an
   trigger:
