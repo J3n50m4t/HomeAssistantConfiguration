@@ -7,7 +7,7 @@
   latitude: !secret zone_work_latitude
   longitude: !secret zone_work_longitude
   radius: 100
-  icon: mdi:cube-send
+  icon: mdi:briefcase
 - name: !secret zone_zone3_name
   latitude: !secret zone_zone3_latitude
   longitude: !secret zone_zone3_longitude 
