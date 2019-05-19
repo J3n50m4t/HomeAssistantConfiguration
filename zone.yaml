@@ -6,7 +6,7 @@
 - name: Arbeit
   latitude: !secret zone_work_latitude
   longitude: !secret zone_work_longitude
-  radius: 100
+  radius: 200
   icon: mdi:briefcase
 - name: !secret zone_zone3_name
   latitude: !secret zone_zone3_latitude
