@@ -23,6 +23,7 @@ views:
           - device_tracker.a78f3bb3_op6
           - device_tracker.iphone_von_markus
           - zone.home
+          - zone.arbeit
       - type: custom:monster-card
         show_empty: false
         card: 
