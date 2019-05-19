@@ -6,7 +6,8 @@ automation: !include automations.yaml
 
 camera:
   - platform: mjpeg
-    mjpeg_url: !secret cameraurl
+    mjpeg_url: !secret schlafzimmer_cameraurl
+    name: Schlafzimmer
   - platform: local_file
     name: Grafana_fritzbox_traffic
     file_path: /config/www/grafanaimages/fritzboxtraffic.png
