@@ -89,7 +89,6 @@ homekit:
     
 http:
   base_url: !secret http_base_url
-  api_password: !secret http_api_password
 
 influxdb:
   host: !secret influx_host
