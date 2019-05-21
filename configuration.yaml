@@ -147,6 +147,8 @@ sun:
 
 system_health:
 
+updater: 
+
 vacuum:
   - platform: xiaomi_miio
     host: !secret vacuum_ip_adress

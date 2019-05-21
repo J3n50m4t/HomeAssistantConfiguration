@@ -70,7 +70,7 @@
       title: Staubsauger Startet, da keiner zuhause
       data:
         push:
-          thread-id: "vacuum-group"
+          thread-id: vacuum-group
     service: notify.ios_iphone_von_markus
   - data:
       value_template: '{{ (variable.state | int) + 1 }}'
@@ -90,7 +90,7 @@
       title: Staubsauger Startet
       data:
         push:
-          thread-id: "vacuum-group"
+          thread-id: vacuum-group
     service: notify.ios_iphone_von_markus
   - data:
       value_template: '{{ (variable.state | int) + 1 }}'
@@ -131,7 +131,7 @@
       title: Staubsauger Startet
       data:
         push:
-          thread-id: "vacuum-group"
+          thread-id: vacuum-group
     service: notify.ios_iphone_von_markus
 - id: '1546875168005'
   alias: Fernseher schaltet Dreamscreen an
@@ -186,3 +186,21 @@
   action:
   - delay: 00:05
   - service: homekit.start
+- id: '1515492307283'
+  alias: Update Notification
+  trigger:
+  - entity_id: sensor.ha_update_available
+    from: 'No'
+    platform: state
+    to: 'Yes'
+  condition: []
+  action:
+  - data:
+      data:
+        push:
+          thread-id: ha_update_notification
+      message: "New Home Assistant version {{ states.sensor.ha_latest_version.state}}\
+        \ is available for download.\r\n\r\nYou are currently running {{ states.sensor.ha_installed_version.state}}.\r\
+        \n\r\nhttps://home-assistant.io/blog/categories/release-notes/"
+      title: New Home Assistant version
+    service: notify.ios_iphone_von_markus

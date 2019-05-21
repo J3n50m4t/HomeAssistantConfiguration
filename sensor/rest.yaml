@@ -26,3 +26,7 @@
   resource: !secret rest_plexpy_refresh_libs 
   name: Plex Lib Refresh
   scan_interval: 300
+- platform: rest
+  resource: https://raw.githubusercontent.com/home-assistant/hassio/dev/version.json
+  name: HA Latest Version
+  value_template: '{{ value_json.homeassistant }}'
