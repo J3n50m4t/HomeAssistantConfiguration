@@ -19,6 +19,10 @@ config:
 
 device_tracker: !include device_tracker.yaml
 
+discovery:
+  ignore:
+    - yeelight
+
 dreamscreen:
   devices:
     - dream_screen:
@@ -163,4 +167,9 @@ weather:
     mode: hourly
     name: Wetter
 
+yeelight:
+  devices:
+    !secret yeelight_kitchen:
+      name: Küchenlicht
+      
 zone: !include zone.yaml

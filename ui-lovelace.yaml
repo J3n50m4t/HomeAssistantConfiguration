@@ -28,10 +28,11 @@ views:
         show_empty: false
         card: 
           type: entities
-          title: Lights
+          title: Lampen
         filter:
           include: 
             - entity_id: "light.esszimmer"
+            - entity_id: "light.kuchenlicht"
             - entity_id: "light.leuchtkugel"
             - entity_id: "light.schlafzimmer"
             - entity_id: "light.stehlampe"

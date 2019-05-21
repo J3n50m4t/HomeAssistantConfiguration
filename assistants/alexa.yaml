@@ -6,6 +6,7 @@ smart_home:
       - group.wohnzimmerlichter
       - group.allegeraete
       - light.esszimmer
+      - light.kuchenlicht
       - light.leuchtkugel
       - light.schlafzimmer
       - light.stehlampe
@@ -47,6 +48,8 @@ smart_home:
       display_categories: LIGHT
     light.esszimmer:
       name: Esszimmer
+    light.kuchenlicht:
+      name: Küchenlicht
     light.leuchtkugel:
       name: Leuchtkugel
     light.schlafzimmer:
