@@ -7,7 +7,6 @@ smart_home:
       - group.allegeraete
       - light.esszimmer
       - light.leuchtkugel
-      - light.hintergrundbeleuchtung
       - light.schlafzimmer
       - light.stehlampe
       - light.woodbox
@@ -50,9 +49,6 @@ smart_home:
       name: Esszimmer
     light.leuchtkugel:
       name: Leuchtkugel
-    light.hintergrundbeleuchtung:
-      name: Hintergrundbeleuchtung
-      display_categories: LIGHT
     light.schlafzimmer:
       name:  Schlafzimmer
     light.stehlampe:

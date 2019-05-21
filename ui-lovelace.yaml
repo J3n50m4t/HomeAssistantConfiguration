@@ -33,14 +33,12 @@ views:
           include: 
             - entity_id: "light.esszimmer"
             - entity_id: "light.leuchtkugel"
-            # - entity_id: "light.hintergrundbeleuchtung"
             - entity_id: "light.schlafzimmer"
             - entity_id: "light.stehlampe"
             - entity_id: "group.wohnzimmerlichter"
             - entity_id: "switch.deko_switch"
             - entity_id: "switch.steckdose_deko"
             - entity_id: "switch.lichtschalterkueche"
-            # - entity_id: "switch.steckdose_fernseher"
             - entity_id: "switch.flur_switch"
             - entity_id: "switch.tv_power"
           exclude: 
@@ -61,7 +59,6 @@ views:
           - light.esszimmer
           - group.kuchenlichter
           - switch.deko_switch
-          - light.hintergrundbeleuchtung
           - type: divider
           - light.wohnung
           - light.fenster

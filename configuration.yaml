@@ -100,12 +100,6 @@ ios:
 
 light:
   - platform: yeelight
-  - platform: flux_led
-    automatic_add: false
-    devices:
-      192.168.1.21:
-        name: Hintergrundbeleuchtung
-        mode: "rgb"
 
 logbook:
 
