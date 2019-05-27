@@ -5,9 +5,11 @@ api:
 automation: !include automations.yaml
 
 camera:
-  - platform: mjpeg
-    mjpeg_url: !secret schlafzimmer_cameraurl
-    name: Schlafzimmer
+  - platform: generic
+    verify_ssl: false
+    still_image_url: !secret schlafzimmer_cameraurl_still
+    stream_source: !secret schlafzimmer_cameraurl_stream
+    name: schlafzimmer
   - platform: local_file
     name: Grafana_fritzbox_traffic
     file_path: /config/www/grafanaimages/fritzboxtraffic.png
