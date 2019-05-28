@@ -12,6 +12,7 @@ smart_home:
       - light.stehlampe
       - light.woodbox
       - light.yeelight_rgb_34ce008e9873
+      - sensor.tv_board_temperature
       - switch.anlage_power
       - switch.deko_switch
       - switch.steckdose_deko
@@ -60,6 +61,9 @@ smart_home:
       name: Woodbox
     light.yeelight_rgb_34ce008e9873:
       name: Küchenlampe
+    sensor.tv_board_temperature:
+      name: Wohnzimmertemperatur
+      display_categories: TEMPERATURE_SENSOR
     switch.deko_switch:
       name: Deko
       description: Dekoration im Haus
