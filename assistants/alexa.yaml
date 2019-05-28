@@ -1,6 +1,7 @@
 smart_home:
   filter:
     include_entities:
+      - camera.schlafzimmer
       - group.kuchenlichter
       - group.wohnkuchelichter
       - group.wohnzimmerlichter
@@ -35,6 +36,10 @@ smart_home:
       - script
       - switch
   entity_config:
+    camera.schlafzimmer:
+      name: Schlafzimmer
+      description: Kamera im Schlafzimmer
+      display_categories: CAMERA
     group.kuchenlichter:
       name: Küche
       description: Alle Lichter in der Küche
