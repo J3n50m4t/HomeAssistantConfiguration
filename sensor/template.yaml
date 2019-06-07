@@ -32,17 +32,3 @@
     vacuum_cleaning_time:
       friendly_name: "Reinigungsdauer"
       value_template: "Reinigungsdauer: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaning_time  }} min"
-    ha_update_available:
-      friendly_name: 'HA Update Available'
-      value_template: >-
-        {%- if states.sensor.ha_latest_version.state != "unavailable" and states.sensor.ha_latest_version.state != states.sensor.ha_installed_version.state -%}
-           Yes
-        {%- else -%}
-           No
-        {%- endif -%}
-      icon_template: >-
-        {%- if states.sensor.ha_latest_version.state != "unavailable" and states.sensor.ha_latest_version.state != states.sensor.ha_installed_version.state -%}
-          mdi:alert-box
-        {% else %}
-          mdi:approval
-        {% endif %}
