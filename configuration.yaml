@@ -128,6 +128,8 @@ panel_iframe:
     icon: mdi:code-braces
     url: !secret ideurl
 
+person: !include person.yaml
+
 recorder:
   purge_keep_days: 5
   exclude:
