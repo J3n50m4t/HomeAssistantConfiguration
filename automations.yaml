@@ -23,10 +23,6 @@
   - entity_id: group.all_devices
     platform: state
     to: not_home
-  condition:
-  - entity_id: group.all_devices
-    platform: state
-    to: not_home
   action:
   - data:
       entity_id: group.all_lights
