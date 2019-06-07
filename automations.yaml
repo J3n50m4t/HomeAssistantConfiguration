@@ -24,12 +24,9 @@
     platform: state
     to: not_home
   condition:
-  - condition: state
-    entity_id: device_tracker.a78f3bb3_op6
-    state: not_home
-  - condition: state
-    entity_id: device_tracker.iphone_von_markus
-    state: not_home
+  - entity_id: group.all_devices
+    platform: state
+    to: not_home
   action:
   - data:
       entity_id: group.all_lights
