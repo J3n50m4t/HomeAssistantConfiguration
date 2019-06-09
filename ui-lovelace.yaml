@@ -20,8 +20,8 @@ views:
       - type: map
         aspect_ratio: 100%
         entities:
-          - device_tracker.a78f3bb3_op6
-          - device_tracker.iphone_von_markus
+          - !secret person_sensor_person_one
+          - !secret person_sensor_person_two
           - zone.home
           - zone.arbeit
       - type: custom:monster-card
@@ -45,8 +45,8 @@ views:
           exclude: 
       - type: entity-filter
         entities:
-          - device_tracker.iphone_von_markus
-          - device_tracker.a78f3bb3_op6
+          - !secret person_sensor_person_one
+          - !secret person_sensor_person_two
         state_filter:
           - home
         card: 
