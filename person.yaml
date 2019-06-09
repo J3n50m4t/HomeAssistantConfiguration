@@ -1,9 +1,9 @@
 # Example configuration.yaml entry
-- name: !secret person_first_name
-  id: !secret person_first_id
+- name: !secret person_one_name
+  id: !secret person_one_id
   device_trackers:
-    - !secret person_first_device
-- name: !secret person_second_name
-  id: !secret person_second_id
+    - !secret person_one_device_one
+- name: !secret person_two_name
+  id: !secret person_two_id
   device_trackers:
-    - !secret person_second_device
+    - !secret person_two_device_one
