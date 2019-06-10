@@ -32,11 +32,14 @@
     service: switch.turn_off
   - data:
       entity_id: switch.steckdose_deko
+  - data:
     service: switch.turn_off
   - data:
       entity_id: switch.flur_switch
     service: switch.turn_off
   - data:
+      entity_id: switch.lichtschalterkueche
+    service: switch.turn_off
       message: Überprüfe, ob der TV zB noch lief und schalte ihn ab!
       title: Alle Lichter Ausgeschaltet, da keiner mehr zuhause
     service: notify.ios_iphone_von_markus
