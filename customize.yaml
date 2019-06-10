@@ -26,5 +26,5 @@ switch.steckdose_deko:
   friendly_name: Lichtschild Wohnzimmer
 !secret person_sensor_person_one:
   entity_picture: !secret person_one_image
-  !secret person_sensor_person_two:
+!secret person_sensor_person_two:
   entity_picture: !secret person_two_image
