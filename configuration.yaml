@@ -19,7 +19,7 @@ camera:
 
 config:
 
-# device_tracker: !include device_tracker.yaml
+device_tracker: !include device_tracker.yaml
 
 discovery:
   ignore:
