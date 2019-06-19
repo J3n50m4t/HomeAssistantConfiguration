@@ -1,1 +1,8 @@
-platform: bluetooth_le_tracker
+- platform: bluetooth_le_tracker
+- platform: fritz
+  host : 192.168.1.1
+  username: !secret device_tracker_fritz_username
+  password: !secret device_tracker_fritz_password
+  new_device_defaults:
+    track_new_devices: false
+    hide_if_away: true
