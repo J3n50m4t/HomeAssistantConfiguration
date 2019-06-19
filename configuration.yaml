@@ -21,8 +21,11 @@ config:
 
 device_tracker: !include device_tracker.yaml
 
+# igd is for upnp
 discovery:
   ignore:
+    - google_cast
+    - igd
     - yeelight
 
 dreamscreen:
