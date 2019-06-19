@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('updating Git') {
       steps {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/J3n50m4t/HomeAssistantConfiguration.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '9490a13a-5142-45e6-bc07-18d99cfaed13', url: 'https://github.com/J3n50m4t/HomeAssistantConfiguration/']]])
       }
     }
     stage('updating Git on Hassio') {
