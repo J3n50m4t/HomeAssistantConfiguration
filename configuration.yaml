@@ -21,12 +21,39 @@ config:
 
 device_tracker: !include device_tracker.yaml
 
-# # igd is for upnp
-# discovery:
-#   ignore:
-#     - google_cast
-#     - igd
-#     - yeelight
+discovery:
+  enable:
+    - homekit
+  ignore:
+    - apple_tv
+    - belkin_wemo
+    - bluesound
+    - bose_soundtouch
+    - denonavr
+    - directv
+    - enigma2
+    - frontier_silicon
+    - google_cast
+    - harmony
+    - igd
+    - logitech_mediaserver
+    - netgear_router
+    - octoprint
+    - openhome
+    - panasonic_viera
+    - philips_hue
+    - plex_mediaserver
+    - roku
+    - sabnzbd
+    - samsung_printer
+    - samsung_tv
+    - sonos
+    - songpal
+    - tellstick
+    - wink
+    - yamaha
+    - yeelight
+    - xiaomi_gw
 
 dreamscreen:
   devices:
