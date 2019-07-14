@@ -56,8 +56,8 @@ homeassistant:
 
 http:
   base_url: !secret http_base_url
+  
 homekit:
-  auto_start: false
     
 influxdb:
   host: !secret influx_host
