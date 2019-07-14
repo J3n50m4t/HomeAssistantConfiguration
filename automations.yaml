@@ -81,14 +81,6 @@
   condition: []
   action:
   - data:
-      message: 'Dein Staubsauger fängt jetzt an. Runcounter: {{ states.variable.staubsauger_runcounter.state
-        }}'
-      title: Staubsauger Startet
-      data:
-        push:
-          thread-id: vacuum-group
-    service: notify.ios_iphone_von_markus
-  - data:
       value_template: '{{ (variable.state | int) + 1 }}'
       variable: staubsauger_runcounter
     service: variable.set_variable
