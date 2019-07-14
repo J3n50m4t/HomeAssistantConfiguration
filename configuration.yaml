@@ -22,8 +22,6 @@ config:
 device_tracker: !include device_tracker.yaml
 
 discovery:
-  enable:
-    - homekit
   ignore:
     - apple_tv
     - belkin_wemo
