@@ -172,5 +172,5 @@
     platform: homeassistant
   condition: []
   action:
-  - delay: 00:05
+  - delay: 00:02
   - service: homekit.start
