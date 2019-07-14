@@ -83,6 +83,34 @@ http:
   base_url: !secret http_base_url
 
 homekit:
+  filter:
+    include_entities:
+      - light.esszimmer
+      - light.fenster
+      - light.kuchenlicht
+      - light.leuchtkugel
+      - light.mitte
+      - light.schlaflampe
+      - light.stehlampe
+      - light.wohnung
+  entity_config:
+    light.esszimmer:
+      name: Esszimmer
+    light.fenster:
+      name: Wohnzimmer Fenster Lampe
+    light.kuchenlicht:
+      name: Küchenlicht
+    light.leuchtkugel:
+      name: Wohnzimmer Deko Leuchte
+    light.mitte:
+      name: Wohnzimmer Mittige Lampe
+    light.schlaflampe:
+      name: Schlafzimmer
+    light.stehlampe:
+      name: Kleine Schlafzimmerlampe
+    light.wohnung:
+      name: Wohnzimmer Wohnungs Lampe
+    
     
 influxdb:
   host: !secret influx_host
