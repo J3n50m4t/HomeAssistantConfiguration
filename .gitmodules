@@ -1,6 +1,3 @@
 [submodule "www/custom_ui/vertical-stack-in-card"]
 	path = www/custom_ui/vertical-stack-in-card
 	url = https://github.com/custom-cards/vertical-stack-in-card.git
-[submodule "www/custom_ui/text-element"]
-	path = www/custom_ui/text-element
-	url = https://github.com/custom-cards/text-element.git
