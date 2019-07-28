@@ -17,7 +17,6 @@ AlleGeraete:
     - light.stehlampe
     - group.wohnzimmerlichter
     - switch.deko_switch
-    - switch.steckdose_deko
     - switch.lichtschalterkueche
     # - switch.steckdose_fernseher
     - switch.flur_switch
@@ -44,7 +43,6 @@ Wohnküchelichter:
     - light.mitte 
     - light.wohnung
     - switch.deko_switch
-    - switch.steckdose_deko
     - switch.lichtschalterkueche
 
 Wohnzimmerlichter:
