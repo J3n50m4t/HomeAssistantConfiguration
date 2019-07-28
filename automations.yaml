@@ -15,7 +15,7 @@
       title: ' Saugroboter fertig'
       data:
         push:
-          thread-id: "vacuum-group"
+          thread-id: vacuum-group
     service: notify.ios_iphone_von_markus
 - id: '1539122857421'
   alias: Wenn keiner zuhause, Licht aus
@@ -174,3 +174,15 @@
   action:
   - delay: 00:02
   - service: homekit.start
+- id: '1563746340325'
+  alias: 'wasserpumpe aus '
+  trigger:
+  - entity_id: switch.steckdose_deko
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - delay: 00:03:00
+  - data:
+      entity_id: switch.steckdose_deko
+    service: switch.turn_off
