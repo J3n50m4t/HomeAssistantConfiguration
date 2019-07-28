@@ -98,7 +98,7 @@ homekit:
       - switch.tv_power
       - switch.lichtschalterkueche
       - switch.deko_switch
-      - switch.steckdose_Bewaesserung
+      - switch.steckdose_bewaesserung
   entity_config:
     light.esszimmer:
       name: Esszimmer
@@ -122,7 +122,7 @@ homekit:
       name: Küchenleiste
     switch.deko_switch:
       name: Deko Lampions
-    switch.steckdose_Bewaesserung: 
+    switch.steckdose_bewaesserung: 
       name: Bewaesserung
     
     

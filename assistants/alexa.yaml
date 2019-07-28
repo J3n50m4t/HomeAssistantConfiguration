@@ -16,7 +16,7 @@ smart_home:
       - sensor.tv_board_temperature
       - switch.anlage_power
       - switch.deko_switch
-      - switch.steckdose_Bewaesserung
+      - switch.steckdose_bewaesserung
       - switch.lichtschalterkueche
       - switch.tv_power
       - switch.flur_switch
@@ -73,7 +73,7 @@ smart_home:
       name: Deko
       description: Dekoration im Haus
       display_categories: LIGHT
-    switch.steckdose_Bewaesserung:
+    switch.steckdose_bewaesserung:
       name: Bewässerung
       description: Bewässerung auf dem Balkon
       display_categories: switch

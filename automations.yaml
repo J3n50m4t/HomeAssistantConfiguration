@@ -174,12 +174,12 @@
 - id: '1563746340325'
   alias: 'wasserpumpe aus '
   trigger:
-  - entity_id: switch.steckdose_Bewaesserung
+  - entity_id: switch.steckdose_bewaesserung
     platform: state
     to: 'on'
   condition: []
   action:
   - delay: 00:03:00
   - data:
-      entity_id: switch.steckdose_Bewaesserung
+      entity_id: switch.steckdose_bewaesserung
     service: switch.turn_off

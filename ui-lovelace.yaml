@@ -38,7 +38,7 @@ views:
             - entity_id: "light.stehlampe"
             - entity_id: "group.wohnzimmerlichter"
             - entity_id: "switch.deko_switch"
-            - entity_id: "switch.steckdose_Bewaesserung"
+            - entity_id: "switch.steckdose_bewaesserung"
             - entity_id: "switch.lichtschalterkueche"
             - entity_id: "switch.flur_switch"
             - entity_id: "switch.tv_power"
