@@ -148,6 +148,9 @@ life360:
     - moving
   warning_threshold: 2
   error_threshold: 3
+  accounts:
+    - username: !secret LIFE360_USERNAME
+      password: !secret LIFE360_PASSWORD
 
 light:
   - platform: yeelight
