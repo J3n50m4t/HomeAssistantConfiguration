@@ -3,6 +3,7 @@
   id: !secret person_one_id
   device_trackers:
     - !secret person_one_device_one
+    - !secret person_one_device_two
 - name: !secret person_two_name
   id: !secret person_two_id
   device_trackers:
