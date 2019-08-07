@@ -140,6 +140,7 @@ ios:
 life360:
   driving_speed: 39
   interval_seconds: 10
+  prefix: life360
   max_gps_accuracy: 200
   max_update_wait:
     minutes: 45
