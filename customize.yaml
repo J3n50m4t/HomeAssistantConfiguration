@@ -24,3 +24,7 @@ switch.lichtschalterkueche:
   friendly_name: Küchenlicht Leiste
 switch.steckdose_bewaesserung:
   friendly_name: Bewässerung Balkon
+!secret person_sensor_person_one:
+  entity_picture: !secret person_one_image
+!secret person_sensor_person_two:
+  entity_picture: !secret person_two_image
