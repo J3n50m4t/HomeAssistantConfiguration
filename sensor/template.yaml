@@ -40,10 +40,10 @@
       value_template: "Akkustand: {{ states.device_tracker.life360_vanessa.attributes.battery  }} %"
     person_one_wifi:
       friendly_name: !secret person_one_wifi
-      value_template: "{{ states.device_tracker.life360_markus_dittrich.attributes.wifi }}"
+      value_template: "{{ states.device_tracker.life360_markus_dittrich.attributes.wifi_on }}"
     person_two_wifi:
       friendly_name: !secret person_two_wifi
-      value_template: "{{ states.device_tracker.life360_vanessa.attributes.wifi }}"
+      value_template: "{{ states.device_tracker.life360_vanessa.attributes.wifi_on }}"
     person_one_gps:
       friendly_name: !secret person_one_gps
       value_template: "{{ states.device_tracker.life360_markus_dittrich.attributes.gps_accuracy }} m"
