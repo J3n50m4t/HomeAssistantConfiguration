@@ -67,7 +67,14 @@ views:
             icon: mdi:wifi
           - entity: sensor.person_one_gps
             icon: mdi:crosshairs-gps
-          
+       - type: glance
+        title: Money
+        entities:
+          - entity: !secret konto_eins
+            icon: mdi:cash
+          - entity: !secret konto_zwei
+            icon: mdi:cash
+             
 
   - title: Wohnküche
     cards:
