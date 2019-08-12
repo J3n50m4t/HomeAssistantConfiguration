@@ -10,12 +10,6 @@ camera:
     still_image_url: !secret schlafzimmer_cameraurl_still
     stream_source: !secret schlafzimmer_cameraurl_stream
     name: schlafzimmer
-  - platform: local_file
-    name: Grafana_fritzbox_traffic
-    file_path: /config/www/grafanaimages/fritzboxtraffic.png
-  - platform: local_file
-    name: Grafana_tvboard_temperature
-    file_path: /config/www/grafanaimages/tvboardtemp.png
 
 config:
 
@@ -126,15 +120,6 @@ homekit:
       name: Bewaesserung
     
     
-influxdb:
-  host: !secret influx_host
-  database: home_assistant
-  username: !secret influx_username
-  password: !secret influx_password
-  include:
-    domains:
-      - sensor
-
 ios:
 
 life360:
