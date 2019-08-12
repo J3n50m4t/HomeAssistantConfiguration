@@ -53,7 +53,7 @@ views:
           title: Wer ist zuhause
   - title: Markus
     cards: 
-      - type: map<
+      - type: map
         aspect_ratio: 100%
         default_zoom: 11
         entities:
