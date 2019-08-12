@@ -64,6 +64,9 @@ views:
             icon: mdi:battery-30
           - entity: sensor.person_one_wifi
             icon: mdi:wifi
+          - entity: sensor.person_one_gps
+            icon: mdi:crosshairs-gps
+          
 
   - title: Wohnküche
     cards:
