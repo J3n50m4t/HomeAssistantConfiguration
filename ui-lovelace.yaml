@@ -34,7 +34,6 @@ views:
             - entity_id: "light.esszimmer"
             - entity_id: "light.kuchenlicht"
             - entity_id: "light.leuchtkugel"
-            - entity_id: "light.schlafzimmer"
             - entity_id: "light.stehlampe"
             - entity_id: "group.wohnzimmerlichter"
             - entity_id: "switch.deko_switch"
@@ -163,17 +162,17 @@ views:
                   service_data:
                     entity_id: dreamscreen.dream_screen
                     mode: "3"
-  - title: Schlafzimmer
-    cards: 
-      - type: picture-glance
-        title:  Schlafzimmer
-        entities:
-          - light.stehlampe
-          - light.schlaflampe
-        camera_image: camera.schlafzimmer
-      - type: light
-        entity: light.schlafzimmer
-      
+ 
+  - title: Monitoring
+    cards:
+      - type: sensor
+        entity: sensor.tv_board_temperature
+        name: TV Board Temperatur
+        height: 75
+        line_color: "#3498db"
+        icon: mdi:oil-temperature
+        unit: °C
+
   - title: Cams
     icon: mdi:cctv
     cards: 
