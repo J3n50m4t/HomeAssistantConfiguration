@@ -51,6 +51,19 @@ views:
         card: 
           type: glance
           title: Wer ist zuhause
+  - title: Markus
+    cards: 
+      - type: map
+        aspect_ratio: 100%
+        entities:
+          - !secret person_sensor_person_one
+      - type: glance
+        entities:
+          - sensor.person_one_battery
+            icon: mdi:battery-30
+          - sensor.person_one_wifi
+            icon: mdi:wifi
+
   - title: Wohnküche
     cards:
       - type: entities
