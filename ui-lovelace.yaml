@@ -58,10 +58,11 @@ views:
         entities:
           - !secret person_sensor_person_one
       - type: glance
+        title: Phonestate
         entities:
-          - sensor.person_one_battery
+          - entity: sensor.person_one_battery
             icon: mdi:battery-30
-          - sensor.person_one_wifi
+          - entity: sensor.person_one_wifi
             icon: mdi:wifi
 
   - title: Wohnküche
