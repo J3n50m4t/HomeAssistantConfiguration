@@ -1,4 +1,17 @@
 - platform: waze_travel_time
   origin: device_tracker.life360_markus_dittrich
   destination: zone.arbeit
+  name: Arbeitsweg Markus
+  region: 'EU'
+
+- platform: waze_travel_time
+  origin: device_tracker.life360_markus_dittrich
+  destination: zone.home
+  name: Heimweg Markus
+  region: 'EU'
+
+- platform: waze_travel_time
+  origin: device_tracker.life360_markus_dittrich
+  destination: !secret zone3_usage
+  name: !secret zone_zone3_name
   region: 'EU'
