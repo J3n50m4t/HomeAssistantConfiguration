@@ -24,7 +24,7 @@ AlleGeraete:
 Küchenlichter:
   name: Küche
   entities: 
-    - light.yeelight_rgb_34ce008e9873
+    - light.kuchenlicht
     - switch.lichtschalterkueche
 
 Schlafzimmer:
@@ -38,7 +38,7 @@ Wohnküchelichter:
   entities: 
     - light.esszimmer    
     - light.fenster
-    - light.yeelight_rgb_34ce008e9873
+    - light.kuchenlicht
     - light.leuchtkugel
     - light.mitte 
     - light.wohnung
