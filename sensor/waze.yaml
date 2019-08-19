@@ -1,0 +1,4 @@
+- platform: waze_travel_time
+  origin: device_tracker.life360_markus_dittrich
+  destination: zone.arbeit
+  region: 'EU'
