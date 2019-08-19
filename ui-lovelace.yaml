@@ -68,6 +68,15 @@ views:
           - entity: sensor.person_one_gps
             icon: mdi:crosshairs-gps
       - type: glance
+        title: Navigationszeiten
+        entities:
+          - entity: sensor.heimweg_markus
+            name: Zuhause
+          - entity: sensor.arbeitsweg_markus
+            name: Arbeit
+          - entity: !secret zone3_usage_sensor
+            name: !secret zone_zone3_name
+      - type: glance
         title: Money
         entities:
           - entity: !secret konto_eins
