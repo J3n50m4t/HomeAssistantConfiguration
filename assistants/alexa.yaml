@@ -12,7 +12,7 @@ smart_home:
       - light.schlafzimmer
       - light.stehlampe
       - light.woodbox
-      - light.yeelight_rgb_34ce008e9873
+      - light.kuchenlicht
       - sensor.tv_board_temperature
       - switch.anlage_power
       - switch.deko_switch
@@ -64,7 +64,7 @@ smart_home:
       name:  Stehlampe
     light.woodbox:
       name: Woodbox
-    light.yeelight_rgb_34ce008e9873:
+    light.kuchenlicht:
       name: Küchenlampe
     sensor.tv_board_temperature:
       name: Wohnzimmertemperatur
