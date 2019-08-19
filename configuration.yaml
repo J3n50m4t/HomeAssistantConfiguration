@@ -165,7 +165,7 @@ panel_iframe:
 person: !include person.yaml
 
 recorder:
-  purge_keep_days: 5
+  purge_keep_days: 15
   exclude:
     domains:
       - automation
