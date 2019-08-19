@@ -55,7 +55,7 @@ views:
     cards: 
       - type: map
         aspect_ratio: 100%
-        default_zoom: 11
+        default_zoom: 12
         entities:
           - !secret person_sensor_person_one
       - type: glance
@@ -87,7 +87,7 @@ views:
     cards: 
       - type: map
         aspect_ratio: 100%
-        default_zoom: 11
+        default_zoom: 12
         entities:
           - !secret person_sensor_person_two
       - type: glance
