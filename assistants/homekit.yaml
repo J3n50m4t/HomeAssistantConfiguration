@@ -14,6 +14,7 @@ filter:
     - switch.lichtschalterkueche
     - switch.deko_switch
     - switch.steckdose_bewaesserung
+    - sensor.tv_board_temperature
 entity_config:
   light.esszimmer:
     name: Esszimmer
@@ -39,3 +40,5 @@ entity_config:
     name: Deko Lampions
   switch.steckdose_bewaesserung: 
     name: Bewaesserung
+  sensor.tv_board_temperature:
+    name: TV Bord Temperatur
