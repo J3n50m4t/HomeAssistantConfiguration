@@ -1,0 +1,41 @@
+auto_start: false
+filter:
+  include_entities:
+    - light.esszimmer
+    - light.fenster
+    - light.kuchenlicht
+    - light.leuchtkugel
+    - light.mitte
+    - light.schlaflampe
+    - light.stehlampe
+    - light.wohnung
+    - switch.tv_power
+    - switch.tv_power
+    - switch.lichtschalterkueche
+    - switch.deko_switch
+    - switch.steckdose_bewaesserung
+entity_config:
+  light.esszimmer:
+    name: Esszimmer
+  light.fenster:
+    name: Wohnzimmer Fenster Lampe
+  light.kuchenlicht:
+    name: Küchenlicht
+  light.leuchtkugel:
+    name: Wohnzimmer Deko Leuchte
+  light.mitte:
+    name: Wohnzimmer Mittige Lampe
+  light.schlaflampe:
+    name: Schlafzimmer
+  light.stehlampe:
+    name: Kleine Schlafzimmerlampe
+  light.wohnung:
+    name: Wohnzimmer Wohnungs Lampe
+  switch.tv_power:
+    name: Fernseher
+  switch.lichtschalterkueche:
+    name: Küchenleiste
+  switch.deko_switch:
+    name: Deko Lampions
+  switch.steckdose_bewaesserung: 
+    name: Bewaesserung

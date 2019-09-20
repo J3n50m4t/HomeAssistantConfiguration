@@ -64,8 +64,6 @@ smart_home:
       name:  Stehlampe
     light.woodbox:
       name: Woodbox
-    light.kuchenlicht:
-      name: Küchenlampe
     sensor.tv_board_temperature:
       name: Wohnzimmertemperatur
       display_categories: TEMPERATURE_SENSOR
