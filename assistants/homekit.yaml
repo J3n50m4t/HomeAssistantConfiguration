@@ -23,7 +23,7 @@ entity_config:
   light.kuchenlicht:
     name: Küchenlicht
   light.leuchtkugel:
-    name: Wohnzimmer Deko Leuchte
+    name: Leuchtkugel
   light.mitte:
     name: Wohnzimmer Mittige Lampe
   light.schlaflampe:
