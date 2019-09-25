@@ -68,8 +68,8 @@ homeassistant:
   unit_system: metric
   time_zone: Europe/Berlin
   customize: !include customize.yaml
-  whitelist_external_dirs:
-    - /config
+  # whitelist_external_dirs:
+  #   - /config
 
 http:
   base_url: !secret http_base_url

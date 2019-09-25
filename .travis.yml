@@ -7,4 +7,3 @@ script:
   - hass -c . --script check_config
 before_install:
   - mv dummy_secrets.yaml secrets.yaml
-  - mkdir /config
