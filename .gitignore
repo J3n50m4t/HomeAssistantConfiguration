@@ -1,6 +1,5 @@
 secrets.yaml
 home-assistant*
-.*
 known_devices\.yaml
 traccar\.xml
 aircast\.xml
@@ -8,3 +7,11 @@ www/grafanaimages
 www/images
 deps/
 custom_components/__pycache__/
+
+.storage/
+
+custom_components/.mypy_cache/
+
+.HA_VERSION
+
+.uuid
