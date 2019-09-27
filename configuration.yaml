@@ -76,6 +76,8 @@ http:
 
 homekit: !include assistants/homekit.yaml
   
+ios:
+
 life360:
   driving_speed: 39
   interval_seconds: 10
