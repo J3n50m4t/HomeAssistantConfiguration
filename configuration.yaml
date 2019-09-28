@@ -68,8 +68,6 @@ homeassistant:
   unit_system: metric
   time_zone: Europe/Berlin
   customize: !include customize.yaml
-  # whitelist_external_dirs:
-  #   - /config
 
 http:
   base_url: !secret http_base_url
@@ -110,9 +108,10 @@ mqtt:
   username: !secret mqtt_user
   password: !secret mqtt_password
 
-n26:
-  username: !secret n26_email
-  password: !secret n26_password
+# Removed due to 403. Needs investigation
+# n26:
+#   username: !secret n26_email
+#   password: !secret n26_password
 
 panel_iframe:
   ide:
