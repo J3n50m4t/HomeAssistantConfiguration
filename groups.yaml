@@ -30,7 +30,7 @@ Küchenlichter:
 Schlafzimmer:
   name: Schlafzimmer
   entities:
-    - light.stehlame
+    - light.stehlampe
     - light.schlaflampe
 
 Wohnküchelichter:
