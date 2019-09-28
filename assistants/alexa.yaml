@@ -95,4 +95,4 @@ smart_home:
       description: Roborock S50 Saugroboter
       display_categories: switch
     script.find_vacuum:
-      name: Finde Staubsauger
+      name: Staubsauger lokalisieren
