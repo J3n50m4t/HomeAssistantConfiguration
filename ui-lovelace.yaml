@@ -304,7 +304,7 @@ views:
               entity: vacuum.xiaomi_vacuum_cleaner
               style:
                 top: 90%
-                left: 65%
+                left: 50%
                 "--paper-item-icon-color": rgb(115, 122, 130)
             - type: icon
               tap_action: 
@@ -314,7 +314,7 @@ views:
               icon: mdi:home
               style:
                 top: 90%
-                left: 55%
+                left: 40%
                 "--paper-item-icon-color": rgb(115, 122, 130)
             - type: icon
               icon: mdi:play
@@ -324,17 +324,56 @@ views:
               entity: vacuum.xiaomi_vacuum_cleaner
               style:
                 top: 90%
-                left: 45%
+                left: 20%
                 "--paper-item-icon-color": rgb(115, 122, 130)
             - type: icon
-              icon: mdi:stop
+              icon: mdi:pause
               tap_action: 
                 action: call-service
-                service: vacuum.stop
+                service: vacuum.pause
               entity: vacuum.xiaomi_vacuum_cleaner
               style:
                 top: 90%
-                left: 35%
+                left: 30%
+                "--paper-item-icon-color": rgb(115, 122, 130)
+            - type: icon
+              icon: mdi:speedometer-slow
+              tap_action: 
+                action: call-service
+                service: vacuum.set_fan_speed
+                service_data:
+                  entity_id: vacuum.xiaomi_vacuum_cleaner
+                  fan_speed: quiet
+              entity: vacuum.xiaomi_vacuum_cleaner
+              style:
+                top: 90%
+                left: 60%
+                "--paper-item-icon-color": rgb(115, 122, 130)
+            - type: icon
+              icon: mdi:speedometer-medium
+              tap_action: 
+                action: call-service
+                service: vacuum.set_fan_speed
+                service_data:
+                  entity_id: vacuum.xiaomi_vacuum_cleaner
+                  fan_speed: balanced
+              entity: vacuum.xiaomi_vacuum_cleaner
+              style:
+                top: 90%
+                left: 70%
+                "--paper-item-icon-color": rgb(115, 122, 130)
+            - type: icon
+              icon: mdi:speedometer
+              tap_action: 
+                action: call-service
+                service: vacuum.set_fan_speed
+                service_data:
+                  entity_id: vacuum.xiaomi_vacuum_cleaner
+                  fan_speed: turbo
+              entity: vacuum.xiaomi_vacuum_cleaner
+              style:
+                top: 90%
+                left: 80%
                 "--paper-item-icon-color": rgb(115, 122, 130)
             - type: state-label
               entity: sensor.vacuum_operation
