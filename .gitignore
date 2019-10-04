@@ -15,3 +15,5 @@ custom_components/.mypy_cache/
 .HA_VERSION
 
 .uuid
+
+.homekit.state
