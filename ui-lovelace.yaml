@@ -76,13 +76,13 @@ views:
             name: Arbeit
           - entity: !secret zone3_usage_sensor
             name: !secret zone_zone3_name
-      - type: glance
-        title: Money
-        entities:
-          - entity: !secret konto_eins
-            icon: mdi:cash
-          - entity: !secret konto_zwei
-            icon: mdi:cash
+      # - type: glance
+      #   title: Money
+      #   entities:
+      #     - entity: !secret konto_eins
+      #       icon: mdi:cash
+      #     - entity: !secret konto_zwei
+      #       icon: mdi:cash
   - title: Vanessa
     cards: 
       - type: map
