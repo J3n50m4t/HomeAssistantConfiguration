@@ -56,7 +56,6 @@ smart_home:
       name: Schlafzimmer
       description: Alle Lichter im Schlafzimmer
       display_categories: LIGHT
-    group.wohnkuchelichter:
     light.esszimmer:
       name: Esszimmer
     light.kuchenlicht:
