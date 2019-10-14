@@ -52,14 +52,19 @@ smart_home:
       name: Wohnzimmer
       description: Alle Lichter im Wohnzimmer
       display_categories: LIGHT
+    group.schlafzimmer:
+      name: Schlafzimmer
+      description: Alle Lichter im Schlafzimmer
+      display_categories: LIGHT
+    group.wohnkuchelichter:
     light.esszimmer:
       name: Esszimmer
     light.kuchenlicht:
       name: Küchenlicht
     light.leuchtkugel:
       name: Leuchtkugel
-    light.schlafzimmer:
-      name:  Schlafzimmer
+    light.schlaflampe:
+      name:  Schlaflampe
     light.stehlampe:
       name:  Stehlampe
     light.woodbox:
