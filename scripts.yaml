@@ -8,3 +8,10 @@ restart_my_homeassistant:
   alias: Restart my HomeAssistant
   sequence:
     - service: homeassistant.restart
+dreamscreen_off:
+  alias: "DreamScreen - Off"
+  sequence:
+    - service: dreamscreen.set_mode
+      data:
+        entity_id: dreamscreen.dreamscreen
+        mode: 0
