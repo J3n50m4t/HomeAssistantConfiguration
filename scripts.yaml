@@ -13,5 +13,5 @@ dreamscreen_off:
   sequence:
     - service: dreamscreen.set_mode
       data:
-        entity_id: dreamscreen.dreamscreen
+        entity_id: dreamscreen.dream_screen
         mode: 0
