@@ -222,6 +222,18 @@ views:
         line_color: "#3498db"
         icon: mdi:oil-temperature
         unit: °C
+      - type: entities
+        title: AdGuard
+        entities:
+          - sensor.adguard_average_processing_speed
+          - sensor.adguard_dns_queries
+          - sensor.adguard_dns_queries_blocked
+          - sensor.adguard_dns_queries_blocked_ratio
+          - type: divider
+          - switch.adguard_filtering
+          - switch.adguard_protection
+          - switch.adguard_query_log
+          - switch.adguard_safe_browsing
 
   - title: Cams
     icon: mdi:cctv
