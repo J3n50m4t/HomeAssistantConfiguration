@@ -72,10 +72,19 @@ views:
         entities:
           - entity: sensor.heimweg_markus
             name: Zuhause
+            tap_action:
+              action: url
+              url_path: !secret url_path_home_m
           - entity: sensor.arbeitsweg_markus
             name: Arbeit
+            tap_action:
+              action: url
+              url_path: !secret url_path_work_m
           - entity: !secret zone3_usage_sensor
             name: !secret zone_zone3_name
+            tap_action:
+              action: url
+              url_path: !secret url_path_zone3_m
       # - type: glance
       #   title: Money
       #   entities:
