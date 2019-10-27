@@ -85,13 +85,6 @@ views:
             tap_action:
               action: url
               url_path: !secret url_path_zone3_m
-      # - type: glance
-      #   title: Money
-      #   entities:
-      #     - entity: !secret konto_eins
-      #       icon: mdi:cash
-      #     - entity: !secret konto_zwei
-      #       icon: mdi:cash
   - title: Vanessa
     cards: 
       - type: map
@@ -229,20 +222,20 @@ views:
         name: TV Board Temperatur
         height: 75
         line_color: "#3498db"
-        icon: mdi:oil-temperature
+        icon: mdi:temperature
         unit: °C
       - type: entities
         title: AdGuard
         entities:
-          - sensor.adguard_average_processing_speed
-          - sensor.adguard_dns_queries
-          - sensor.adguard_dns_queries_blocked
-          - sensor.adguard_dns_queries_blocked_ratio
-          - type: divider
           - switch.adguard_filtering
           - switch.adguard_protection
           - switch.adguard_query_log
           - switch.adguard_safe_browsing
+          - type: divider
+          - sensor.adguard_average_processing_speed
+          - sensor.adguard_dns_queries
+          - sensor.adguard_dns_queries_blocked
+          - sensor.adguard_dns_queries_blocked_ratio
 
   - title: Cams
     icon: mdi:cctv
