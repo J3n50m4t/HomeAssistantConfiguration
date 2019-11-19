@@ -6,6 +6,7 @@ smart_home:
       - group.wohnkuchelichter
       - group.wohnzimmerlichter
       - group.allegeraete
+      - group.schlafzimmer
       - light.esszimmer
       - light.kuchenlicht
       - light.leuchtkugel
