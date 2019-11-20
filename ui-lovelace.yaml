@@ -221,6 +221,18 @@ views:
         line_color: "#3498db"
         icon: mdi:temperature
         unit: °C
+      - type: sensor
+        entity: sensor.fritzbox_traffic_download  
+        name: Download gesamt
+        height: 75
+        icon: mdi:download
+        unit: MB
+      - type: sensor
+        entity: sensor.fritzbox_traffic_upload 
+        name: Upload gesamt
+        height: 75
+        icon: mdi:upload
+        unit: MB
       - type: entities
         title: AdGuard
         entities:
