@@ -1,5 +1,48 @@
 - platform: template
   sensors:
+    ############
+    ### FritzBox
+    ############
+    fritzbox_traffic_download:
+      friendly_name: "Bandbreite Download gesamt"
+      value_template: "{{ sensor.fritz_netmonitor.attributes.bytes_received | float / 1000000 }}" 
+      unit_of_measurement: 'MB'
+    fritzbox_traffic_upload:
+      friendly_name: "Bandbreite Upload gesamt"
+      value_template: "{{ sensor.fritz_netmonitor.attributes.bytes_sent | float / 1000000 }}" 
+      unit_of_measurement: 'MB'
+    fritzbox_traffic_transmission_download:
+      friendly_name: "Bandbreite Download aktuell"
+      value_template: "{{ sensor.fritz_netmonitor.attributes.transmission_rate_down | float / 1000000 }}" 
+      unit_of_measurement: 'MB/s'
+    fritzbox_traffic_transmission_upload:
+      friendly_name: "Bandbreite Upload aktuell"
+      value_template: "{{ sensor.fritz_netmonitor.attributes.transmission_rate_up | float / 1000000 }}" 
+      unit_of_measurement: 'MB/s'
+    ############
+    ### Persons
+    ############
+    person_one_battery:
+      friendly_name: !secret person_one_battery
+      value_template: "{{ states.device_tracker.life360_markus_dittrich.attributes.battery }}"
+    person_two_battery:
+      friendly_name: !secret person_two_battery
+      value_template: "{{ states.device_tracker.life360_vanessa.attributes.battery  }}"
+    person_one_wifi:
+      friendly_name: !secret person_one_wifi
+      value_template: "{{ states.device_tracker.life360_markus_dittrich.attributes.wifi_on }}"
+    person_two_wifi:
+      friendly_name: !secret person_two_wifi
+      value_template: "{{ states.device_tracker.life360_vanessa.attributes.wifi_on }}"
+    person_one_gps:
+      friendly_name: !secret person_one_gps
+      value_template: "{{ states.device_tracker.life360_markus_dittrich.attributes.gps_accuracy }} m"
+    person_two_gps:
+      friendly_name: !secret person_two_gps
+      value_template: "{{ states.device_tracker.life360_vanessa.attributes.gps_accuracy }} m"
+    ############
+    ### VACUUM
+    ############
     vacuum_status:
       friendly_name: "Vacuum - Status"
       value_template: "Status: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.status }}"
@@ -32,21 +75,4 @@
     vacuum_cleaning_time:
       friendly_name: "Reinigungsdauer"
       value_template: "Reinigungsdauer: {{ states.vacuum.xiaomi_vacuum_cleaner.attributes.cleaning_time  }} min"
-    person_one_battery:
-      friendly_name: !secret person_one_battery
-      value_template: "{{ states.device_tracker.life360_markus_dittrich.attributes.battery  }}"
-    person_two_battery:
-      friendly_name: !secret person_two_battery
-      value_template: "{{ states.device_tracker.life360_vanessa.attributes.battery  }}"
-    person_one_wifi:
-      friendly_name: !secret person_one_wifi
-      value_template: "{{ states.device_tracker.life360_markus_dittrich.attributes.wifi_on }}"
-    person_two_wifi:
-      friendly_name: !secret person_two_wifi
-      value_template: "{{ states.device_tracker.life360_vanessa.attributes.wifi_on }}"
-    person_one_gps:
-      friendly_name: !secret person_one_gps
-      value_template: "{{ states.device_tracker.life360_markus_dittrich.attributes.gps_accuracy }} m"
-    person_two_gps:
-      friendly_name: !secret person_two_gps
-      value_template: "{{ states.device_tracker.life360_vanessa.attributes.gps_accuracy }} m"
+    
