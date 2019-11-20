@@ -5,19 +5,19 @@
     ############
     fritzbox_traffic_download:
       friendly_name: "Bandbreite Download gesamt"
-      value_template: "{{ sensor.fritz_netmonitor.attributes.bytes_received | float / 1000000 }}" 
+      value_template: "{{ states.sensor.fritz_netmonitor.attributes.bytes_received | float / 1000000 }}" 
       unit_of_measurement: 'MB'
     fritzbox_traffic_upload:
       friendly_name: "Bandbreite Upload gesamt"
-      value_template: "{{ sensor.fritz_netmonitor.attributes.bytes_sent | float / 1000000 }}" 
+      value_template: "{{ states.sensor.fritz_netmonitor.attributes.bytes_sent | float / 1000000 }}" 
       unit_of_measurement: 'MB'
     fritzbox_traffic_transmission_download:
       friendly_name: "Bandbreite Download aktuell"
-      value_template: "{{ sensor.fritz_netmonitor.attributes.transmission_rate_down | float / 1000000 }}" 
+      value_template: "{{ states.sensor.fritz_netmonitor.attributes.transmission_rate_down | float / 1000000 }}" 
       unit_of_measurement: 'MB/s'
     fritzbox_traffic_transmission_upload:
       friendly_name: "Bandbreite Upload aktuell"
-      value_template: "{{ sensor.fritz_netmonitor.attributes.transmission_rate_up | float / 1000000 }}" 
+      value_template: "{{ states.sensor.fritz_netmonitor.attributes.transmission_rate_up | float / 1000000 }}" 
       unit_of_measurement: 'MB/s'
     ############
     ### Persons
