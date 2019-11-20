@@ -100,6 +100,15 @@ light:
 
 logbook:
 
+logger:
+  default: critical
+  logs:
+    # log level for HA core
+    homeassistant.core: fatal
+
+    # log level for SmartThings lights
+    homeassistant.components.fritzbox_netmonitor: debug
+
 lovelace:
   mode: yaml
 
