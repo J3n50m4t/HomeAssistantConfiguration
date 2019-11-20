@@ -1,3 +1,5 @@
+airly:
+
 alexa: !include assistants/alexa.yaml
 
 api:
@@ -108,7 +110,7 @@ mqtt:
   username: !secret mqtt_user
   password: !secret mqtt_password
 
-# Removed due to 403. Needs investigation
+# Removed due to 403. see python_n26
 # n26:
 #   username: !secret n26_email
 #   password: !secret n26_password
