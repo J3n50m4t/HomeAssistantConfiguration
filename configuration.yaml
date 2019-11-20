@@ -6,6 +6,12 @@ api:
 
 automation: !include automations.yaml
 
+camera:
+  - platform: generic
+    verify_ssl: false
+    still_image_url: !secret kinderzimmer_cameraurl_still
+    stream_source: !secret kinderzimmer_cameraurl_stream
+    name: Kinderzimmer
 
 config:
 
