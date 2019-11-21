@@ -250,21 +250,18 @@ views:
       - type: sensor
         entity: sensor.load_1m
         name: 1 min Load
-        height: 75
         line_color: "#3498db"
         hours_to_show: 1
         detail: 2
       - type: sensor
         entity: sensor.load_5m
         name: 5 min Load
-        height: 75
         line_color: "#3498db"
         hours_to_show: 3
         detail: 2
       - type: sensor
         entity: sensor.load_15m
         name: 15 min Load
-        height: 75
         line_color: "#3498db"
         hours_to_show: 5
         detail: 2
