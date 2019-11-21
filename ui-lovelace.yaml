@@ -249,7 +249,7 @@ views:
         name: 1 min Load
         height: 75
         line_color: "#3498db"
-        unit: %
+        unit: "%"
         hours_to_show: 1
         detail: 2
       - type: sensor
@@ -257,7 +257,7 @@ views:
         name: 5 min Load
         height: 75
         line_color: "#3498db"
-        unit: %
+        unit: "%"
         hours_to_show: 3
         detail: 2
       - type: sensor
@@ -265,7 +265,7 @@ views:
         name: 15 min Load
         height: 75
         line_color: "#3498db"
-        unit: %
+        unit: "%"
         hours_to_show: 5
         detail: 2
       - type: entities
