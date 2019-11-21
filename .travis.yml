@@ -17,4 +17,5 @@ before_install:
   - conda config --set always_yes yes --set changeps1 no
   # Useful for debugging any issues with conda
   - conda info -a
+  - conda install av -c conda-forge
   - mv dummy_secrets.yaml secrets.yaml
