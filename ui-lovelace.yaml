@@ -250,9 +250,9 @@ views:
     icon: mdi:cctv
     cards: 
       - type: picture-entity
-        name: Schlafzimmer
-        entity: camera.schlafzimmer
-        camera_image: camera.schlafzimmer
+        name: Kinderzimmer
+        entity: camera.kinderzimmer
+        camera_image: camera.kinderzimmer
 
   - title: Tautulli card
     icon: mdi:plex
