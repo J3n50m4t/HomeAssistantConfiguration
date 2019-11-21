@@ -236,20 +236,10 @@ views:
         icon: mdi:upload
         unit: MB
       - type: sensor
-        entity: sensor.kinderzimmer
-        name: Kinderzimmer Temperatur
-        height: 75
-        line_color: "#3498db"
-        icon: mdi:temperature
-        unit: °C
-        hours_to_show: 8
-        detail: 2
-      - type: sensor
         entity: sensor.load_1m
         name: 1 min Load
         height: 75
         line_color: "#3498db"
-        unit: "%"
         hours_to_show: 1
         detail: 2
       - type: sensor
@@ -257,7 +247,6 @@ views:
         name: 5 min Load
         height: 75
         line_color: "#3498db"
-        unit: "%"
         hours_to_show: 3
         detail: 2
       - type: sensor
@@ -265,7 +254,6 @@ views:
         name: 15 min Load
         height: 75
         line_color: "#3498db"
-        unit: "%"
         hours_to_show: 5
         detail: 2
       - type: entities
