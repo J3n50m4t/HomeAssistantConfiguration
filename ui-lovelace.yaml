@@ -215,12 +215,26 @@ views:
   - title: Monitoring
     cards:
       - type: sensor
-        entity: sensor.tv_board_temperature
-        name: TV Board Temperatur
+        entity: sensor.kinderzimmer
+        name: Kinderzimmer Temperatur
         height: 75
         line_color: "#3498db"
         icon: mdi:temperature
         unit: °C
+        hours_to_show: 8
+        detail: 2
+      - type: sensor
+        entity: sensor.fritzbox_traffic_download  
+        name: Download gesamt
+        height: 75
+        icon: mdi:download
+        unit: MB
+      - type: sensor
+        entity: sensor.fritzbox_traffic_upload 
+        name: Upload gesamt
+        height: 75
+        icon: mdi:upload
+        unit: MB
       - type: entities
         title: AdGuard
         entities:
@@ -238,9 +252,9 @@ views:
     icon: mdi:cctv
     cards: 
       - type: picture-entity
-        name: Schlafzimmer
-        entity: camera.schlafzimmer
-        camera_image: camera.schlafzimmer
+        name: Kinderzimmer
+        entity: camera.kinderzimmer
+        camera_image: camera.kinderzimmer
 
   - title: Tautulli card
     icon: mdi:plex

@@ -9,9 +9,9 @@ automation: !include automations.yaml
 camera:
   - platform: generic
     verify_ssl: false
-    still_image_url: !secret schlafzimmer_cameraurl_still
-    stream_source: !secret schlafzimmer_cameraurl_stream
-    name: schlafzimmer
+    still_image_url: !secret kinderzimmer_cameraurl_still
+    stream_source: !secret kinderzimmer_cameraurl_stream
+    name: Kinderzimmer
 
 config:
 
@@ -99,6 +99,15 @@ light:
 
 
 logbook:
+
+logger:
+  default: critical
+  logs:
+    # log level for HA core
+    homeassistant.core: fatal
+
+    # log level for SmartThings lights
+    homeassistant.components.fritzbox_netmonitor: debug
 
 lovelace:
   mode: yaml
