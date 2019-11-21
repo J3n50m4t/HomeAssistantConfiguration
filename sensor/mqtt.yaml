@@ -1,4 +1,5 @@
 - platform: mqtt
-  name: "TV Board Temperature"
+  # needs refactoring to kinderzimmer
+  name: "Kinderzimmer"
   state_topic: "tvboardtemp"
   unit_of_measurement: '°C'
