@@ -223,6 +223,7 @@ views:
         unit: °C
         hours_to_show: 8
         detail: 2
+        graph: line
       - type: sensor
         entity: sensor.fritzbox_traffic_download  
         name: Download gesamt
@@ -253,16 +254,19 @@ views:
         line_color: "#3498db"
         hours_to_show: 1
         detail: 2
+        graph: line
       - type: sensor
         entity: sensor.load_5m
         name: 5 min Load
         line_color: "#3498db"
         hours_to_show: 3
         detail: 2
+        graph: line
       - type: sensor
         entity: sensor.load_15m
         name: 15 min Load
         line_color: "#3498db"
+        graph: line
         hours_to_show: 5
         detail: 2
       - type: entities
