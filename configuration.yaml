@@ -147,6 +147,8 @@ script: !include scripts.yaml
 
 sensor: !include_dir_merge_list sensor
 
+speedtestdotnet: 
+
 switch: !include_dir_merge_list switch
 
 sun:

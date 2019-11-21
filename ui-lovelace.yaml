@@ -236,6 +236,18 @@ views:
         icon: mdi:upload
         unit: MB
       - type: sensor
+        entity: sensor.speedtest_download
+        name: 
+        height: 75
+      - type: sensor
+        entity: sensor.speedtest_upload
+        name: Upload Speedtest
+        height: 75
+      - type: sensor
+        entity: sensor.speedtest_ping
+        name: Ping
+        height: 75
+      - type: sensor
         entity: sensor.load_1m
         name: 1 min Load
         height: 75
