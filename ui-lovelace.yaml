@@ -239,15 +239,15 @@ views:
       - type: sensor
         entity: sensor.speedtest_download
         name: 
-        height: 75
+        graph: line
       - type: sensor
         entity: sensor.speedtest_upload
         name: Upload Speedtest
-        height: 75
+        graph: line
       - type: sensor
         entity: sensor.speedtest_ping
         name: Ping
-        height: 75
+        graph: line
       - type: sensor
         entity: sensor.load_1m
         name: 1 min Load
