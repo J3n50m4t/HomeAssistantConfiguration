@@ -148,6 +148,13 @@ recorder:
       - sun.sun
       - sensor.date
 
+sabnzbd: 
+  api_key: !secret sabnzbd_api_key
+  host: !secret sabnzbd_host
+  port: !secret sabnzbd_port
+  ssl: !secret sabnzbd_ssl
+  name: sab
+  
 script: !include scripts.yaml
 
 sensor: !include_dir_merge_list sensor
