@@ -14,6 +14,7 @@ filter:
     - switch.lichtschalterkueche
     - switch.deko_switch
     - switch.steckdose_bewaesserung
+    - switch.flur_switch
     - sensor.kinderzimmer
     - !secret person_sensor_person_one
     - !secret person_sensor_person_two
@@ -44,3 +45,6 @@ entity_config:
     name: Bewaesserung
   sensor.kinderzimmer:
     name: TV Bord Temperatur
+  switch.flur_switch:
+    name: Flur
+  
