@@ -78,6 +78,15 @@ homekit: !include assistants/homekit.yaml
   
 ios:
 
+influxdb:
+  host: a0d7b954-influxdb
+  port: 8086
+  database: homeassistant
+  username: !secret influx_username
+  password: !secret influx_password
+  max_retries: 3
+  default_measurement: state
+
 life360:
   driving_speed: 39
   interval_seconds: 10
@@ -103,11 +112,7 @@ logbook:
 logger:
   default: critical
   logs:
-    # log level for HA core
     homeassistant.core: fatal
-
-    # log level for SmartThings lights
-    homeassistant.components.fritzbox_netmonitor: debug
 
 lovelace:
   mode: yaml
@@ -133,7 +138,7 @@ panel_iframe:
 person: !include person.yaml
 
 recorder:
-  purge_keep_days: 15
+  purge_keep_days: 30
   exclude:
     domains:
       - automation
@@ -143,9 +148,18 @@ recorder:
       - sun.sun
       - sensor.date
 
+sabnzbd: 
+  api_key: !secret sabnzbd_api_key
+  host: !secret sabnzbd_host
+  port: !secret sabnzbd_port
+  ssl: !secret sabnzbd_ssl
+  name: sab
+  
 script: !include scripts.yaml
 
 sensor: !include_dir_merge_list sensor
+
+speedtestdotnet: 
 
 switch: !include_dir_merge_list switch
 

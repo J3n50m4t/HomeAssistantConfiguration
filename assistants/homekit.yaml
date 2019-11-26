@@ -14,26 +14,34 @@ filter:
     - switch.lichtschalterkueche
     - switch.deko_switch
     - switch.steckdose_bewaesserung
+    - switch.flur_switch
     - sensor.kinderzimmer
     - !secret person_sensor_person_one
     - !secret person_sensor_person_two
 entity_config:
   light.esszimmer:
     name: Esszimmer
+    linked_battery_sensor: sensor.esszimmerschalter
   light.fenster:
     name: Wohnzimmer Fenster Lampe
+    linked_battery_sensor: sensor.wohnzimmer
   light.kuchenlicht:
     name: Küchenlicht
   light.leuchtkugel:
     name: Leuchtkugel
+    linked_battery_sensor: sensor.leuchtkugelschalter
   light.mitte:
     name: Wohnzimmer Mittige Lampe
+    linked_battery_sensor: sensor.wohnzimmer
   light.schlaflampe:
     name: Schlafzimmer
+    linked_battery_sensor: sensor.schlafschalter
   light.stehlampe:
     name: Kleine Schlafzimmerlampe
+    linked_battery_sensor: sensor.schlafschalter
   light.wohnung:
     name: Wohnzimmer Wohnungs Lampe
+    linked_battery_sensor: sensor.wohnzimmer
   switch.tv_power:
     name: Fernseher
   switch.lichtschalterkueche:
@@ -44,3 +52,6 @@ entity_config:
     name: Bewaesserung
   sensor.kinderzimmer:
     name: TV Bord Temperatur
+  switch.flur_switch:
+    name: Flur
+  

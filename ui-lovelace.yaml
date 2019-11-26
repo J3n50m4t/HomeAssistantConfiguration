@@ -223,18 +223,75 @@ views:
         unit: °C
         hours_to_show: 8
         detail: 2
-      - type: sensor
-        entity: sensor.fritzbox_traffic_download  
-        name: Download gesamt
-        height: 75
-        icon: mdi:download
-        unit: MB
-      - type: sensor
-        entity: sensor.fritzbox_traffic_upload 
-        name: Upload gesamt
-        height: 75
-        icon: mdi:upload
-        unit: MB
+        graph: line
+      # - type: vertical-stack
+      #   title: Fritzbox
+      #   cards:
+      #     - type: sensor
+      #       entity: sensor.fritzbox_traffic_download  
+      #       name: Download gesamt
+      #       height: 75
+      #       icon: mdi:download
+      #       unit: MB
+      #     - type: sensor
+      #       entity: sensor.fritzbox_traffic_upload 
+      #       name: Upload gesamt
+      #       height: 75
+      #       icon: mdi:upload
+      #       unit: MB
+      - type: vertical-stack
+        title: Speedtest
+        cards:
+          - type: sensor
+            entity: sensor.speedtest_download
+            graph: line
+          - type: sensor
+            entity: sensor.speedtest_upload
+            graph: line
+          - type: sensor
+            entity: sensor.speedtest_ping
+            graph: line
+      - type: vertical-stack
+        title: Load
+        cards:
+          - type: sensor
+            entity: sensor.load_1m
+            name: 1 min Load
+            line_color: "#3498db"
+            hours_to_show: 1
+            detail: 2
+            graph: line
+          - type: sensor
+            entity: sensor.load_5m
+            name: 5 min Load
+            line_color: "#3498db"
+            hours_to_show: 3
+            detail: 2
+            graph: line
+          - type: sensor
+            entity: sensor.load_15m
+            name: 15 min Load
+            line_color: "#3498db"
+            graph: line
+            hours_to_show: 5
+            detail: 2
+      - type: entities
+        title: Downloads
+        entities:
+          - sensor.rtorrent_down_speed
+          - sensor.rtorrent_up_speed
+          - sensor.sab_current_status
+          - sensor.sab_speed
+          - sensor.sab_queue_size
+          - sensor.sab_queue_remaining
+          - sensor.sab_disk_size
+          - sensor.sab_disk_free
+          - sensor.sab_queue_count
+          - sensor.sab_day_size
+          - sensor.sab_week_size
+          - sensor.sab_month_size
+          - sensor.sab_total_size
+
       - type: entities
         title: AdGuard
         entities:
