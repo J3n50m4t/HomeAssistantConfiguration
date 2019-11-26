@@ -7,6 +7,8 @@ resources:
     type: js
   - url: /local/custom_ui/vertical-stack-in-card/vertical-stack-in-card.js
     type: js
+  - url: /local/custom_ui/xiaomi_vacuum_map_card/dist/xiaomi-vacuum-map-card.js
+    type: module
     
 title: Zuhause
 views:
@@ -98,8 +100,6 @@ views:
             icon: mdi:wifi
           - entity: sensor.person_two_gps
             icon: mdi:crosshairs-gps
-             
-
   - title: Wohnküche
     cards:
       - type: entities
@@ -619,3 +619,28 @@ views:
           - automation.starte_saugen_durch_zeit
           - automation.staubsauger_runcounter_resetten
           - automation.wenn_keiner_zuhause_licht_aus   
+
+  - title: Vacuum
+    cards:
+      - type: custom:xiaomi-vacuum-map-card
+        entity: vacuum.xiaomi_vacuum
+        map_image: '/local/images/xiaomi_vacuum_map_card/map.png'
+        calibration_points:
+          - vacuum:
+              x: 25500
+              y: 25500
+            map:
+              x: 466
+              y: 1889
+          - vacuum:
+              x: 26500
+              y: 26500
+            map:
+              x: 730
+              y: 1625
+          - vacuum:
+              x: 25500
+              y: 26500
+            map:
+              x: 466
+              y: 1625

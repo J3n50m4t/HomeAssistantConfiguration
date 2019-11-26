@@ -18,3 +18,6 @@
 	path = www/custom_ui/vertical-stack-in-card
 	url = https://github.com/custom-cards/vertical-stack-in-card.git
 	branch = master
+[submodule "www/custom_ui/xiaomi_vacuum_map_card"]
+	path = www/custom_ui/xiaomi_vacuum_map_card
+	url = https://github.com/PiotrMachowski/lovelace-xiaomi-vacuum-map-card.git
