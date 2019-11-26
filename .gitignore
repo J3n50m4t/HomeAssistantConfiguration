@@ -4,7 +4,6 @@ known_devices\.yaml
 traccar\.xml
 aircast\.xml
 www/grafanaimages
-www/images
 deps/
 custom_components/__pycache__/
 
