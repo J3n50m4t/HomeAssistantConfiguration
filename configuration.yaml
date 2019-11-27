@@ -17,6 +17,8 @@ config:
 
 device_tracker: !include device_tracker.yaml
 
+default_config: 
+
 discovery:
   ignore:
     - apple_tv
@@ -118,6 +120,8 @@ lovelace:
   mode: yaml
 
 map:
+
+mobile_app:
 
 mqtt:
   broker: !secret mqtt_domain
