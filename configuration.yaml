@@ -110,9 +110,10 @@ light:
 logbook:
 
 logger:
-  default: critical
+  default: info
   logs:
     homeassistant.core: fatal
+    mobile_app: debug
 
 lovelace:
   mode: yaml
