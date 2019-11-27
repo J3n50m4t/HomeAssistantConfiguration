@@ -17,8 +17,6 @@ config:
 
 device_tracker: !include device_tracker.yaml
 
-default_config: 
-
 discovery:
   ignore:
     - apple_tv
