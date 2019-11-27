@@ -76,6 +76,8 @@ http:
 
 homekit: !include assistants/homekit.yaml
   
+ios:
+
 influxdb:
   host: a0d7b954-influxdb
   port: 8086
