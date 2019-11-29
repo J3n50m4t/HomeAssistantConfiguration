@@ -104,6 +104,10 @@ life360:
 light:
   - platform: yeelight
 
+lock:
+  - platform: nuki
+    host: !secret nuki_lock_home_host
+    token: !secret nuki_lock_home_token
 
 logbook:
 
