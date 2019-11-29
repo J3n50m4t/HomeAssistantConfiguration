@@ -86,10 +86,10 @@ views:
               url_path: !secret url_path_zone3_m
       - type: sensor
         title: Gelaufene Meter
-        entity: sensor_distance_person1
+        entity: sensor.distance_person1
       - type: sensor
         title: Gelaufene Schritte
-        entity: sensor_steps_person1
+        entity: sensor.steps_person1
   - title: Vanessa
     cards: 
       - type: map
