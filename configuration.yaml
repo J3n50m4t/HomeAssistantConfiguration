@@ -1,5 +1,3 @@
-airly:
-
 alexa: !include assistants/alexa.yaml
 
 api:
