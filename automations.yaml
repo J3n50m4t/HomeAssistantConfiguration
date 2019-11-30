@@ -183,15 +183,24 @@
   - data:
       entity_id: switch.steckdose_bewaesserung
     service: switch.turn_off
-  
-- alias: "Action Turn Lights Off"
+- id: '1550779173465'
+  alias: "iPhone Test"
   initial_state: true
   trigger:
     - platform: event
       event_type: ios.action_fired
       event_data:
-        actionName: 'Bed Time'
+        actionName: 'AllLightsOff'
   action:
+  - data:
+      entity_id: group.all_lights
     service: light.turn_off
-    entity_id: group.all_lights
-    
+  - data:
+      entity_id: switch.deko_switch
+    service: switch.turn_off
+  - data:
+      entity_id: switch.flur_switch
+    service: switch.turn_off
+  - data:
+      entity_id: switch.lichtschalterkueche
+    service: switch.turn_off
