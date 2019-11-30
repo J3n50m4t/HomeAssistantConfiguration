@@ -16,7 +16,7 @@
       data:
         push:
           thread-id: vacuum-group
-    service: notify.ios_iphone_von_markus
+    service: notify.mobile_app
 - id: '1539122857421'
   alias: Wenn keiner zuhause, Licht aus
   trigger:
@@ -39,7 +39,7 @@
   - data:
       message: Überprüfe, ob der TV zB noch lief und schalte ihn ab!
       title: Alle Lichter Ausgeschaltet, da keiner mehr zuhause
-    service: notify.ios_iphone_von_markus
+    service: notify.mobile_app
 - id: '1544476061506'
   alias: Starte Saugen durch Abwesenheit
   trigger:
@@ -64,7 +64,7 @@
       data:
         push:
           thread-id: vacuum-group
-    service: notify.ios_iphone_von_markus
+    service: notify.mobile_app
   - data:
       value_template: '{{ (variable.state | int) + 1 }}'
       variable: staubsauger_runcounter
@@ -117,7 +117,7 @@
       data:
         push:
           thread-id: vacuum-group
-    service: notify.ios_iphone_von_markus
+    service: notify.mobile_app
 - id: '1546875168005'
   alias: Fernseher schaltet Dreamscreen an
   trigger:
