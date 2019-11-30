@@ -17,6 +17,22 @@
         push:
           thread-id: vacuum-group
     service: notify.mobile_app
+- id: '1544472184318'
+  alias: Saugroboter Error
+  trigger:
+  - entity_id: vacuum.xiaomi_vacuum_cleaner
+    platform: state
+    to: error
+  condition: []
+  action:
+  - alias: Notify iOS app
+    data:
+      message: 'Der Staubsauger hat einen Fehler'
+      title: 'Der Staubsauger hat einen Fehler'
+      data:
+        push:
+          thread-id: vacuum-group
+    service: notify.mobile_app
 - id: '1539122857421'
   alias: Wenn keiner zuhause, Licht aus
   trigger:
