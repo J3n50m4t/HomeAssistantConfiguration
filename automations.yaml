@@ -184,7 +184,7 @@
       entity_id: switch.steckdose_bewaesserung
     service: switch.turn_off
 - id: '1550779173465'
-  alias: "iPhone Test"
+  alias: "iPhone Action AllLightsOff"
   initial_state: true
   trigger:
     - platform: event
