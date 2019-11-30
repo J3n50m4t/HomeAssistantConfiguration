@@ -134,11 +134,11 @@ mqtt:
 #   username: !secret n26_email
 #   password: !secret n26_password
 
-panel_iframe:
-  ide:
-    title: IDE
-    icon: mdi:code-braces
-    url: !secret ideurl
+# panel_iframe:
+#   ide:
+#     title: IDE
+#     icon: mdi:code-braces
+#     url: !secret ideurl
 
 person: !include person.yaml
 
