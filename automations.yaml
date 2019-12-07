@@ -244,3 +244,14 @@
   - data:
       entity_id: switch.tv_power
     service: switch.toggle
+- alias: 'Remove new devices notification'
+  trigger:
+    - platform: state
+      entity_id: persistent_notification.config_entry_discovery
+      to: notifying
+    - platform: homeassistant
+      event: start
+  action:
+    - service: persistent_notification.dismiss
+      data:
+        notification_id: config_entry_discovery
