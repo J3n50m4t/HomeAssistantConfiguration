@@ -20,8 +20,10 @@ switch.deko_switch:
   friendly_name: Dekoration im Wohnzimmer
 switch.lichtschalterkueche:
   friendly_name: Küchenlicht Leiste
-switch.steckdose_bewaesserung:
-  friendly_name: Bewässerung Balkon
+# switch.steckdose_bewaesserung:
+#   friendly_name: Bewässerung Balkon
+switch.steckdose_weihnachtsstern:
+  friendly_name: Weihnachtsstern im Fenster
 !secret person_sensor_person_one:
   entity_picture: !secret person_one_image
 !secret person_sensor_person_two:

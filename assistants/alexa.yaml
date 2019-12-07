@@ -20,7 +20,8 @@ smart_home:
       - sensor.kinderzimmer
       - switch.anlage_power
       - switch.deko_switch
-      - switch.steckdose_bewaesserung
+      # - switch.steckdose_bewaesserung
+      - switch.steckdose_weihnachtsstern
       - switch.lichtschalterkueche
       - switch.tv_power
       - switch.flur_switch
@@ -79,9 +80,13 @@ smart_home:
       name: Deko
       description: Dekoration im Haus
       display_categories: LIGHT
-    switch.steckdose_bewaesserung:
-      name: Bewässerung
-      description: Bewässerung auf dem Balkon
+    # switch.steckdose_bewaesserung:
+    #   name: Bewässerung
+    #   description: Bewässerung auf dem Balkon
+    #   display_categories: switch
+    switch.steckdose_weihnachtsstern:
+      name: Weihnachtsstern
+      description: Weihnachtsstern im Fenster
       display_categories: switch
     switch.anlage_power:
       name: Stereoanlage
