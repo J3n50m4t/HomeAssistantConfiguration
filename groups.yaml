@@ -14,7 +14,6 @@ AlleGeraete:
     - switch.deko_switch
     - switch.lichtschalterkueche
     # - switch.steckdose_fernseher
-    - switch.flur_switch
 
 Küchenlichter:
   name: Küche
@@ -52,4 +51,14 @@ ha_menu:
   view: no
   name: HA Menu Switches
   entities:
-    - group.kuchenlichter
+    - light.esszimmer    
+    - light.fenster
+    - light.kuchenlicht
+    - light.leuchtkugel
+    - light.mitte 
+    - light.wohnung
+    - switch.deko_switch
+    - switch.lichtschalterkueche
+    - switch.flur_switch
+    - light.schlafzimmer
+    - light.stehlampe
