@@ -6,13 +6,13 @@ aircast\.xml
 www/grafanaimages
 deps/
 custom_components/__pycache__/
-
 .storage/
-
 custom_components/.mypy_cache/
-
 .HA_VERSION
-
 .uuid
-
 .homekit.state
+ .ios.conf
+.storage2/
+glances/
+matrix.yaml
+www/images/
