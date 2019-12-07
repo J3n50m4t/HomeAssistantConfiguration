@@ -232,7 +232,7 @@
     - alias: ''
       data: {}
       service: vacuum.start
-- id: '1550779173467'
+  - id: '1550779173467'
     alias: "iPhone Action Fernseher umschalten"
     initial_state: true
     trigger:
