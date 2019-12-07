@@ -116,6 +116,7 @@ views:
           - light.esszimmer
           - group.kuchenlichter
           - switch.deko_switch
+          - switch.steckdose_weihnachtsstern
           - type: divider
           - light.wohnung
           - light.fenster
