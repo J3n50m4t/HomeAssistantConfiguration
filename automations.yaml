@@ -206,7 +206,7 @@
     - platform: event
       event_type: ios.action_fired
       event_data:
-        actionName: 'AllLightsOff'
+        actionName: 'AllLightsOff '
   action:
   - data:
       entity_id: group.all_lights
