@@ -220,7 +220,7 @@
   - data:
       entity_id: switch.lichtschalterkueche
     service: switch.turn_off
-- id: '1550779173466'
+  - id: '1550779173466'
     alias: "iPhone Action Staubsauger starten"
     initial_state: true
     trigger:
