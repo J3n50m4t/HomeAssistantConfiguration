@@ -46,3 +46,10 @@ Wohnzimmerlichter:
     - light.wohnung
     - light.fenster
     - light.mitte  
+
+ha_menu:
+  control: hidden
+  view: no
+  name: HA Menu Switches
+  entities:
+    - group.kuchenlichter
