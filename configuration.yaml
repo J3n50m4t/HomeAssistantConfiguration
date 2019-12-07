@@ -136,6 +136,13 @@ mqtt:
 #   username: !secret n26_email
 #   password: !secret n26_password
 
+notify:
+  - platform: html5
+    name: browserpush
+    vapid_pub_key: !secret notify_html5_vapid_pub_key
+    vapid_prv_key: !secret notify_html5_vapid_prv_key
+    vapid_email: !secret notify_html5_vapid_email
+
 # panel_iframe:
 #   ide:
 #     title: IDE
