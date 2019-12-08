@@ -27,8 +27,8 @@
   action:
   - alias: Notify iOS app
     data:
-      message: 'Der Staubsauger hat einen Fehler'
-      title: 'Der Staubsauger hat einen Fehler'
+      message: Der Staubsauger hat einen Fehler
+      title: Der Staubsauger hat einen Fehler
       data:
         push:
           thread-id: vacuum-group
@@ -187,26 +187,14 @@
   action:
   - delay: 00:02
   - service: homekit.start
-# - id: '1563746340325'
-#   alias: 'wasserpumpe aus '
-#   trigger:
-#   - entity_id: switch.steckdose_bewaesserung
-#     platform: state
-#     to: 'on'
-#   condition: []
-#   action:
-#   - delay: 00:03:00
-#   - data:
-#       entity_id: switch.steckdose_bewaesserung
-#     service: switch.turn_off
 - id: '1550779173465'
-  alias: "iPhone Action AllLightsOff"
+  alias: iPhone Action AllLightsOff
   initial_state: true
   trigger:
-    - platform: event
-      event_type: ios.action_fired
-      event_data:
-        actionName: 'AllLightsOff '
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: 'AllLightsOff '
   action:
   - data:
       entity_id: group.all_lights
@@ -221,37 +209,50 @@
       entity_id: switch.lichtschalterkueche
     service: switch.turn_off
 - id: '1550779173466'
-  alias: "iPhone Action Staubsauger starten"
+  alias: iPhone Action Staubsauger starten
   initial_state: true
   trigger:
-    - platform: event
-      event_type: ios.action_fired
-      event_data:
-        actionName: 'Staubsauger starten'
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: Staubsauger starten
   action:
   - alias: ''
     data: {}
     service: vacuum.start
 - id: '1550779173467'
-  alias: "iPhone Action Fernseher umschalten"
+  alias: iPhone Action Fernseher umschalten
   initial_state: true
   trigger:
-    - platform: event
-      event_type: ios.action_fired
-      event_data:
-        actionName: 'Fernseher umschalten'
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: Fernseher umschalten
   action:
   - data:
       entity_id: switch.tv_power
     service: switch.toggle
-- alias: 'Remove new devices notification'
+- alias: Remove new devices notification
   trigger:
-    - platform: state
-      entity_id: persistent_notification.config_entry_discovery
-      to: notifying
-    - platform: homeassistant
-      event: start
+  - platform: state
+    entity_id: persistent_notification.config_entry_discovery
+    to: notifying
+  - platform: homeassistant
+    event: start
   action:
-    - service: persistent_notification.dismiss
-      data:
-        notification_id: config_entry_discovery
+  - service: persistent_notification.dismiss
+    data:
+      notification_id: config_entry_discovery
+  id: a287fa7c5e804c07b5d508da93c2ca14
+- id: '1575837347767'
+  alias: Weihnachtsdeko
+  description: Optiona
+  trigger:
+  - event: sunset
+    offset: '-1'
+    platform: sun
+  condition: []
+  action:
+  - data:
+      entity_id: switch.steckdose_weihnachtsstern
+    service: switch.turn_on
