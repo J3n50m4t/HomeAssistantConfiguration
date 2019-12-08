@@ -227,7 +227,7 @@
     - platform: event
       event_type: ios.action_fired
       event_data:
-        actionName: 'Staubsauger starten '
+        actionName: 'Staubsauger starten'
   action:
   - alias: ''
     data: {}
