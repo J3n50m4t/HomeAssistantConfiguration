@@ -245,8 +245,8 @@
       notification_id: config_entry_discovery
   id: a287fa7c5e804c07b5d508da93c2ca14
 - id: '1575837347767'
-  alias: Weihnachtsdeko
-  description: Optiona
+  alias: Weihnachtsdeko abends anschalten
+  description: Bei Sonnenuntergang die Weihnachtsdeko aktivieren
   trigger:
   - event: sunset
     offset: '-1'
@@ -256,3 +256,37 @@
   - data:
       entity_id: switch.steckdose_weihnachtsstern
     service: switch.turn_on
+- id: '1575837521534'
+  alias: Weihnachtsdeko abends ausschalten
+  description: ''
+  trigger:
+  - at: '23:00'
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: switch.steckdose_weihnachtsstern
+    service: switch.turn_off
+- id: '1575837521535'
+    alias: Weihnachtsdeko früh anschalten
+    description: ''
+    trigger:
+    - at: '5:00'
+      platform: time
+    condition: []
+    action:
+    - data:
+        entity_id: switch.steckdose_weihnachtsstern
+      service: switch.turn_on
+- id: '1575837347737'
+  alias: Weihnachtsdeko früh ausschalten
+  description: Bei Sonnenuntergang die Weihnachtsdeko ausschalten
+  trigger:
+  - event: sunrise
+    offset: '+1'
+    platform: sun
+  condition: []
+  action:
+  - data:
+      entity_id: switch.steckdose_weihnachtsstern
+    service: switch.turn_off
