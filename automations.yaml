@@ -1,5 +1,5 @@
-- id: '1544472184317'
-  alias: Saugroboter ist fertig
+- alias: Saugroboter ist fertig
+  id: '1544472184317'
   trigger:
   - entity_id: vacuum.xiaomi_vacuum_cleaner
     platform: state
@@ -17,8 +17,8 @@
         push:
           thread-id: vacuum-group
     service: notify.mobile_app
-- id: '1544472184318'
-  alias: Saugroboter Error
+- alias: Saugroboter Error
+     id: '1544472184318'
   trigger:
   - entity_id: vacuum.xiaomi_vacuum_cleaner
     platform: state
@@ -33,8 +33,8 @@
         push:
           thread-id: vacuum-group
     service: notify.mobile_app
-- id: '1539122857421'
-  alias: Wenn keiner zuhause, Licht aus
+- alias: Wenn keiner zuhause, Licht aus
+  id: '1539122857421'
   trigger:
   - entity_id: group.all_devices
     platform: state
@@ -56,8 +56,8 @@
       message: Überprüfe, ob der TV zB noch lief und schalte ihn ab!
       title: Alle Lichter Ausgeschaltet, da keiner mehr zuhause
     service: notify.mobile_app
-- id: '1544476061506'
-  alias: Starte Saugen durch Abwesenheit
+- alias: Starte Saugen durch Abwesenheit
+  id: '1544476061506'
   trigger:
   - entity_id: group.all_devices
     platform: state
@@ -85,8 +85,8 @@
       value_template: '{{ (variable.state | int) + 1 }}'
       variable: staubsauger_runcounter
     service: variable.set_variable
-- id: '1544476061523'
-  alias: 'Saugroboter counter update '
+- alias: 'Saugroboter counter update '
+  id: '1544476061523'
   trigger:
   - entity_id: vacuum.xiaomi_vacuum_cleaner
     platform: state
@@ -97,8 +97,8 @@
       value_template: '{{ (variable.state | int) + 1 }}'
       variable: staubsauger_runcounter
     service: variable.set_variable
-- id: '1544565337548'
-  alias: Staubsauger RunCounter Resetten
+- alias: Staubsauger RunCounter Resetten
+  id: '1544565337548'
   trigger:
   - at: '8:50'
     platform: time
@@ -108,8 +108,8 @@
       value: '0'
       variable: staubsauger_runcounter
     service: variable.set_variable
-- id: '1544910582816'
-  alias: Starte Saugen durch Zeit
+- alias: Starte Saugen durch Zeit
+  id: '1544910582816'
   trigger:
   - at: '10:30'
     platform: time
@@ -134,8 +134,8 @@
         push:
           thread-id: vacuum-group
     service: notify.mobile_app
-- id: '1546875168005'
-  alias: Fernseher schaltet Dreamscreen an
+- alias: Fernseher schaltet Dreamscreen an
+  id: '1546875168005'
   trigger:
   - entity_id: switch.tv_power
     platform: state
@@ -146,8 +146,8 @@
       entity_id: dreamscreen.dream_screen
       mode: '1'
     service: dreamscreen.set_mode
-- id: '1546875223626'
-  alias: Fernseher schaltet Dreamscreen aus
+- alias: Fernseher schaltet Dreamscreen aus
+  id: '1546875223626'
   trigger:
   - entity_id: switch.tv_power
     platform: state
@@ -158,8 +158,8 @@
       entity_id: dreamscreen.dream_screen
       mode: '0'
     service: dreamscreen.set_mode
-- id: '1547397663898'
-  alias: Automatisierungen An
+- alias: Automatisierungen An
+  id: '1547397663898'
   trigger:
   - at: '1:00'
     platform: time
@@ -178,8 +178,8 @@
   - data:
       entity_id: group.all_automations
     service: automation.turn_on
-- id: '1550779173464'
-  alias: Starte Homekit mit Delay
+- alias: Starte Homekit mit Delay
+  id: '1550779173464'
   trigger:
   - event: start
     platform: homeassistant
@@ -187,8 +187,8 @@
   action:
   - delay: 00:02
   - service: homekit.start
-- id: '1550779173465'
-  alias: iPhone Action AllLightsOff
+- alias: iPhone Action AllLightsOff
+  id: '1550779173465'
   initial_state: true
   trigger:
   - platform: event
@@ -208,8 +208,8 @@
   - data:
       entity_id: switch.lichtschalterkueche
     service: switch.turn_off
-- id: '1550779173466'
-  alias: iPhone Action Staubsauger starten
+- alias: iPhone Action Staubsauger starten
+  id: '1550779173466'
   initial_state: true
   trigger:
   - platform: event
@@ -220,8 +220,8 @@
   - alias: ''
     data: {}
     service: vacuum.start
-- id: '1550779173467'
-  alias: iPhone Action Fernseher umschalten
+- alias: iPhone Action Fernseher umschalten
+  id: '1550779173467'
   initial_state: true
   trigger:
   - platform: event
@@ -244,8 +244,8 @@
     data:
       notification_id: config_entry_discovery
   id: a287fa7c5e804c07b5d508da93c2ca14
-- id: '1575837347767'
-  alias: Weihnachtsdeko abends anschalten
+- alias: Weihnachtsdeko abends anschalten
+  id: '1575837347767'
   description: Bei Sonnenuntergang die Weihnachtsdeko aktivieren
   trigger:
   - event: sunset
@@ -256,8 +256,8 @@
   - data:
       entity_id: switch.steckdose_weihnachtsstern
     service: switch.turn_on
-- id: '1575837521534'
-  alias: Weihnachtsdeko abends ausschalten
+- alias: Weihnachtsdeko abends ausschalten
+  id: '1575837521534'
   description: ''
   trigger:
   - at: '23:00'
@@ -267,8 +267,8 @@
   - data:
       entity_id: switch.steckdose_weihnachtsstern
     service: switch.turn_off
-- id: '1575837521535'
-    alias: Weihnachtsdeko früh anschalten
+- alias: Weihnachtsdeko früh anschalten
+  id: '1575837521535'
     description: ''
     trigger:
     - at: '5:00'
@@ -278,8 +278,8 @@
     - data:
         entity_id: switch.steckdose_weihnachtsstern
       service: switch.turn_on
-- id: '1575837347737'
-  alias: Weihnachtsdeko früh ausschalten
+- alias: Weihnachtsdeko früh ausschalten
+  id: '1575837347737'
   description: Bei Sonnenuntergang die Weihnachtsdeko ausschalten
   trigger:
   - event: sunrise
