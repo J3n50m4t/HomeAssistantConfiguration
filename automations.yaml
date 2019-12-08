@@ -18,7 +18,7 @@
           thread-id: vacuum-group
     service: notify.mobile_app
 - alias: Saugroboter Error
-     id: '1544472184318'
+  id: '1544472184318'
   trigger:
   - entity_id: vacuum.xiaomi_vacuum_cleaner
     platform: state
@@ -267,17 +267,17 @@
   - data:
       entity_id: switch.steckdose_weihnachtsstern
     service: switch.turn_off
-- alias: Weihnachtsdeko früh anschalten
+- alias: Weihnachtsdeko frueh anschalten
   id: '1575837521535'
-    description: ''
-    trigger:
-    - at: '5:00'
-      platform: time
-    condition: []
-    action:
-    - data:
-        entity_id: switch.steckdose_weihnachtsstern
-      service: switch.turn_on
+  description: ''
+  trigger:
+  - at: '5:00'
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: switch.steckdose_weihnachtsstern
+    service: switch.turn_on
 - alias: Weihnachtsdeko früh ausschalten
   id: '1575837347737'
   description: Bei Sonnenuntergang die Weihnachtsdeko ausschalten
