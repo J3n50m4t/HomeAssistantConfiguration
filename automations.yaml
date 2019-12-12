@@ -290,3 +290,17 @@
   - data:
       entity_id: switch.steckdose_weihnachtsstern
     service: switch.turn_off
+- alias: Deko abends ausschalten
+  id: '1575837347738'
+  description: Alle Lampen ausschalten, die der Deko Gruppe zugewiesen sind
+  trigger:
+    - at: '23:00'
+      platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: group.dekoration
+    service: switch.turn_off
+  - data:
+      entity_id: group.dekoration
+    service: light.turn_off
