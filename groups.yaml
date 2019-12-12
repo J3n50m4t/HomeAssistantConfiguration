@@ -62,3 +62,11 @@ ha_menu:
     - switch.flur_switch
     - light.schlafzimmer
     - light.stehlampe
+
+Dekoration:
+  view: no
+  name: Dekoration
+  entities:
+    - switch.deko_switch
+    - switch.steckdose_weihnachtsstern
+    - switch.lichtschild

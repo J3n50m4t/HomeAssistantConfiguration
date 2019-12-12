@@ -22,7 +22,6 @@
         friendly_name: "Fernseher Input"
         command_on: !secret broadlink_ir_tv_input_command_on
         command_off: !secret broadlink_ir_tv_input_command_off
-
     anlage_volume:
       friendly_name: "Stereoanlage Volume"
       command_on: !secret broadlink_ir_stereoanlage_volume_command_on
@@ -31,7 +30,7 @@
       friendly_name: "Stereoanlage"
       command_on: !secret broadlink_ir_stereoanlage_power_command_on
       command_off: !secret broadlink_ir_stereoanlage_power_command_off
-    Lichtschild:
+    lichtschild:
       friendly_name: "Lichtschild"
       command_on: !secret broad_link_codes_brennstuhl_a_command_on
       command_off: !secret broad_link_codes_brennstuhl_a_command_off
