@@ -290,6 +290,8 @@ views:
       - type: entities
         title: Downloads
         entities:
+          - sensor.rtorrent_down_speed
+          - sensor.rtorrent_up_speed
           - sensor.sab_status
           - sensor.sab_speed
           - sensor.sab_queue
