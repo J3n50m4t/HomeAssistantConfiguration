@@ -15,4 +15,3 @@ custom_components/.mypy_cache/
 .storage2/
 glances/
 matrix.yaml
-www/images/
