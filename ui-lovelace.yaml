@@ -19,7 +19,7 @@ views:
       - type: glance
         title: Schlafzimmer
         show_state: false
-        columns: 2
+        columns: 3
         entities:
           - entity: light.stehlampe
             tap_action:
@@ -129,7 +129,7 @@ views:
           - entity: sensor.person_one_gps
             icon: mdi:crosshairs-gps
       - type: glance
-        title: Navigationszeiten
+        title: Navigationszeiten (h4i)
         entities:
           - entity: sensor.heimweg_markus
             name: Zuhause
