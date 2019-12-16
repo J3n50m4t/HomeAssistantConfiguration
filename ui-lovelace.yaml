@@ -27,6 +27,11 @@ views:
           - entity: light.schlaflampe
             tap_action:
               action: toggle
+          - entity: vacuum.xiaomi_vacuum_cleaner
+            tap_action: 
+              action: call-service
+              service: vacuum.start
+              confirmation: true
       - type: glance
         title: Wohnzimmer
         show_state: false
@@ -35,6 +40,10 @@ views:
           - entity: group.wohnzimmerlichter
             tap_action:
               action: toggle
+            hold_action: 
+              action: more-info
+            double_tap_action: 
+                action: more-info
           - entity: light.leuchtkugel
             tap_action:
               action: toggle
@@ -127,16 +136,22 @@ views:
             tap_action:
               action: url
               url_path: !secret url_path_home_m
+            hold_action:
+              action: more-info
           - entity: sensor.arbeitsweg_markus
             name: Arbeit
             tap_action:
               action: url
               url_path: !secret url_path_work_m
+            hold_action:
+                action: more-info
           - entity: !secret zone3_usage_sensor
             name: !secret zone_zone3_name
             tap_action:
               action: url
               url_path: !secret url_path_zone3_m
+            hold_action:
+                action: more-info
       - type: sensor
         title: Gelaufene Meter
         entity: sensor.distance_person1
