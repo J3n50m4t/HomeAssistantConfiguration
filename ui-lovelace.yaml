@@ -16,13 +16,72 @@ views:
     cards:
       - type: weather-forecast
         entity: weather.wetter
-      - type: map
-        aspect_ratio: 100%
+      - type: glance
+        title: Schlafzimmer
+        show_state: false
+        columns: 2
+        entities:
+          - entity: light.stehlampe
+            tap_action:
+              action: toggle
+          - entity: light.schlaflampe
+            tap_action:
+              action: toggle
+      - type: glance
+        title: Wohnzimmer
+        show_state: false
+        columns: 6
+        entities:
+          - entity: group.wohnzimmerlichter
+            tap_action:
+              action: toggle
+          - entity: light.leuchtkugel
+            tap_action:
+              action: toggle
+          - entity: switch.deko_switch
+            tap_action:
+              action: toggle
+          - entity: switch.steckdose_weihnachtsstern
+            tap_action:
+              action: toggle
+          - entity: switch.tv_power
+            tap_action:
+              action: toggle
+          - entity: switch.lichtschild
+            tap_action:
+              action: toggle
+      - type: glance
+        title: Esszimmer
+        show_state: false
+        columns: 1
+        entities:
+          - entity: light.esszimmer
+            tap_action:
+              action: toggle
+      - type: glance
+        title: Küche
+        show_state: false
+        columns: 2
+        entities:
+          - entity: light.kuchenlicht
+            tap_action:
+              action: toggle
+          - entity: switch.lichtschalterkueche
+            tap_action:
+              action: toggle
+
+            
+      - type: entity-filter
         entities:
           - !secret person_sensor_person_one
           - !secret person_sensor_person_two
-          - zone.home
-          - zone.arbeit
+        state_filter:
+          - home
+        card: 
+          type: glance
+          title: Wer ist zuhause
+  - title: Allgemein
+    cards:
       - type: custom:monster-card
         show_empty: false
         card: 
@@ -44,15 +103,6 @@ views:
             - entity_id: "switch.flur_switch"
             - entity_id: "switch.tv_power"
           exclude: 
-      - type: entity-filter
-        entities:
-          - !secret person_sensor_person_one
-          - !secret person_sensor_person_two
-        state_filter:
-          - home
-        card: 
-          type: glance
-          title: Wer ist zuhause
   - title: Markus
     cards: 
       - type: map
