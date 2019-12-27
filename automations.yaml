@@ -73,6 +73,7 @@
   - alias: ''
     data: {}
     service: vacuum.start
+    entity_id: vacuum.xiaomi_vacuum_cleaner
   - data:
       message: 'Dein Staubsauger fängt jetzt an. Runcounter: {{ states.variable.staubsauger_runcounter.state
         }}'
@@ -122,6 +123,7 @@
     state: not_home
   action:
   - service: vacuum.start
+    entity_id: vacuum.xiaomi_vacuum_cleaner
   - data:
       value_template: '{{ (variable.state | int) + 1 }}'
       variable: staubsauger_runcounter
@@ -220,6 +222,7 @@
   - alias: ''
     data: {}
     service: vacuum.start
+    entity_id: vacuum.xiaomi_vacuum_cleaner
 - alias: iPhone Action Fernseher umschalten
   id: '1550779173467'
   initial_state: true
