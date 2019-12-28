@@ -31,6 +31,8 @@ views:
             tap_action: 
               action: call-service
               service: vacuum.start
+              service_data:
+                entity_id: vacuum.xiaomi_vacuum_cleaner
               confirmation: true
       - type: glance
         title: Wohnzimmer
@@ -460,6 +462,8 @@ views:
               tap_action: 
                 action: call-service
                 service: vacuum.locate
+                service_data:
+                  entity_id: vacuum.xiaomi_vacuum_cleaner
               entity: vacuum.xiaomi_vacuum_cleaner
               style:
                 top: 90%
@@ -469,6 +473,8 @@ views:
               tap_action: 
                 action: call-service
                 service: vacuum.return_to_base
+                service_data:
+                  entity_id: vacuum.xiaomi_vacuum_cleaner
               entity: vacuum.xiaomi_vacuum_cleaner
               icon: mdi:home
               style:
@@ -480,6 +486,8 @@ views:
               tap_action: 
                 action: call-service
                 service: vacuum.start
+                service_data:
+                  entity_id: vacuum.xiaomi_vacuum_cleaner
               entity: vacuum.xiaomi_vacuum_cleaner
               style:
                 top: 90%
@@ -490,6 +498,9 @@ views:
               tap_action: 
                 action: call-service
                 service: vacuum.pause
+                service_data:
+                  entity_id: vacuum.xiaomi_vacuum_cleaner
+                entity: vacuum.xiaomi_vacuum_cleaner
               entity: vacuum.xiaomi_vacuum_cleaner
               style:
                 top: 90%
