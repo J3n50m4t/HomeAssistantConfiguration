@@ -1,0 +1,34 @@
+esphome:
+  name: kinderzimmertemperatur
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: !secret wifiname
+  password: !secret wifipassword
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Kinderzimmertemperatur"
+    password: "GNG9ufD7NYFQ"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: !secret espaccesspassword
+
+ota:
+  password: !secret espaccesspassword
+
+sensor:
+  - platform: dht
+    pin: D2
+    temperature:
+      name: "Kinderzimmer Temperatur"
+    humidity:
+      name: "Kinderzimmer Luftfeuchtigkeit"
+    update_interval: 60s
