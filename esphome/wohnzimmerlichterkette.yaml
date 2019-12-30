@@ -23,3 +23,8 @@ api:
 
 ota:
   password: !secret espaccesspassword
+
+switch:
+  - platform: gpio
+    name: "Wohnzimmer Regal Lichterkette"
+    pin: D1
