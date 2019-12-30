@@ -1,0 +1,33 @@
+esphome:
+  name: wohnzimmerdekoration
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: !secret wifiname
+  password: !secret wifipassword
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "wohnzimmerdekoration"
+    password: "GNG9ufD7NYFQ"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: !secret espaccesspassword
+
+ota:
+  password: !secret espaccesspassword
+
+switch:
+  - platform: gpio
+    name: "Wohnzimmer Deko Lampions"
+    pin: D3
+  - platform: gpio
+    name: "Wohnzimmer Deko Regal"
+    pin: D4
