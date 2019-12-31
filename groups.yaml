@@ -11,7 +11,7 @@ AlleGeraete:
     - light.schlafzimmer
     - light.stehlampe
     - group.wohnzimmerlichter
-    - switch.deko_switch
+    - group.dekoration
     - switch.lichtschalterkueche
     # - switch.steckdose_fernseher
 
@@ -36,7 +36,7 @@ Wohnküchelichter:
     - light.leuchtkugel
     - light.mitte 
     - light.wohnung
-    - switch.deko_switch
+    - group.dekoration
     - switch.lichtschalterkueche
 
 Wohnzimmerlichter:
@@ -57,7 +57,7 @@ ha_menu:
     - light.leuchtkugel
     - light.mitte 
     - light.wohnung
-    - switch.deko_switch
+    - group.dekoration
     - switch.lichtschalterkueche
     - switch.flur_switch
     - light.schlafzimmer
@@ -67,6 +67,7 @@ Dekoration:
   view: no
   name: Dekoration
   entities:
-    - switch.deko_switch
+    - switch.wohnzimmer_deko_lampions
+    - switch.wohnzimmer_deko_regal
     - switch.steckdose_weihnachtsstern
     - switch.lichtschild

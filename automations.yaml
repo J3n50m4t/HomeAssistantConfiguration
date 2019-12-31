@@ -44,7 +44,10 @@
       entity_id: group.all_lights
     service: light.turn_off
   - data:
-      entity_id: switch.deko_switch
+      entity_id: switch.wohnzimmer_deko_regal
+    service: switch.turn_off
+  - data:
+      entity_id: switch.wohnzimmer_deko_lampions
     service: switch.turn_off
   - data:
       entity_id: switch.flur_switch

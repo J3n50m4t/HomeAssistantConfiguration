@@ -16,7 +16,7 @@ light.wohnung:
   friendly_name: Wohnzimmerlampe Wohnungsrichtung
 light.kuchenlicht:
   friendly_name: Küchenlampe 
-switch.deko_switch:
+group.dekoration:
   friendly_name: Dekoration im Wohnzimmer
 switch.lichtschalterkueche:
   friendly_name: Küchenlicht Leiste

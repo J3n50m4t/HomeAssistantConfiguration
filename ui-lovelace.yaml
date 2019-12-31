@@ -184,7 +184,8 @@ views:
           - light.leuchtkugel
           - light.esszimmer
           - group.kuchenlichter
-          - switch.deko_switch
+          - switch.wohnzimmer_deko_regal
+          - switch.wohnzimmer_deko_lampions
           - switch.steckdose_weihnachtsstern
           - switch.lichtschild
           - type: divider

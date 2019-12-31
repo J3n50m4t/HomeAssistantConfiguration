@@ -12,7 +12,7 @@ filter:
     - switch.tv_power
     - switch.tv_power
     - switch.lichtschalterkueche
-    - switch.deko_switch
+    - group.dekoration
     # - switch.steckdose_bewaesserung
     - switch.steckdose_weihnachtsstern
     - switch.flur_switch
@@ -39,8 +39,8 @@ entity_config:
     name: Fernseher
   switch.lichtschalterkueche:
     name: Küchenleiste
-  switch.deko_switch:
-    name: Deko Lampions
+  group.dekoration:
+    name: Deko Haus
   # switch.steckdose_bewaesserung: 
   #   name: Bewaesserung
   switch.steckdose_weihnachtsstern: 
