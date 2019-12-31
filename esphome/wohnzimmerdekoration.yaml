@@ -30,4 +30,4 @@ switch:
     pin: D3
   - platform: gpio
     name: "Wohnzimmer Deko Regal"
-    pin: D4
+    pin: D2
