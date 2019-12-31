@@ -49,7 +49,7 @@ views:
           - entity: light.leuchtkugel
             tap_action:
               action: toggle
-          - entity: switch.deko_switch
+          - entity: group.dekoration
             tap_action:
               action: toggle
           - entity: switch.steckdose_weihnachtsstern
