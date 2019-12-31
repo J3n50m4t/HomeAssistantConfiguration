@@ -17,7 +17,6 @@ smart_home:
       - light.stehlampe
       - light.woodbox
       - light.kuchenlicht
-      - sensor.kinderzimmer
       - switch.anlage_power
       - switch.deko_switch
       # - switch.steckdose_bewaesserung
@@ -73,9 +72,6 @@ smart_home:
       name:  Stehlampe
     light.woodbox:
       name: Woodbox
-    sensor.kinderzimmer:
-      name: Wohnzimmertemperatur
-      display_categories: TEMPERATURE_SENSOR
     switch.deko_switch:
       name: Deko
       description: Dekoration im Haus
