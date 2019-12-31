@@ -293,16 +293,24 @@ views:
  
   - title: Monitoring
     cards:
-      # - type: sensor
-      #   entity: sensor.kinderzimmer
-      #   name: Kinderzimmer Temperatur
-      #   height: 75
-      #   line_color: "#3498db"
-      #   icon: mdi:temperature
-      #   unit: °C
-      #   hours_to_show: 8
-      #   detail: 2
-      #   graph: line
+      - type: sensor
+        entity: sensor.kinderzimmer_temperatur
+        name: Kinderzimmer Temperatur
+        height: 75
+        line_color: "#3498db"
+        unit: °C
+        hours_to_show: 8
+        detail: 2
+        graph: line
+      - type: sensor
+        entity: sensor.kinderzimmer_luftfeuchtigkeit
+        name: Kinderzimmer Luftfeuchte
+        height: 75
+        line_color: "#3498db"
+        unit: °C
+        hours_to_show: 8
+        detail: 2
+        graph: line
       # - type: vertical-stack
       #   title: Fritzbox
       #   cards:
