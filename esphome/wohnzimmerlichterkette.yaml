@@ -28,3 +28,6 @@ switch:
   - platform: gpio
     name: "Wohnzimmer Regal Lichterkette"
     pin: D1
+  - platform: gpio
+    name: "Wohnzimmer Regal Perlenkette"
+    pin: D2

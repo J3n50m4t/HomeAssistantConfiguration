@@ -18,7 +18,7 @@ smart_home:
       - light.woodbox
       - light.kuchenlicht
       - switch.anlage_power
-      - group.deko
+      - group.dekoration
       # - switch.steckdose_bewaesserung
       - switch.steckdose_weihnachtsstern
       - switch.lichtschalterkueche
@@ -72,7 +72,7 @@ smart_home:
       name:  Stehlampe
     light.woodbox:
       name: Woodbox
-    group.deko:
+      group.dekoration:
       name: Deko
       description: Dekoration im Haus
       display_categories: LIGHT
