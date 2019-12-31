@@ -69,5 +69,6 @@ Dekoration:
   entities:
     - switch.wohnzimmer_deko_lampions
     - switch.wohnzimmer_deko_regal
+    - switch.wohnzimmer_regal_lichterkette
     - switch.steckdose_weihnachtsstern
     - switch.lichtschild
