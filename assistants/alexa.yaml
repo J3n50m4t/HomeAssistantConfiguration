@@ -10,6 +10,7 @@ smart_home:
       - group.wohnzimmerlichter
       - group.allegeraete
       - group.schlafzimmer
+      - group.dekoration
       - light.esszimmer
       - light.kuchenlicht
       - light.leuchtkugel
@@ -18,7 +19,6 @@ smart_home:
       - light.woodbox
       - light.kuchenlicht
       - switch.anlage_power
-      - group.dekoration
       # - switch.steckdose_bewaesserung
       - switch.steckdose_weihnachtsstern
       - switch.lichtschalterkueche
@@ -73,7 +73,7 @@ smart_home:
     light.woodbox:
       name: Woodbox
     group.dekoration:
-      name: Deko
+      name: Dekoration
       description: Dekoration im Haus
       display_categories: LIGHT
     # switch.steckdose_bewaesserung:
