@@ -72,7 +72,7 @@ smart_home:
       name:  Stehlampe
     light.woodbox:
       name: Woodbox
-      group.dekoration:
+    group.dekoration:
       name: Deko
       description: Dekoration im Haus
       display_categories: LIGHT
