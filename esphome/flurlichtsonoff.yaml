@@ -24,21 +24,51 @@ api:
 ota:
   password: !secret espaccesspassword
   
+
 binary_sensor:
   - platform: gpio
     pin:
-      number: GPIO0
+      number: GPIO14
       mode: INPUT_PULLUP
-      inverted: True
-    name: "Flurlicht Basic Button"
+    id: floor_binary  
     on_press:
-      - switch.toggle: relay
+      then:
+        - light.turn_on: floor_light
+    on_release:
+      then:
+        - light.turn_off: floor_light
+    on_multi_click:
+    - timing:
+        - ON for at most 0.5s
+        - OFF for at most 0.5s
+        - ON for at most 0.5s
+        - OFF for at most 0.5s
+        - ON for at most 0.5s
+        - OFF for at most 0.5s
+        - ON for at most 0.5s
+        - OFF for at least 0.2s
+      then:
+        - switch.turn_on: floor_light_restart
 
-switch:
+  - platform: status
+    name: "Flurlicht Status"
+
+output:
   - platform: gpio
-    name: "Flurlicht Relay"
     pin: GPIO12
-    id: relay
+    id: relay_1
+
+light:
+  - platform: binary
+    name: "Flurlicht"
+    id: floor_light
+    output: relay_1
+    
+switch:
+  - platform: restart
+    name: "Reboot floor Sonoff"
+    id: floor_light_restart
+
 
 status_led:
   pin:
