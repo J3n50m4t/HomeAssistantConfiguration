@@ -308,7 +308,6 @@ views:
         name: Kinderzimmer Luftfeuchte
         height: 75
         line_color: "#3498db"
-        unit: %
         hours_to_show: 8
         detail: 2
         graph: line
