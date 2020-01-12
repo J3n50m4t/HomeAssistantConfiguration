@@ -26,6 +26,8 @@ smart_home:
       - switch.flur_switch
       - switch.vacuum
       - script.find_vacuum
+      - switch.lichtschild
+      - switch.vernebler
     exclude_domains:
       - alert
       - automation
@@ -105,3 +107,12 @@ smart_home:
       display_categories: switch
     script.find_vacuum:
       name: Staubsauger lokalisieren
+    switch.lichtschild:
+      name: lichtschild
+      description: Lichtschild im Wohnzimmerregal
+      display_categories: light
+    switch.vernebler:
+      name: vernebler
+      description: Dampfvernebler in der TV Wohnwand
+      display_categories: switch
+    
