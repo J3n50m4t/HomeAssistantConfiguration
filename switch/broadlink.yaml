@@ -34,6 +34,10 @@
       friendly_name: "Lichtschild"
       command_on: !secret broad_link_codes_brennstuhl_a_command_on
       command_off: !secret broad_link_codes_brennstuhl_a_command_off
+    vernebler:
+      friendly_name: "Vernebler"
+      command_on: !secret broad_link_codes_brennstuhl_b_command_on
+      command_off: !secret broad_link_codes_brennstuhl_b_command_off
 
 
 

@@ -37,7 +37,7 @@ views:
       - type: glance
         title: Wohnzimmer
         show_state: false
-        columns: 6
+        columns: 4
         entities:
           - entity: group.wohnzimmerlichter
             tap_action:
@@ -59,6 +59,9 @@ views:
             tap_action:
               action: toggle
           - entity: switch.lichtschild
+            tap_action:
+              action: toggle
+          - entity: switch.vernebler
             tap_action:
               action: toggle
       - type: glance
@@ -185,9 +188,11 @@ views:
           - light.esszimmer
           - group.kuchenlichter
           - switch.wohnzimmer_deko_regal
+          - switch.wohnzimmer_regal_lichterkette
           - switch.wohnzimmer_deko_lampions
           - switch.steckdose_weihnachtsstern
           - switch.lichtschild
+          - switch.vernebler
           - type: divider
           - light.wohnung
           - light.fenster
