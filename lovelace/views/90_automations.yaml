@@ -1,0 +1,257 @@
+title: Automatisierung
+cards: 
+  - type: vertical-stack
+    cards:
+      - type: picture-elements
+        image: https://community-home-assistant-assets.s3.dualstack.us-west-2.amazonaws.com/original/3X/8/2/8249fd50a958e80bd226584a09acd534471bbb4a.png
+        elements:
+        - type: icon
+          icon: mdi:bell-ring
+          tap_action: 
+            action: call-service
+            service: vacuum.locate
+            service_data:
+              entity_id: vacuum.xiaomi_vacuum_cleaner
+          entity: vacuum.xiaomi_vacuum_cleaner
+          style:
+            top: 90%
+            left: 50%
+            "--paper-item-icon-color": rgb(115, 122, 130)
+        - type: icon
+          tap_action: 
+            action: call-service
+            service: vacuum.return_to_base
+            service_data:
+              entity_id: vacuum.xiaomi_vacuum_cleaner
+          entity: vacuum.xiaomi_vacuum_cleaner
+          icon: mdi:home
+          style:
+            top: 90%
+            left: 40%
+            "--paper-item-icon-color": rgb(115, 122, 130)
+        - type: icon
+          icon: mdi:play
+          tap_action: 
+            action: call-service
+            service: vacuum.start
+            service_data:
+              entity_id: vacuum.xiaomi_vacuum_cleaner
+          entity: vacuum.xiaomi_vacuum_cleaner
+          style:
+            top: 90%
+            left: 20%
+            "--paper-item-icon-color": rgb(115, 122, 130)
+        - type: icon
+          icon: mdi:pause
+          tap_action: 
+            action: call-service
+            service: vacuum.pause
+            service_data:
+              entity_id: vacuum.xiaomi_vacuum_cleaner
+            entity: vacuum.xiaomi_vacuum_cleaner
+          entity: vacuum.xiaomi_vacuum_cleaner
+          style:
+            top: 90%
+            left: 30%
+            "--paper-item-icon-color": rgb(115, 122, 130)
+        - type: icon
+          icon: mdi:speedometer-slow
+          tap_action: 
+            action: call-service
+            service: vacuum.set_fan_speed
+            service_data:
+              entity_id: vacuum.xiaomi_vacuum_cleaner
+              fan_speed: quiet
+          entity: vacuum.xiaomi_vacuum_cleaner
+          style:
+            top: 90%
+            left: 60%
+            "--paper-item-icon-color": rgb(115, 122, 130)
+        - type: icon
+          icon: mdi:speedometer-medium
+          tap_action: 
+            action: call-service
+            service: vacuum.set_fan_speed
+            service_data:
+              entity_id: vacuum.xiaomi_vacuum_cleaner
+              fan_speed: balanced
+          entity: vacuum.xiaomi_vacuum_cleaner
+          style:
+            top: 90%
+            left: 70%
+            "--paper-item-icon-color": rgb(115, 122, 130)
+        - type: icon
+          icon: mdi:speedometer
+          tap_action: 
+            action: call-service
+            service: vacuum.set_fan_speed
+            service_data:
+              entity_id: vacuum.xiaomi_vacuum_cleaner
+              fan_speed: turbo
+          entity: vacuum.xiaomi_vacuum_cleaner
+          style:
+            top: 90%
+            left: 80%
+            "--paper-item-icon-color": rgb(115, 122, 130)
+        - type: state-label
+          entity: sensor.vacuum_operation
+          style:
+            top: 10%
+            left: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-color: rgb(34, 154, 210)
+            background-color: rgb(54, 65, 78)
+            opacity: 0.8
+        - type: state-label
+          entity: sensor.vacuum_accessories
+          style:
+            top: 10%
+            right: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-color: rgb(34, 154, 210)
+            background-color: rgb(54, 65, 78)
+            opacity: 0.8
+        - type: state-label
+          entity: sensor.vacuum_main_brush
+          style:
+            top: 30%
+            right: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-right-style: solid
+            border-color: rgb(34, 154, 210)
+            opacity: 0.8
+        - type: state-label
+          entity: sensor.vacuum_side_brush
+          style:
+            top: 45%
+            right: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-right-style: solid
+            border-color: rgb(34, 154, 210)
+            opacity: 0.8
+        - type: state-label
+          entity: sensor.vacuum_filter
+          style:
+            top: 60%
+            right: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-right-style: solid
+            border-color: rgb(34, 154, 210)
+            opacity: 0.8
+        - type: state-label
+          entity: sensor.vacuum_sensor
+          style:
+            top: 75%
+            right: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-right-style: solid
+            border-color: rgb(34, 154, 210)
+            opacity: 0.8
+        - type: state-label
+          entity: sensor.vacuum_status
+          style:
+            top: 30%
+            left: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-left-style: solid
+            border-color: rgb(34, 154, 210)
+            opacity: 0.8
+        - type: state-label
+          entity: sensor.vacuum_battery
+          style:
+            top: 45%
+            left: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-left-style: solid
+            border-color: rgb(34, 154, 210)
+            opacity: 0.8
+        - type: state-label
+          entity: sensor.vacuum_area_cleaned
+          style:
+            top: 60%
+            left: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-left-style: solid
+            border-color: rgb(34, 154, 210)
+            opacity: 0.8
+        - type: state-label
+          entity: sensor.vacuum_cleaning_time
+          style:
+            top: 75%
+            left: 1%
+            color: rgb(255, 255, 255)
+            transform: translate(0%,-50%)
+            pointer-events: none
+            text-shadow: 1px 1px black
+            font-family: Trebuchet MS
+            font-size: 90%
+            font-weight: bold
+            border-left-style: solid
+            border-color: rgb(34, 154, 210)
+            opacity: 0.8        
+
+  - type: entities
+    entities:
+      - group.all_automations
+      - automation.fernseher_schaltet_dreamscreen_an
+      - automation.fernseher_schaltet_dreamscreen_aus
+      - automation.saugroboter_counter_update
+      - automation.saugroboter_ist_fertig
+      - automation.starte_saugen_durch_abwesenheit
+      - automation.starte_saugen_durch_zeit
+      - automation.staubsauger_runcounter_resetten
+      - automation.wenn_keiner_zuhause_licht_aus 

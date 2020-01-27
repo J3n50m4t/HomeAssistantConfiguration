@@ -1,0 +1,7 @@
+title: Cams
+icon: mdi:cctv
+cards: 
+  - type: picture-entity
+    name: Kinderzimmer
+    entity: camera.kinderzimmer
+    camera_image: camera.kinderzimmer

@@ -1,0 +1,16 @@
+title: Vanessa
+cards: 
+  - type: map
+    aspect_ratio: 100%
+    default_zoom: 12
+    entities:
+      - !secret person_sensor_person_two
+  - type: glance
+    title: Phonestate
+    entities:
+      - entity: sensor.person_two_battery
+        icon: mdi:battery-30
+      - entity: sensor.person_two_wifi
+        icon: mdi:wifi
+      - entity: sensor.person_two_gps
+        icon: mdi:crosshairs-gps

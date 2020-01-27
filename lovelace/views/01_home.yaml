@@ -1,0 +1,83 @@
+title: Home
+id: Home
+cards:
+  - type: weather-forecast
+    entity: weather.wetter
+  - type: glance
+    title: Schlafzimmer
+    show_state: false
+    columns: 3
+    entities:
+      - entity: light.stehlampe
+        tap_action:
+          action: toggle
+      - entity: light.schlaflampe
+        tap_action:
+          action: toggle
+      - entity: vacuum.xiaomi_vacuum_cleaner
+        tap_action: 
+          action: call-service
+          service: vacuum.start
+          service_data:
+            entity_id: vacuum.xiaomi_vacuum_cleaner
+          confirmation: true
+  - type: glance
+    title: Wohnzimmer
+    show_state: false
+    columns: 4
+    entities:
+      - entity: group.wohnzimmerlichter
+        tap_action:
+          action: toggle
+        hold_action: 
+          action: more-info
+        double_tap_action: 
+            action: more-info
+      - entity: light.leuchtkugel
+        tap_action:
+          action: toggle
+      - entity: group.dekoration
+        tap_action:
+          action: toggle
+      - entity: switch.steckdose_weihnachtsstern
+        tap_action:
+          action: toggle
+      - entity: switch.tv_power
+        tap_action:
+          action: toggle
+      - entity: switch.lichtschild
+        tap_action:
+          action: toggle
+      - entity: switch.vernebler
+        tap_action:
+          action: toggle
+  - type: glance
+    title: Esszimmer
+    show_state: false
+    columns: 1
+    entities:
+      - entity: light.esszimmer
+        tap_action:
+          action: toggle
+  - type: glance
+    title: Küche
+    show_state: false
+    columns: 2
+    entities:
+      - entity: light.kuchenlicht
+        tap_action:
+          action: toggle
+      - entity: switch.lichtschalterkueche
+        tap_action:
+          action: toggle
+
+        
+  - type: entity-filter
+    entities:
+      - !secret person_sensor_person_one
+      - !secret person_sensor_person_two
+    state_filter:
+      - home
+    card: 
+      type: glance
+      title: Wer ist zuhause

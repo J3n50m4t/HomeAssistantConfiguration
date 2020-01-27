@@ -1,0 +1,23 @@
+title: Allgemein
+cards:
+  - type: custom:monster-card
+    show_empty: false
+    card: 
+      type: entities
+      title: Allgemeine Schalter
+    filter:
+      include: 
+        - entity_id: "light.esszimmer"
+        - entity_id: "light.kuchenlicht"
+        - entity_id: "switch.lichtschalterkueche"
+        - entity_id: "light.leuchtkugel"
+        - entity_id: "light.stehlampe"
+        - entity_id: "light.schlaflampe"
+        - entity_id: "group.wohnzimmerlichter"
+        - entity_id: "group.dekoration"
+        - entity_id: "switch.deko_switch"
+        - entity_id: "switch.steckdose_weihnachtsstern"
+        - entity_id: "switch.lichtschild"
+        - entity_id: "switch.flur_switch"
+        - entity_id: "switch.tv_power"
+      exclude: 

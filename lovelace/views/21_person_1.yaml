@@ -1,0 +1,46 @@
+title: Markus
+cards: 
+  - type: map
+    aspect_ratio: 100%
+    default_zoom: 12
+    entities:
+      - !secret person_sensor_person_one
+  - type: glance
+    title: Phonestate
+    entities:
+      - entity: sensor.person_one_battery
+        icon: mdi:battery-30
+      - entity: sensor.person_one_wifi
+        icon: mdi:wifi
+      - entity: sensor.person_one_gps
+        icon: mdi:crosshairs-gps
+  - type: glance
+    title: Navigationszeiten (h4i)
+    entities:
+      - entity: sensor.heimweg_markus
+        name: Zuhause
+        tap_action:
+          action: url
+          url_path: !secret url_path_home_m
+        hold_action:
+          action: more-info
+      - entity: sensor.arbeitsweg_markus
+        name: Arbeit
+        tap_action:
+          action: url
+          url_path: !secret url_path_work_m
+        hold_action:
+            action: more-info
+      - entity: !secret zone3_usage_sensor
+        name: !secret zone_zone3_name
+        tap_action:
+          action: url
+          url_path: !secret url_path_zone3_m
+        hold_action:
+            action: more-info
+  - type: sensor
+    title: Gelaufene Meter
+    entity: sensor.distance_person1
+  - type: sensor
+    title: Gelaufene Schritte
+    entity: sensor.steps_person1

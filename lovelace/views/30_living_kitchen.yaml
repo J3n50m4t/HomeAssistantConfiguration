@@ -1,0 +1,117 @@
+title: Wohnküche
+cards:
+  - type: entities
+    entities:
+      - group.wohnzimmerlichter
+      - light.leuchtkugel
+      - light.esszimmer
+      - group.kuchenlichter
+      - switch.wohnzimmer_deko_regal
+      - switch.wohnzimmer_regal_lichterkette
+      - switch.wohnzimmer_deko_lampions
+      - switch.steckdose_weihnachtsstern
+      - switch.lichtschild
+      - switch.vernebler
+      - type: divider
+      - light.wohnung
+      - light.fenster
+      - light.mitte
+  - type: vertical-stack
+    cards: 
+      - type: glance
+        title: Fernseher
+        show_state: false
+        columns: 3
+        entities:
+        - entity: switch.tv_power
+          icon: mdi:power
+          name:
+          tap_action: 
+            action: call-service
+            service: switch.toggle
+            service_data:
+              entity_id: switch.tv_power
+        - entity: switch.tv_volume
+          icon: mdi:volume-minus
+          name:
+          tap_action: 
+            action: call-service
+            service: switch.turn_off
+            service_data:
+              entity_id: switch.tv_volume
+        - entity: switch.tv_volume
+          icon: mdi:volume-plus
+          name:
+          tap_action: 
+            action: call-service
+            service: switch.turn_on
+            service_data:
+              entity_id: switch.tv_volume    
+  - type: vertical-stack
+    cards: 
+      - type: glance
+        title: Dreamscreen Source
+        show_state: false
+        columns: 3
+        entities:
+          - entity: dreamscreen.dream_screen
+            icon: mdi:youtube-tv
+            name:
+            tap_action:
+              action: call-service
+              service: dreamscreen.set_hdmi_source
+              service_data:
+                entity_id: dreamscreen.dream_screen
+                source: "0"
+          - entity: dreamscreen.dream_screen
+            icon: mdi:xbox
+            name:
+            tap_action:
+              action: call-service
+              service: dreamscreen.set_hdmi_source
+              service_data:
+                entity_id: dreamscreen.dream_screen
+                source: "1"
+          - entity: dreamscreen.dream_screen
+            icon: mdi:steam
+            name:
+            tap_action:
+              action: call-service
+              service: dreamscreen.set_hdmi_source
+              service_data:
+                entity_id: dreamscreen.dream_screen
+                source: "2"
+  - type: vertical-stack
+    cards: 
+      - type: glance
+        title: Dreamscreen Mode
+        show_state: false
+        columns: 3
+        entities:
+          - entity: dreamscreen.dream_screen
+            icon: mdi:power
+            name:
+            tap_action:
+              action: call-service
+              service: dreamscreen.set_mode
+              service_data:
+                entity_id: dreamscreen.dream_screen
+                mode: "0"
+          - entity: dreamscreen.dream_screen
+            icon: mdi:television
+            name:
+            tap_action:
+              action: call-service
+              service: dreamscreen.set_mode
+              service_data:
+                entity_id: dreamscreen.dream_screen
+                mode: "1"
+          - entity: dreamscreen.dream_screen
+            icon: mdi:alarm-light
+            name:
+            tap_action:
+              action: call-service
+              service: dreamscreen.set_mode
+              service_data:
+                entity_id: dreamscreen.dream_screen
+                mode: "3"
