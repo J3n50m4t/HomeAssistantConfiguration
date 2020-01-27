@@ -15,3 +15,7 @@ custom_components/.mypy_cache/
 .storage2/
 glances/
 matrix.yaml
+
+.ios.conf
+
+custom_components/lovelace_gen/
