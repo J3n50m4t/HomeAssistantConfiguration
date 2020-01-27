@@ -1,3 +1,4 @@
+# lovelace_gen
 title: Monitoring
 cards:
   - type: sensor

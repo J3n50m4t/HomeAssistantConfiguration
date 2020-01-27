@@ -123,6 +123,8 @@ logger:
     homeassistant.core: fatal
     mobile_app: debug
 
+lovelace_gen:
+
 lovelace:
   mode: yaml
 
