@@ -248,11 +248,23 @@ cards:
   - type: entities
     entities:
       - group.all_automations
+      - automation.automatisierungen_an
+      - automation.deko_abends_ausschalten
       - automation.fernseher_schaltet_dreamscreen_an
       - automation.fernseher_schaltet_dreamscreen_aus
+      - automation.iphone_action_alllightsoff
+      - automation.iphone_action_fernseher_umschalten
+      - automation.iphone_action_staubsauger_starten
+      - automation.remove_new_devices_notification
       - automation.saugroboter_counter_update
+      - automation.saugroboter_error
       - automation.saugroboter_ist_fertig
+      - automation.starte_homekit_mit_delay
       - automation.starte_saugen_durch_abwesenheit
       - automation.starte_saugen_durch_zeit
       - automation.staubsauger_runcounter_resetten
+      - automation.weihnachtsdeko_abends_anschalten
+      - automation.weihnachtsdeko_abends_ausschalten
+      - automation.weihnachtsdeko_frueh_anschalten
+      - automation.weihnachtsdeko_fruh_ausschalten
       - automation.wenn_keiner_zuhause_licht_aus 
