@@ -8,6 +8,8 @@ api:
 
 automation: !include automations.yaml
 
+browser_mod:
+
 camera:
   - platform: generic
     verify_ssl: false
