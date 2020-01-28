@@ -6,10 +6,6 @@
 	path = www/custom_ui/custom-lovelace
 	url = https://github.com/ciotlosm/custom-lovelace.git
 	branch = master
-[submodule "www/custom_ui/text-element"]
-	path = www/custom_ui/text-element
-	url = https://github.com/custom-cards/text-element.git
-	branch = master
 [submodule "www/custom_ui/vertical-stack-in-card"]
 	path = www/custom_ui/vertical-stack-in-card
 	url = https://github.com/custom-cards/vertical-stack-in-card.git
