@@ -5,9 +5,7 @@ traccar\.xml
 aircast\.xml
 www/grafanaimages
 deps/
-custom_components/__pycache__/
 .storage/
-custom_components/.mypy_cache/
 .HA_VERSION
 .uuid
 .homekit.state
@@ -15,11 +13,6 @@ custom_components/.mypy_cache/
 .storage2/
 glances/
 matrix.yaml
-
 .ios.conf
-
-custom_components/lovelace_gen/
-
 custom_components/
-
 www/community/
