@@ -97,3 +97,15 @@ cards:
       - sensor.adguard_dns_queries
       - sensor.adguard_dns_queries_blocked
       - sensor.adguard_dns_queries_blocked_ratio
+
+  - type: entities
+    entities:
+      - binary_sensor.fritzbox_connectivity
+      - switch.fritzbox_guest_wifi
+      - switch.fritzbox_wifi
+      - switch.fritzbox_wifi_5ghz
+      - switch.fritzbox_portforward_ftp_server
+      - switch.fritzbox_portforward_http_server
+      - switch.fritzbox_portforward_https_server
+      - switch.fritzbox_portforward_homeassistant
+      - switch.fritzbox_portforward_ssh
