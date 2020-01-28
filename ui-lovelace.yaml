@@ -9,7 +9,8 @@ resources:
     type: js
   - url: /local/custom_ui/xiaomi_vacuum_map_card/dist/xiaomi-vacuum-map-card.js
     type: module
-    
+  - url: /local/card-tools.js
+    type: module    
 title: Zuhause
 views: !include_dir_list lovelace/views/
   

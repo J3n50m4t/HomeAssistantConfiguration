@@ -1,5 +1,13 @@
 title: Home
 id: Home
+popup_cards:
+  light.stehlampegross:
+    title: Stehlampe Groß
+    card:
+      type: entities
+      entities:
+        - light.stehlampe
+        - light.schlaflampe
 cards:
   - type: weather-forecast
     entity: weather.wetter
