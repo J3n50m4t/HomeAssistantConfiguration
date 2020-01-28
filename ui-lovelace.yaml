@@ -1,16 +1,21 @@
 resources:
   - url: /local/custom_ui/custom-lovelace/monster-card/monster-card.js
     type: js    
-  - url: /local/custom_ui/state-attribute-element/state-attribute-element.js
+  - url: /local/community/state-attribute-element/state-attribute-element.js
     type: js
-  - url: /local/custom_ui/text-element/text-element.js
+  - url: /local/community/text-element/text-element.js
     type: js
-  - url: /local/custom_ui/vertical-stack-in-card/vertical-stack-in-card.js
+  - url: /local/community/vertical-stack-in-card/vertical-stack-in-card.js
     type: js
-  - url: /local/custom_ui/xiaomi_vacuum_map_card/dist/xiaomi-vacuum-map-card.js
-    type: module
-  - url: /local/card-tools.js
+  - url: /local/community/lovelace-card-tools/card-tools.js
     type: module    
+  - url: /local/community/lovelace-xiaomi-vacuum-card/xiaomi-vacuum-card.js
+    type: module
+  - url: /local/community/lovelace-xiaomi-vacuum-map-card/xiaomi-vacuum-map-card.js
+    type: module
+  - url: /local/community/weather-card/weather-card.js
+    type: module
+
 title: Zuhause
 views: !include_dir_list lovelace/views/
   

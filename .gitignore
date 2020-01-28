@@ -19,3 +19,7 @@ matrix.yaml
 .ios.conf
 
 custom_components/lovelace_gen/
+
+custom_components/
+
+www/community/

@@ -1,16 +1,11 @@
 title: Home
 id: Home
-popup_cards:
-  light.stehlampegross:
-    title: Stehlampe Groß
-    card:
-      type: entities
-      entities:
-        - light.stehlampe
-        - light.schlaflampe
 cards:
-  - type: weather-forecast
+  - type: custom:weather-card
     entity: weather.wetter
+    current: true
+    details: true
+    forecast: true
   - type: glance
     title: Schlafzimmer
     show_state: false

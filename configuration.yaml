@@ -215,7 +215,7 @@ variable:
 weather:
   - platform: darksky
     api_key: !secret darksky_api_key
-    mode: hourly
+    mode: daily
     name: Wetter
 
 yeelight:

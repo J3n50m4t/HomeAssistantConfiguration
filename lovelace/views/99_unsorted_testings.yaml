@@ -3,19 +3,19 @@ cards:
   - type: picture-elements
     image: /local/images/plex.jpg
     elements: 
-    - type: custom:text-element
+    - type: "custom:text-element"
       text: "<b style='color: orange; font-size: 18px'>Now Playing: </b>"
       style:
         top: 7%
         left: 15px
         transform: none
-    - type: custom:text-element
+    - type: "custom:text-element"
       text: "<b style='color: orange; font-size: 18px'>Statistics: </b>"
       style:
         top: 37%
         left: 15px
         transform: none
-    - type: custom:state-attribute-element
+    - type: "custom:state-attribute-element"
       entity: sensor.tautulli
       attribute: "Top Movie"
       show_empty: true
@@ -25,7 +25,7 @@ cards:
         left: 15px
         color: white
         transform: none
-    - type: custom:state-attribute-element
+    - type: "custom:state-attribute-element"
       entity: sensor.tautulli
       attribute: "Top TV Show"
       show_empty: true
@@ -35,7 +35,7 @@ cards:
         left: 15px
         color: white
         transform: none
-    - type: custom:state-attribute-element
+    - type: "custom:state-attribute-element"
       entity: sensor.tautulli
       attribute: "Top User"
       show_empty: true
@@ -45,7 +45,7 @@ cards:
         left: 15px
         color: white
         transform: none
-    - type: custom:state-attribute-element
+    - type: "custom:state-attribute-element"
       entity: sensor.tautulli
       attribute: "stream_count"
       show_empty: true
@@ -55,7 +55,7 @@ cards:
         left: 15px
         color: white
         transform: none             
-  - type: custom:xiaomi-vacuum-map-card
+  - type: "custom:xiaomi-vacuum-map-card"
     entity: vacuum.xiaomi_vacuum
     map_image: '/local/images/xiaomi_vacuum_map_card/map.png'
     calibration_points:
