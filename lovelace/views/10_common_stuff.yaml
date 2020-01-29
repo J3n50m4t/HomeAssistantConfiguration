@@ -1,5 +1,31 @@
 title: Allgemein
 cards:
+  - type: entities
+    entities:
+      - type: custom:slider-entity-row
+        entity: light.esszimmer
+      - light.kuchenlicht
+      - switch.lichtschalterkueche
+      - type: custom:slider-entity-row
+        entity: light.leuchtkugel
+      - type: custom:slider-entity-row
+        entity: light.stehlampe
+      - type: custom:slider-entity-row
+        entity: light.schlaflampe
+      - group.wohnzimmerlichter
+      - type: custom:slider-entity-row
+        entity: light.wohnung
+      - type: custom:slider-entity-row
+        entity: light.fenster
+      - type: custom:slider-entity-row
+        entity: light.mitte
+      - group.dekoration
+      - switch.deko_switch
+      - switch.steckdose_weihnachtsstern
+      - switch.lichtschild
+      - switch.flur_switch
+      - switch.tv_power
+  
   - type: custom:monster-card
     show_empty: false
     card: 
