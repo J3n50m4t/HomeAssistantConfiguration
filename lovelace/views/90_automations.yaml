@@ -243,6 +243,10 @@ cards:
             border-left-style: solid
             border-color: rgb(34, 154, 210)
             opacity: 0.8        
+  
+  - type: custom:more-info-card
+    entity: vacuum.xiaomi_vacuum_cleaner
+    title: Vacuum cleaner
 
   - type: entities
     entities:

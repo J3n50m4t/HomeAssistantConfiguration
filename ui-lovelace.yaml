@@ -15,7 +15,12 @@ resources:
     type: module
   - url: /local/community/weather-card/weather-card.js
     type: module
-
+  - url: /local/community/mini-graph-card/mini-graph-card-bundle.js
+    type: module
+  - url: /local/community/ha-card-waze-travel-time/ha-card-waze-travel-time.js
+    type: module
+  - url: /local/community/lovelace-more-info-card/more-info-card.js
+    type: module
 title: Zuhause
 views: !include_dir_list lovelace/views/
   
