@@ -9,4 +9,5 @@ os: linux
 dist: xenial
 before_install:
   - pip3 install netdisco
+  - pip3 install home-assistant-frontend
   - mv dummy_secrets.yaml secrets.yaml
