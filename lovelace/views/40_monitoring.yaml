@@ -2,15 +2,20 @@ title: Monitoring
 cards:
   - type: custom:mini-graph-card
     unit: °C
-    hours_to_show: 168
+    hours_to_show: 24
     points_per_hour: 0.25
     entities:
-      - sensor.kinderzimmer_temperatur
-  - type: custom:mini-graph-card
-    hours_to_show: 168
-    points_per_hour: 0.25
-    entities:
-      - sensor.kinderzimmer_luftfeuchtigkeit
+      - entity: sensor.kinderzimmer_temperatur
+        color_thresholds:
+          - value: 19.0
+            color: "#00327E"
+          - value: 22.5
+            color: "#F89700"
+      - entity: sensor.kinderzimmer_luftfeuchtigkeit
+        unit: "%"
+        color: "#37007E"
+        y_axis: secondary
+
   - type: custom:mini-graph-card
     entities:
       - sensor.speedtest_download
