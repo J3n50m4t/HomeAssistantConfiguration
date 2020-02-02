@@ -3,7 +3,7 @@ cards:
   - type: custom:mini-graph-card
     unit: °C
     hours_to_show: 24
-    points_per_hour: 0.25
+    points_per_hour: 1
     entities:
       - entity: sensor.kinderzimmer_temperatur
         color_thresholds:
