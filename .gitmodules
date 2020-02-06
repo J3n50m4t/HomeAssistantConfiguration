@@ -1,7 +1,3 @@
-[submodule "custom_components/dreamscreen"]
-	path = custom_components/dreamscreen
-	url = https://github.com/GregoryDosh/Home-Assistant-DreamScreen-Service.git
-	branch = master
 [submodule "www/custom_ui/custom-lovelace"]
 	path = www/custom_ui/custom-lovelace
 	url = https://github.com/ciotlosm/custom-lovelace.git
