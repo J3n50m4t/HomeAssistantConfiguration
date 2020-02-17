@@ -48,7 +48,6 @@ Wohnzimmerlichter:
 
 ha_menu:
   control: hidden
-  view: no
   name: HA Menu Switches
   entities:
     - light.esszimmer    
@@ -64,7 +63,6 @@ ha_menu:
     - light.stehlampe
 
 Dekoration:
-  view: no
   name: Dekoration
   entities:
     - switch.wohnzimmer_deko_lampions
@@ -74,7 +72,6 @@ Dekoration:
     - switch.lichtschild
 
 All Automations:
-  view: no
   name: all_automations
   entities: 
     - automation.automatisierungen_an
