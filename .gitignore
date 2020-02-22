@@ -16,3 +16,6 @@ matrix.yaml
 .ios.conf
 /custom_components/
 /www/community/
+sabnzbd.conf
+appdaemon
+www/*.html
