@@ -11,6 +11,7 @@
 icloud/
 .storage/
 .cloud/
+themes/
 google_calendars.yaml
 harmony_media_room.conf
 home-assistant.db

@@ -7,3 +7,7 @@
   Integrations:
 
     - Dreamscreen 
+
+  Frontend:
+
+    - Dark Mint Theme
