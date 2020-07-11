@@ -1,17 +1,45 @@
-# Example .gitignore file for your config dir.
-# An * ensures that everything will be ignored.
-*
-# You can whitelist files/folders with !, these will not be ignored.
-!*.yaml
-!.gitignore
-!*.md
+# Created by https://www.toptal.com/developers/gitignore/api/homeassistant
+# Edit at https://www.toptal.com/developers/gitignore?templates=homeassistant
 
-# Ignore folders.
-.storage
-.cloud
+### HomeAssistant ###
+# Files with personal details
+*.crt
+*.csr
+*.key
 .google.token
-
-# Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
+.uuid
+icloud/
+.storage/
+.cloud/
+google_calendars.yaml
+harmony_media_room.conf
+home-assistant.db
+home-assistant_v2.db
+home-assistant_v2.db-*
+html5_push_registrations.conf
 ip_bans.yaml
-secrets.yaml
 known_devices.yaml
+phue.conf
+plex.conf
+pyozw.sqlite
+secrets.yaml
+tradfri.conf
+
+# Temporary files
+*.db-journal
+*.pid
+tts
+
+# automatically downloaded dependencies
+deps
+lib
+www
+
+# Log files
+home-assistant.log
+ozw_log.txt
+
+# Development files
+custom_components/
+
+# End of https://www.toptal.com/developers/gitignore/api/homeassistant

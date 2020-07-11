@@ -1,0 +1,8 @@
+title: Dashboard
+path: dashboard
+panel: false
+badges: []
+cards:
+  - type: weather-forecast
+    entity: weather.home
+
