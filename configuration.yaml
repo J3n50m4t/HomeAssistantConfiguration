@@ -3,6 +3,12 @@ automation: !include automations.yaml
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
+dreamscreen:
+  devices:
+    - dream_screen:
+        address: !secret dreamscreenip
+        timeout: 5
+
 group: !include groups.yaml
 
 lovelace:
