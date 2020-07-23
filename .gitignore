@@ -25,6 +25,8 @@ plex.conf
 pyozw.sqlite
 secrets.yaml
 tradfri.conf
+.homekit.state
+.DS_Store
 
 # Temporary files
 *.db-journal
