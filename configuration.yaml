@@ -2,6 +2,13 @@ automation: !include automations.yaml
 
 browser_mod:
 
+camera:
+  - platform: generic
+    verify_ssl: false
+    still_image_url: !secret kinderzimmer_cameraurl_still
+    stream_source: !secret kinderzimmer_cameraurl_stream
+    name: Kinderzimmer
+
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
@@ -60,7 +67,11 @@ scene: !include scenes.yaml
 
 script: !include scripts.yaml
 
+switch: !include_dir_merge_list switch
+
 system_health:
+
+updater:
 
 # Text to speech
 tts:
