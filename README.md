@@ -11,3 +11,4 @@
   Frontend:
 
     - Dark Mint Theme
+    - Weather Card
