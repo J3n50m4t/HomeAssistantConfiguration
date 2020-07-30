@@ -1,8 +1,17 @@
 title: Dashboard
 path: dashboard
 panel: false
-badges: []
+badges:
+  - entity: binary_sensor.updater
 cards:
-  - type: weather-forecast
+  - type: picture-entity
+    entity: camera.kinderzimmer
+  - type: entities
+    entities:
+      - lock.zuhause
+    title: Schloss
+  - type: custom:weather-card
     entity: weather.home
-
+    current: true
+    details: true
+    forecast: true
