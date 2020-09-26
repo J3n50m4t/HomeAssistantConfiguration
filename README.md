@@ -6,7 +6,9 @@
   
   Integrations:
 
+    - Deutscher Wetterdienst
     - Dreamscreen 
+    - Monitor Docker
 
   Frontend:
 
