@@ -1,0 +1,47 @@
+auto_start: false
+filter:
+  include_domains:
+    - media_player
+  include_entities:
+    - light.badlicht
+    - light.esszimmer
+    - light.fenster
+    - light.leuchtkugel
+    - light.mitte
+    - light.schlaflampe
+    - light.stehlampe
+    - light.stehlampegross
+    - light.wohnung
+    - camera.kinderzimmer
+    - device_tracker.iphonej3
+    - device_tracker.iphone_von_vanessa
+    - lock.zuhause
+    - group.wohnzimmerlichter
+entity_config:
+  device_tracker.iphonej3:
+    name: iPhone Markus
+    linked_battery_sensor: sensor.iphonej3_battery_state
+  device_tracker.iphone_von_vanessa:
+    name: iPhone Vanessa
+    linked_battery_sensor: sensor.iphone_von_vanessa_battery_state
+  light.badlicht:
+    name: Badlicht
+    linked_battery_sensor: sensor.lichtschalter_bad
+  light.esszimmer:
+    name: Esszimmerlicht
+    linked_battery_sensor: sensor.esszimmerschalter
+  light.fenster:
+    name: Wohnzimmerlicht Richtung Fenster
+    linked_battery_sensor: sensor.wohnzimmer
+  light.leuchtkugel:
+    linked_battery_sensor: sensor.leuchtkugelschalter
+  light.mitte:
+    name: Wohnzimmerlicht mittig
+    linked_battery_sensor: sensor.wohnzimmer
+  light.wohnung:
+    name: Wohnzimmerlicht Richtung Flur
+    linked_battery_sensor: sensor.wohnzimmer
+  group.wohnzimmerlichter:
+    name: Wohnzimmerlichter
+  lock.zuhause:
+    name: Wohnungstür

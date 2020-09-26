@@ -1,0 +1,6 @@
+Wohnzimmerlichter:
+  name: Wohnzimmer
+  entities:
+    - light.wohnung
+    - light.fenster
+    - light.mitte  
