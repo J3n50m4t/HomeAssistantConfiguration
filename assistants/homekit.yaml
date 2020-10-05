@@ -1,16 +1,16 @@
 auto_start: false
 filter:
-  include_domains:
-    - media_player
   include_entities:
+    - media_player.fernseher_im_wohnzimmer
     - light.badlicht
+    - light.kuechenlicht
     - light.esszimmer
     - light.fenster
     - light.leuchtkugel
     - light.mitte
-    - light.schlaflampe
-    - light.stehlampe
-    - light.stehlampegross
+    - light.nachttischlampe
+    - light.kaffeepflanze
+    - light.flurlampe
     - light.wohnung
     - camera.kinderzimmer
     - device_tracker.iphonej3
