@@ -17,6 +17,11 @@ filter:
     - device_tracker.iphone_von_vanessa
     - lock.zuhause
     - group.wohnzimmerlichter
+    - switch.steckdose_esszimmer
+    - switch.steckdose_schlafzimmer
+    - switch.steckdose_tv_board
+    - switch.steckdose_wickelzimmer
+    - switch.steckdose_wohnzimmertuer
 entity_config:
   device_tracker.iphonej3:
     name: iPhone Markus
@@ -45,3 +50,21 @@ entity_config:
     name: Wohnzimmerlichter
   lock.zuhause:
     name: Wohnungstür
+  switch.steckdose_esszimmer:
+    name: Steckdose Esszimmer
+  switch.steckdose_schlafzimmer:
+    name: Steckdose Schlafzimmer
+  switch.steckdose_tv_board:
+    name: Steckdose TV Board
+  switch.steckdose_wickelzimmer:
+    name: Steckdose Wickelzimmer
+  switch.steckdose_wohnzimmertuer:
+    name: Steckdose Wohnzimmertür
+
+  camera.kinderzimmer:
+    stream_source: !secret kinderzimmer_cameraurl_stream_with_homekit_params
+    video_codec: copy
+    support_audio: True
+    max_width: 1920
+    max_height: 1080
+    max_fps: 30
