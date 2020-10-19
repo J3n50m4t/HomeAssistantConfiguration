@@ -73,6 +73,12 @@ scene: !include scenes.yaml
 
 script: !include scripts.yaml
 
+sensor: !include_dir_merge_list sensor
+
+speedtestdotnet:
+  scan_interval:
+    minutes: 30
+
 switch: !include_dir_merge_list switch
 
 system_health:

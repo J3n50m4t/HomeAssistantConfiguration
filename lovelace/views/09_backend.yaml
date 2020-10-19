@@ -1,0 +1,23 @@
+title: Backend
+path: backend
+panel: false
+cards:
+  - type: history-graph
+    entities:
+      - entity: sensor.fritzbox_bytes_received
+      - entity: sensor.fritzbox_bytes_sent
+    title: Internet Traffic
+    hours_to_show: 24
+  - type: history-graph
+    entities:
+      - entity: sensor.fritzbox_bytes_received_current
+      - entity: sensor.fritzbox_bytes_sent_current
+    title: Internet Durchssatz
+    hours_to_show: 24
+  - type: glance
+    entities:
+      - sensor.speedtest_ping
+      - sensor.speedtest_download
+      - sensor.speedtest_upload
+    state_color: false
+    title: Speedtest Metic

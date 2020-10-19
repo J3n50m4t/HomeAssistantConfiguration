@@ -1,0 +1,18 @@
+- platform: template
+  sensors:
+    fritzbox_bytes_sent:
+      friendly_name: "Fritzbox Traffic gesendet"
+      unit_of_measurement: 'GB'
+      value_template: "{{ state_attr('sensor.fritz_netmonitor', 'bytes_sent') /1000000000 }}"
+    fritzbox_bytes_received:
+      friendly_name: "Fritzbox Traffic empfangen"
+      unit_of_measurement: 'GB'
+      value_template: "{{ state_attr('sensor.fritz_netmonitor', 'bytes_received') /1000000000 }}"
+    fritzbox_bytes_received_current:
+      friendly_name: "Fritzbox Durchsatz empfangen"
+      unit_of_measurement: 'Mbit/s'
+      value_template: "{{ state_attr('sensor.fritz_netmonitor', 'transmission_rate_down') /125000 }}"
+    fritzbox_bytes_sent_current:
+      friendly_name: "Fritzbox Durchsatz senden"
+      unit_of_measurement: 'Mbit/s'
+      value_template: "{{ state_attr('sensor.fritz_netmonitor', 'transmission_rate_up') /125000 }}"
