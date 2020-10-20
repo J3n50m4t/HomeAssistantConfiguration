@@ -54,3 +54,99 @@
         push:
           thread-id: low-battery
   mode: single
+- id: '1603219342103'
+  alias: 'Security: Schalte Steckdose Esszimmer nach 2 h aus'
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 19c5976e0f1411eb817865e5a12ec692
+    entity_id: switch.steckdose_esszimmer
+    domain: switch
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 19c5976e0f1411eb817865e5a12ec692
+    entity_id: switch.steckdose_esszimmer
+    domain: switch
+  mode: single
+- id: '1603219374222'
+  alias: 'Security: Schalte Steckdose Wohnzimmer nach 2 h aus'
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: e7a059f60f1311ebb7f67b9e67f1af66
+    entity_id: switch.steckdose_wohnzimmertuer
+    domain: switch
+    for:
+      hours: 2
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_off
+    device_id: e7a059f60f1311ebb7f67b9e67f1af66
+    entity_id: switch.steckdose_wohnzimmertuer
+    domain: switch
+  mode: single
+- id: '1603219401776'
+  alias: 'Security: Schalte Steckdose TVBoard nach 2 h aus '
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 969d54160f1411eba0d4a15f453636c9
+    entity_id: switch.steckdose_tv_board
+    domain: switch
+    for:
+      hours: 2
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 969d54160f1411eba0d4a15f453636c9
+    entity_id: switch.steckdose_tv_board
+    domain: switch
+  mode: single
+- id: '1603219427956'
+  alias: 'Security: Schalte Steckdose Wickelzimmer nach 2 h aus'
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: fbcc42440f1411eba2412965904c83d6
+    entity_id: switch.steckdose_wickelzimmer
+    domain: switch
+    for:
+      hours: 2
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_off
+    device_id: fbcc42440f1411eba2412965904c83d6
+    entity_id: switch.steckdose_wickelzimmer
+    domain: switch
+  mode: single
+- id: '1603219463242'
+  alias: 'Security: Schalte Steckdose Schlafzimmer nach 2 h aus'
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 0b5ac2c90f1511ebb1616768214d53f8
+    entity_id: switch.steckdose_schlafzimmer
+    domain: switch
+    for:
+      hours: 2
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 0b5ac2c90f1511ebb1616768214d53f8
+    entity_id: switch.steckdose_schlafzimmer
+    domain: switch
+  mode: single
