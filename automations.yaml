@@ -7,3 +7,50 @@
   action:
   - delay: 00:01
   - service: homekit.start
+- id: '1602967607387'
+  alias: 'Notifiy: Critical Battery iPad'
+  description: ''
+  trigger:
+  - type: battery_level
+    platform: device
+    device_id: a2052b4410a211eb810359ee5277127a
+    entity_id: sensor.ipad_von_markus_battery_level
+    domain: sensor
+    below: 25
+  condition: []
+  action:
+  - service: notify.mobile_app_iphonej3
+    data:
+      message: 'Der Akku vom iPad ist kritisch. Verbleibende Akkukapazität: {{ states.device_tracker.ipad_von_markus.attributes.battery_level}}
+        %'
+      title: iPad Akku kritisch!
+      data:
+        push:
+          thread-id: low-battery
+  mode: single
+- id: '1602968028491'
+  alias: 'Notifiy: Critical Battery Op6'
+  description: ''
+  trigger:
+  - type: battery_level
+    platform: device
+    device_id: b3887cd610b711ebb078dd22a668a37f
+    entity_id: sensor.oneplus_a6003_akkustand
+    domain: sensor
+    below: 15
+  condition:
+  - type: is_not_plugged_in
+    condition: device
+    device_id: b3887cd610b711ebb078dd22a668a37f
+    entity_id: binary_sensor.oneplus_a6003_ladt_auf
+    domain: binary_sensor
+  action:
+  - service: notify.mobile_app_iphonej3
+    data:
+      message: 'Der Akku vom OP6 ist kritisch. Verbleibende Akkukapazität: {{ states.sensor.oneplus_a6003_akkustand.state_with_unit
+        }}'
+      title: OP6 Akku kritisch!
+      data:
+        push:
+          thread-id: low-battery
+  mode: single
