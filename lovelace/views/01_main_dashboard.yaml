@@ -2,14 +2,177 @@ title: Dashboard
 path: dashboard
 panel: false
 badges:
-  - entity: binary_sensor.updater
+  - entity: person.markus_dittrich
+  - entity: lock.zuhause
 cards:
   - type: picture-entity
     entity: camera.kinderzimmer
+  - type: vertical-stack
+    cards: 
+      - type: horizontal-stack
+        cards:
+          - type: 'custom:button-card'
+            entity: light.leuchtkugel
+            icon: 'mdi:lightbulb'
+            color: auto
+            color_type: card
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+            name: Wohnzimmer Leuchtkugel
+            styles:
+              card:
+                - font-size: 12px
+                - font-weight: bold
+                - height: 100px
+            label: |
+              [[[
+                var bri = states['light.leuchtkugel'].attributes.brightness;
+                bri = ((bri / 255.0) * 100.0)|| 0;
+                return '' + (bri ? bri.toFixed(0) : '0') + '%';
+              ]]]
+            show_label: true
+            size: 25%
+          - type: 'custom:button-card'
+            entity: light.wohnung
+            icon: 'mdi:lightbulb'
+            color: auto
+            color_type: card
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+            name: Wohnzimmer Wohnung
+            styles:
+              card:
+                - font-size: 12px
+                - font-weight: bold
+                - height: 100px
+            label: |
+              [[[
+                var bri = states['light.wohnung'].attributes.brightness;
+                bri = ((bri / 255.0) * 100.0)|| 0;
+                return '' + (bri ? bri.toFixed(0) : '0') + '%';
+              ]]]
+            show_label: true
+            size: 25%
+          - type: 'custom:button-card'
+            entity: light.mitte
+            icon: 'mdi:lightbulb'
+            color: auto
+            color_type: card
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+            name: Wohnzimmer Mitte
+            styles:
+              card:
+                - font-size: 12px
+                - font-weight: bold
+                - height: 100px
+            label: |
+              [[[
+                var bri = states['light.mitte'].attributes.brightness;
+                bri = ((bri / 255.0) * 100.0)|| 0;
+                return '' + (bri ? bri.toFixed(0) : '0') + '%';
+              ]]]
+            show_label: true
+            size: 40%
+          - type: 'custom:button-card'
+            entity: light.fenster
+            icon: 'mdi:lightbulb'
+            color: auto
+            color_type: card
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+            name: Wohnzimmer Fenster
+            styles:
+              card:
+                - font-size: 12px
+                - font-weight: bold
+                - height: 100px
+            label: |
+              [[[
+                var bri = states['light.fenster'].attributes.brightness;
+                bri = ((bri / 255.0) * 100.0)|| 0;
+                return '' + (bri ? bri.toFixed(0) : '0') + '%';
+              ]]]
+            show_label: true
+            size: 25%
+      - type: horizontal-stack
+        cards:
+          - type: 'custom:button-card'
+            entity: light.esszimmer
+            icon: 'mdi:lightbulb'
+            color: auto
+            color_type: card
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+            name: Esszimmer
+            styles:
+              card:
+                - font-size: 12px
+                - font-weight: bold
+                - height: 100px
+            label: |
+              [[[
+                var bri = states['light.esszimmer'].attributes.brightness;
+                bri = ((bri / 255.0) * 100.0)|| 0;
+                return '' + (bri ? bri.toFixed(0) : '0') + '%';
+              ]]]
+            show_label: true
+            size: 25%
+          - type: 'custom:button-card'
+            entity: light.kuechenlicht
+            icon: 'mdi:lightbulb'
+            color: auto
+            color_type: card
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+            name: Küchenlicht
+            styles:
+              card:
+                - font-size: 12px
+                - font-weight: bold
+                - height: 100px
+            label: |
+              [[[
+                var bri = states['light.kuechenlicht'].attributes.brightness;
+                bri = ((bri / 255.0) * 100.0)|| 0;
+                return '' + (bri ? bri.toFixed(0) : '0') + '%';
+              ]]]
+            show_label: true
+            size: 25%
+
   - type: entities
     entities:
-      - lock.zuhause
-    title: Schloss
+      - entity: switch.steckdose_esszimmer
+        name: Esszimmer
+        secondary_info: last-changed
+      - entity: switch.steckdose_schlafzimmer
+        name: Schlafzimmer
+        secondary_info: last-changed
+      - entity: switch.steckdose_tv_board
+        name: TV Board
+        secondary_info: last-changed
+      - entity: switch.steckdose_wickelzimmer
+        name: Wickelzimmer
+        secondary_info: last-changed
+      - entity: switch.steckdose_wohnzimmertuer
+        name: Wohnzimmer
+        secondary_info: last-changed
+    show_header_toggle: true
+    title: Steckdosen
+    state_color: true
+
   - type: custom:weather-card
     entity: weather.home
     current: true
