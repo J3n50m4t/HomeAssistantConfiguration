@@ -1,0 +1,19 @@
+title: Hobby
+path: hobby
+panel: false
+cards:
+  - type: entities
+    entities:
+      - sensor.octoprint_actual_bed_temp
+      - sensor.octoprint_actual_tool0_temp
+      - sensor.octoprint_current_state
+      - sensor.octoprint_job_percentage
+      - sensor.octoprint_time_elapsed
+      - sensor.octoprint_time_remaining
+
+  - type: history-graph
+    entities:
+      - entity: sensor.octoprint_actual_bed_temp
+      - entity: sensor.octoprint_actual_tool0_temp
+    title: Ender3V2 Temperatures
+    hours_to_show: 8
