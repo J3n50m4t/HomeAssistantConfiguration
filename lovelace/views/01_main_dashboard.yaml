@@ -105,7 +105,6 @@ cards:
             size: 40%
       - type: horizontal-stack
         cards:
-        
           - type: 'custom:button-card'
             entity: light.wohnzimmerstehlampe
             icon: 'mdi:lightbulb'
