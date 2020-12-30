@@ -1,0 +1,17 @@
+- platform: plex_recently_added
+  name: Plex Recently Added Movies
+  token: !secret plex_token
+  host: !secret plex_host
+  port: 443
+  ssl: true
+  section_types:
+    - movie
+
+- platform: plex_recently_added
+  name: Plex Recently Added Shows
+  token: !secret plex_token
+  host: !secret plex_host
+  port: 443
+  ssl: true
+  section_types:
+    - show
