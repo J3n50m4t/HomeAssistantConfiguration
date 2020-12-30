@@ -57,6 +57,16 @@ octoprint:
   host: !secret octoprint_host
   api_key: !secret octoprint_api_key
   
+person:
+  - name: Markus
+    id: markusJ3
+    device_trackers:
+      - device_tracker.iphonej3
+  - name: Vanessa
+    id: vanessa12345
+    device_trackers:
+      - device_tracker.iphone_von_vanessa
+
 recorder:
   purge_keep_days: 30
   exclude:

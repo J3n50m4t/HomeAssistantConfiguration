@@ -2,7 +2,7 @@ title: Dashboard
 path: dashboard
 panel: false
 badges:
-  - entity: person.markus_dittrich
+  - entity: person.markus
   - entity: lock.zuhause
 cards:
   - type: picture-entity
