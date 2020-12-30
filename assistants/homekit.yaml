@@ -12,6 +12,7 @@ filter:
     - light.kaffeepflanze
     - light.flurlampe
     - light.wohnung
+    - light.wohnzimmerstehlampe
     - camera.kinderzimmer
     - device_tracker.iphonej3
     - device_tracker.iphone_von_vanessa
@@ -46,6 +47,8 @@ entity_config:
   light.wohnung:
     name: Wohnzimmerlicht Richtung Flur
     linked_battery_sensor: sensor.wohnzimmer
+  light.wohnzimmerstehlampe:
+    name: Stehlampe
   group.wohnzimmerlichter:
     name: Wohnzimmerlichter
   lock.zuhause:
