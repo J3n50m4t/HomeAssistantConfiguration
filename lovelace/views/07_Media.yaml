@@ -1,0 +1,27 @@
+title: Medien
+path: media
+panel: true
+cards:
+  - type: vertical-stack
+    cards:
+      - type: media-control
+        entity: media_player.spotify_j3n50m4t
+      - type: media-control
+        entity: media_player.fernseher_im_wohnzimmer
+      - type: horizontal-stack
+        cards:
+          - type: custom:upcoming-media-card
+            entity: sensor.plex_recently_added_shows
+            title: Recently Added Shows
+            clock: 24
+            max: 10
+            text_shadows: false
+            date: ddmm
+          - type: custom:upcoming-media-card
+            entity: sensor.plex_recently_added_movies
+            title: Recently Added Movies
+            clock: 24
+            max: 10
+            text_shadows: false
+            date: ddmm
+
