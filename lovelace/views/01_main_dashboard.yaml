@@ -105,6 +105,30 @@ cards:
             size: 25%
       - type: horizontal-stack
         cards:
+        
+          - type: 'custom:button-card'
+            entity: light.wohnzimmerstehlampe
+            icon: 'mdi:lightbulb'
+            color: auto
+            color_type: card
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+            name: Stehlampe
+            styles:
+              card:
+                - font-size: 12px
+                - font-weight: bold
+                - height: 100px
+            label: |
+              [[[
+                var bri = states['light.wohnzimmerstehlampe'].attributes.brightness;
+                bri = ((bri / 255.0) * 100.0)|| 0;
+                return '' + (bri ? bri.toFixed(0) : '0') + '%';
+              ]]]
+            show_label: true
+            size: 25%
           - type: 'custom:button-card'
             entity: light.esszimmer
             icon: 'mdi:lightbulb'
