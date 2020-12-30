@@ -1,22 +1,22 @@
 
-- platform: broadlink
-  host: !secret broadlink_ip
-  mac: !secret broadlink_mac
-  switches: 
-    kueche_schalter_licht:
-      friendly_name: "Küchenleiste"
-      command_on: !secret broadlink_steckdose_kueche_licht_command_on
-      command_off: !secret broadlink_steckdose_kueche_licht_command_off
-    tv_volume:
-      friendly_name: "Fernseher Volume"
-      command_on: !secret broadlink_ir_tv_volume_command_on
-      command_off: !secret broadlink_ir_tv_volume_command_off
-    tv_power:
-      friendly_name: "Fernseher"
-      command_on: !secret broadlink_ir_tv_power_command_on
-      command_off: !secret broadlink_ir_tv_power_command_off
-    tv_source_input:
-        friendly_name: "Fernseher Input"
-        command_on: !secret broadlink_ir_tv_input_command_on
-        command_off: !secret broadlink_ir_tv_input_command_off
+# - platform: broadlink
+#   host: !secret broadlink_ip
+#   mac: !secret broadlink_mac
+#   switches: 
+#     kueche_schalter_licht:
+#       friendly_name: "Küchenleiste"
+#       command_on: !secret broadlink_steckdose_kueche_licht_command_on
+#       command_off: !secret broadlink_steckdose_kueche_licht_command_off
+#     tv_volume:
+#       friendly_name: "Fernseher Volume"
+#       command_on: !secret broadlink_ir_tv_volume_command_on
+#       command_off: !secret broadlink_ir_tv_volume_command_off
+#     tv_power:
+#       friendly_name: "Fernseher"
+#       command_on: !secret broadlink_ir_tv_power_command_on
+#       command_off: !secret broadlink_ir_tv_power_command_off
+#     tv_source_input:
+#         friendly_name: "Fernseher Input"
+#         command_on: !secret broadlink_ir_tv_input_command_on
+#         command_off: !secret broadlink_ir_tv_input_command_off
 
