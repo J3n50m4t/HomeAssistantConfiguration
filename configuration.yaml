@@ -82,6 +82,9 @@ sensor: !include_dir_merge_list sensor
 speedtestdotnet:
   scan_interval:
     minutes: 30
+spotify:
+  client_id: !secret spotify_client_id
+  client_secret: !secret spotify_client_secret
 
 switch: !include_dir_merge_list switch
 
