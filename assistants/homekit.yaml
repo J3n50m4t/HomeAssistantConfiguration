@@ -11,6 +11,7 @@ filter:
     - light.nachttischlampe
     - light.kaffeepflanze
     - light.flurlampe
+    - light.wickelzimmer
     - light.wohnung
     - light.wohnzimmerstehlampe
     - camera.kinderzimmer
@@ -44,6 +45,8 @@ entity_config:
   light.mitte:
     name: Wohnzimmerlicht mittig
     linked_battery_sensor: sensor.wohnzimmer
+  light.wickelzimmer:
+    name: Licht Wickelzimmer
   light.wohnung:
     name: Wohnzimmerlicht Richtung Flur
     linked_battery_sensor: sensor.wohnzimmer
