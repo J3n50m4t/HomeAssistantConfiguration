@@ -3,6 +3,7 @@ path: dashboard
 panel: false
 badges:
   - entity: person.markus
+  - entity: person.vanessa
   - entity: lock.zuhause
 cards:
   - type: picture-entity
@@ -201,3 +202,9 @@ cards:
     current: true
     details: true
     forecast: true
+    
+  - type: map
+    entities: 
+      - person.markus
+      - person.vanessa
+    hours_to_show: 12
