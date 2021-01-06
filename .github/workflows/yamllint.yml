@@ -9,7 +9,7 @@ on:
 
 jobs:
   yamllint:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Getting your configuration from GitHub
         uses: actions/checkout@v1
