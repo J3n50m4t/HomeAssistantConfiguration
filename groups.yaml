@@ -3,4 +3,4 @@ Wohnzimmerlichter:
   entities:
     - light.wohnung
     - light.fenster
-    - light.mitte  
+    - light.mitte

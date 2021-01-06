@@ -9,7 +9,7 @@ cards:
   - type: picture-entity
     entity: camera.kinderzimmer
   - type: vertical-stack
-    cards: 
+    cards:
       - type: horizontal-stack
         cards:
           - type: 'custom:button-card'
@@ -202,9 +202,9 @@ cards:
     current: true
     details: true
     forecast: true
-    
+
   - type: map
-    entities: 
+    entities:
       - person.markus
       - person.vanessa
     hours_to_show: 12
