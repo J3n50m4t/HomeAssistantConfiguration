@@ -17,4 +17,3 @@ cards:
       - entity: sensor.octoprint_actual_tool0_temp
     title: Ender3V2 Temperatures
     hours_to_show: 8
-    
