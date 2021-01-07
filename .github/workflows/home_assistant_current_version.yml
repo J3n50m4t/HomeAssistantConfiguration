@@ -37,11 +37,10 @@ jobs:
       - name: Install integrations
         run: |
           mkdir -p custom_components
-          cd custom_components
-          git clone https://github.com/hacs/integration
+          cd /github/workspace/tmp
           git clone https://github.com/thomasloven/hass-browser_mod
-          git clone https://github.com/FL550/dwd_weather
-          git clone https://github.com/ualex73/monitor_docker
+          mv hass-browser_mod/custom_components/browser_mod ~/custom_components
           git clone https://github.com/custom-components/sensor.plex_recently_added
+          mv sensor.plex_recently_added/custom_components/plex_recently_added ~/custom_components
       - name: Check config
         run: hass -c . --script check_config --info all
