@@ -23,5 +23,23 @@ jobs:
           HA_VERSION=$(<.HA_VERSION)
       - name: Install Home Assistant
         run: pip3 install homeassistant==$(cat .HA_VERSION)
+      - name: Install frontend
+        run: |
+          mkdir -p www/community
+          git clone https://github.com/bramkragten/weather-card
+          git clone https://github.com/ExperienceLovelace/lovelace-floorplan
+          git clone https://github.com/custom-cards/upcoming-media-card
+          git clone https://github.com/custom-cards/button-card
+          git clone https://github.com/benct/lovelace-battery-entity-row
+          git clone https://github.com/home-assistant-community-themes/dark-mint
+          git clone https://github.com/kalkih/mini-graph-card
+      - name: Install integrations
+        run: |
+          mkdir -p custom_components
+          git clone https://github.com/hacs/integration
+          git clone https://github.com/thomasloven/hass-browser_mod
+          git clone https://github.com/FL550/dwd_weather
+          git clone https://github.com/ualex73/monitor_docker
+          git clone https://github.com/custom-components/sensor.plex_recently_added
       - name: Check config
         run: hass -c . --script check_config --info all
