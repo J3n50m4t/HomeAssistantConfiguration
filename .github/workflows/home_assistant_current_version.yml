@@ -1,0 +1,47 @@
+---
+name: Homeassistant Test against current Version
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  home_assistant_current_install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Getting your configuration from GitHub
+        uses: actions/checkout@v1
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Copy stub files into configuration folder
+        run: |
+          cp -R ci_secrets.yaml secrets.yaml
+          sudo mkdir -p /github/workspace/tmp
+          HA_VERSION=$(<.HA_VERSION)
+      - name: Install Home Assistant
+        run: pip3 install homeassistant==$(cat .HA_VERSION)
+      - name: Install frontend
+        run: |
+          mkdir -p www/community
+          cd www/community
+          git clone https://github.com/bramkragten/weather-card
+          git clone https://github.com/ExperienceLovelace/lovelace-floorplan
+          git clone https://github.com/custom-cards/upcoming-media-card
+          git clone https://github.com/custom-cards/button-card
+          git clone https://github.com/benct/lovelace-battery-entity-row
+          git clone https://github.com/home-assistant-community-themes/dark-mint
+          git clone https://github.com/kalkih/mini-graph-card
+      - name: Install integrations
+        run: |
+          mkdir -p custom_components
+          mkdir tmp
+          cd tmp
+          git clone https://github.com/thomasloven/hass-browser_mod
+          mv hass-browser_mod/custom_components/browser_mod ../custom_components
+          git clone https://github.com/custom-components/sensor.plex_recently_added
+          mv sensor.plex_recently_added/custom_components/plex_recently_added ../custom_components
+      - name: Check config
+        run: hass -c . --script check_config --info all
