@@ -26,6 +26,7 @@ jobs:
       - name: Install frontend
         run: |
           mkdir -p www/community
+          cd www/community
           git clone https://github.com/bramkragten/weather-card
           git clone https://github.com/ExperienceLovelace/lovelace-floorplan
           git clone https://github.com/custom-cards/upcoming-media-card
@@ -36,6 +37,7 @@ jobs:
       - name: Install integrations
         run: |
           mkdir -p custom_components
+          cd custom_components
           git clone https://github.com/hacs/integration
           git clone https://github.com/thomasloven/hass-browser_mod
           git clone https://github.com/FL550/dwd_weather
