@@ -1,5 +1,5 @@
 ---
-name: Homeassistant Test against latest Version
+name: LATEST - validate config 
 
 on:
   push:

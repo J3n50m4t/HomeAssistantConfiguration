@@ -1,5 +1,5 @@
 ---
-name: Homeassistant Test against current Version
+name:  PROD - validate config 
 
 on:
   push:
