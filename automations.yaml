@@ -63,6 +63,10 @@
     device_id: 19c5976e0f1411eb817865e5a12ec692
     entity_id: switch.steckdose_esszimmer
     domain: switch
+    for:
+      hours: 2
+      minutes: 0
+      seconds: 0
   condition: []
   action:
   - type: turn_off
