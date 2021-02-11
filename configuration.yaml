@@ -62,10 +62,12 @@ person:
     id: markusJ3
     device_trackers:
       - device_tracker.iphonej3
+      - device_tracker.iphonej3_2
   - name: Vanessa
     id: vanessa12345
     device_trackers:
       - device_tracker.iphone_von_vanessa
+      - device_tracker.iphone_von_vanessa_2
 
 recorder:
   purge_keep_days: 30
